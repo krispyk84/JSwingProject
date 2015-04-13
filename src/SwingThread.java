@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 import java.net.URL;
 
@@ -31,39 +30,35 @@ public class SwingThread implements Runnable{
 			int x = 0;
 			
 			String[] headers = {"High: ", "Last: ", "TimeStamp: ", "Bid: ", "VWAP: ", "Volume: ", "Low: ", "Ask: "};
-			String tempOldData = "";
 	
-			while(x < 100000000){
-				try {
-					String apiDataFull = readUrl("https://www.bitstamp.net/api/ticker/");
-					if(!apiDataFull.equals(tempOldData)){
-						tempOldData = apiDataFull;
-						bw.write(apiDataFull);
-						bw.newLine();
-						String[] apiData = apiDataFull.split(",");
-						for(int i = 0; i< apiData.length; i++){
-							apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-							
-						}
-						BasicSwing.marketsHeaderBitstamp.setText("X:" + x + "\n" +
-								headers[0] + apiData[0] + "\n" + 
-								headers[1] + apiData[1] + "\n" + 
-								headers[2] + apiData[2] + "\n" + 
-								headers[3] + apiData[3] + "\n" + 
-								headers[5] + apiData[5] + "\n" + 
-								headers[6] + apiData[6] + "\n" + 
-								headers[7] + apiData[7]);
-					}
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
+			long startTime = System.currentTimeMillis();
+			while((System.currentTimeMillis()-startTime) < 604800000){
+				Thread.sleep(5000);
+				String apiDataFull = readUrl("https://www.bitstamp.net/api/ticker/");
+				bw.write(apiDataFull);
+				bw.newLine();
+				bw.write(System.currentTimeMillis()+"");
+				bw.newLine();
+				bw.flush();
+				String[] apiData = apiDataFull.split(",");
+				for(int i = 0; i< apiData.length; i++){
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
 				}
+				BasicSwing.marketsHeaderBitstamp.setText("X:" + x + "\n" +
+					headers[0] + apiData[0] + "\n" + 
+					headers[1] + apiData[1] + "\n" + 
+					headers[2] + apiData[2] + "\n" + 
+					headers[3] + apiData[3] + "\n" + 
+					headers[5] + apiData[5] + "\n" + 
+					headers[6] + apiData[6] + "\n" + 
+					headers[7] + apiData[7]);
+		
 				x++;			 
 			}	
 			
 			bw.close();
 		
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
