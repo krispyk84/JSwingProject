@@ -51,15 +51,9 @@ public class BasicSwing extends JFrame {
 		}
 		
 		new BasicSwing();
-		ec.Evolve gpProg = new ec.Evolve();
-		gpProg.main(args);
-		/*
-		int x = 0;
-		while(x < 100000000){
-			jl.setText("X:" + x + " : " + readUrl("https://www.bitstamp.net/api/ticker/"));
-			x++;			 
-		}
-		*/	
+		//ec.Evolve gpProg = new ec.Evolve();
+		//gpProg.main(args);
+		
 	}
 	
 	public BasicSwing() throws Exception{
@@ -101,24 +95,6 @@ public class BasicSwing extends JFrame {
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
-	}
-	
-	private static String readUrl(String urlString) throws Exception {
-	    BufferedReader reader = null;
-	    try {
-	        URL url = new URL(urlString);
-	        reader = new BufferedReader(new InputStreamReader(url.openStream()));
-	        StringBuffer buffer = new StringBuffer();
-	        int read;
-	        char[] chars = new char[1024];
-	        while ((read = reader.read(chars)) != -1)
-	            buffer.append(chars, 0, read); 
-
-	        return buffer.toString();
-	    } finally {
-	        if (reader != null)
-	            reader.close();
-	    }
 	}
 
 }

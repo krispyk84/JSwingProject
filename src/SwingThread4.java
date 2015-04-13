@@ -1,15 +1,13 @@
-import java.util.*;
 import java.io.*;
 import java.net.URL;
-import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
-
-import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class SwingThread4 implements Runnable{
 	//Do not make public/static because then they'll merge the threads
@@ -23,7 +21,7 @@ public class SwingThread4 implements Runnable{
 	
 	@Override
 	public void run() {
-		
+		//This code here is made to ignore SSL Certificate Requirements of the API
 		SSLContext ctx = null;
         TrustManager[] trustAllCerts = new X509TrustManager[]{new X509TrustManager(){
             public X509Certificate[] getAcceptedIssuers(){return null;}
@@ -36,33 +34,61 @@ public class SwingThread4 implements Runnable{
         } catch (Exception e) {
         	System.out.println("Didn't work");
         }
-
         SSLContext.setDefault(ctx);
-		String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
-				
-		// TODO Auto-generated method stub
-		int x = 0;
-		while(x < 100000000){
-			try {
-				String[] apiData = readUrl("https://www.okcoin.com/api/ticker.do?ok=1").split(",");
-				for(int i = 0; i< apiData.length; i++){
-					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-					
-				}
-				BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
-						headers[2] + apiData[2] + "\n" + 
-						headers[3] + apiData[3] + "\n" + 
-						headers[0] + apiData[0] + "\n" + 
-						headers[1] + apiData[1] + "\n" + 
-						headers[6] + apiData[6] + "\n" + 
-						headers[4] + apiData[4] + "\n" + 
-						headers[5] + apiData[5]);
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+        
+        FileWriter fw;
+		BufferedWriter bw = null;
+		try {
+	        File file = new File("okcoinHistoricData.txt");
+	        if (!file.exists()) {
+				file.createNewFile();
 			}
-			x++;			 
-		}	
+	
+			
+			fw = new FileWriter(file.getAbsoluteFile());
+			bw = new BufferedWriter(fw);
+	
+			
+	        
+	        //The Header Titles for the data returned by the API
+	        String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
+			String tempOldData = "";
+			int x = 0;
+			while(x < 100000000){
+				try {
+					String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
+					if(!apiDataFull.equals(tempOldData)){
+						tempOldData = apiDataFull;
+						bw.write(apiDataFull);
+						bw.newLine();
+						String[] apiData = apiDataFull.split(",");
+						for(int i = 0; i< apiData.length; i++){
+							apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
+							
+						}
+						BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
+								headers[2] + apiData[2] + "\n" + 
+								headers[3] + apiData[3] + "\n" + 
+								headers[0] + apiData[0] + "\n" + 
+								headers[1] + apiData[1] + "\n" + 
+								headers[6] + apiData[6] + "\n" + 
+								headers[4] + apiData[4] + "\n" + 
+								headers[5] + apiData[5]);
+					}
+					
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				x++;			 
+			}	
+			
+			bw.close();
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 		
 		

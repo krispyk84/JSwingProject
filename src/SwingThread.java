@@ -15,31 +15,58 @@ public class SwingThread implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		int x = 0;
 		
-		String[] headers = {"High: ", "Last: ", "TimeStamp: ", "Bid: ", "VWAP: ", "Volume: ", "Low: ", "Ask: "};
-
-		while(x < 100000000){
-			try {
-				String[] apiData = readUrl("https://www.bitstamp.net/api/ticker/").split(",");
-				for(int i = 0; i< apiData.length; i++){
-					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-					
-				}
-				BasicSwing.marketsHeaderBitstamp.setText("X:" + x + "\n" +
-						headers[0] + apiData[0] + "\n" + 
-						headers[1] + apiData[1] + "\n" + 
-						headers[2] + apiData[2] + "\n" + 
-						headers[3] + apiData[3] + "\n" + 
-						headers[5] + apiData[5] + "\n" + 
-						headers[6] + apiData[6] + "\n" + 
-						headers[7] + apiData[7]);
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+		FileWriter fw;
+		BufferedWriter bw = null;
+		try {
+	        File file = new File("bitstampHistoricData.txt");
+	        if (!file.exists()) {
+				file.createNewFile();
 			}
-			x++;			 
-		}	
+	
+			
+			fw = new FileWriter(file.getAbsoluteFile());
+			bw = new BufferedWriter(fw);
+	
+			int x = 0;
+			
+			String[] headers = {"High: ", "Last: ", "TimeStamp: ", "Bid: ", "VWAP: ", "Volume: ", "Low: ", "Ask: "};
+			String tempOldData = "";
+	
+			while(x < 100000000){
+				try {
+					String apiDataFull = readUrl("https://www.bitstamp.net/api/ticker/");
+					if(!apiDataFull.equals(tempOldData)){
+						tempOldData = apiDataFull;
+						bw.write(apiDataFull);
+						bw.newLine();
+						String[] apiData = apiDataFull.split(",");
+						for(int i = 0; i< apiData.length; i++){
+							apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
+							
+						}
+						BasicSwing.marketsHeaderBitstamp.setText("X:" + x + "\n" +
+								headers[0] + apiData[0] + "\n" + 
+								headers[1] + apiData[1] + "\n" + 
+								headers[2] + apiData[2] + "\n" + 
+								headers[3] + apiData[3] + "\n" + 
+								headers[5] + apiData[5] + "\n" + 
+								headers[6] + apiData[6] + "\n" + 
+								headers[7] + apiData[7]);
+					}
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				x++;			 
+			}	
+			
+			bw.close();
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	private static String readUrl(String urlString) throws Exception {

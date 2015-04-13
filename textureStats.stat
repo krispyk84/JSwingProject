@@ -3,2584 +3,1066 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.38375 Adjusted=0.7226738934056007 Hits=493
 Tree 0:
- (div (div (+ Avg7 Avg7) (+ Avg5 Std7)) (+
-     (IfThenElse 0.1952207417971354 Ent11 Ent7)
-     (IfThenElse Ent11 -4.853643364113893 Guassian5x5)))
+ (* (div (+ (IfThenElse Ent11 Guassian5x5
+     Guassian5x5) (- Std7 Avg5)) (IfThenElse (div
+     9.322080598473693 Avg7) (IfThenElse Guassian3x3
+     -3.4228719057655925 Guassian3x3) (+ Ent7
+     Std7))) (+ (IfThenElse (IfThenElse Ent7 Ent11
+     Guassian3x3) (IfThenElse Std11 Guassian5x5
+     Avg5) (* Ent11 Avg5)) (+ (IfThenElse Avg7
+     Std7 Std11) (- Std7 Std11))))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (div (div (+ Avg7 Avg7) (+ Avg5 Std7)) (+
-     (IfThenElse 0.1952207417971354 Ent11 Ent7)
-     (IfThenElse Ent11 -4.853643364113893 (IfThenElse
-         Avg5 Avg7 Std7))))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
+     Std11 Guassian5x5) (+ -9.134275217691986
+     -9.875555242834515)) (* (IfThenElse Guassian5x5
+     Guassian3x3 Guassian3x3) (div Guassian3x3
+     -4.047188022454479)))) (+ (IfThenElse (*
+     (div Avg5 Guassian5x5) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+     Ent11 Ent11) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (div (div (+ Avg7 Avg7) (div Ent7 Std11))
-     (+ (IfThenElse 0.1952207417971354 Ent11 Ent7)
-         (IfThenElse Ent11 -4.853643364113893 (IfThenElse
-             Avg5 Avg7 Std7))))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
+     Std11 Guassian5x5) (+ -9.134275217691986
+     -9.875555242834515)) (* (IfThenElse Guassian5x5
+     Guassian3x3 Guassian3x3) (div Guassian3x3
+     -4.047188022454479)))) (+ (IfThenElse (*
+     (div Avg5 Guassian5x5) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+     Ent11 Ent11) (* Std7 Guassian3x3) (+ Ent7
+     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (+ (IfThenElse 0.1952207417971354 Ent11 Ent7)
-     (IfThenElse Ent11 -4.853643364113893 Guassian5x5))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
+     Std11 Guassian5x5) (+ -9.134275217691986
+     -9.875555242834515)) (* (IfThenElse Guassian5x5
+     Guassian3x3 Guassian3x3) (div Guassian3x3
+     -4.047188022454479)))) (+ (IfThenElse (*
+     (* Ent7 Std11) (div -10.326519004347006 Guassian5x5))
+     (IfThenElse (IfThenElse Guassian5x5 Ent11
+         Ent11) (* Std7 Guassian3x3) (+ 3.8403651393628557
+         Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (* (+ (IfThenElse 0.1952207417971354 Ent11
-     Ent7) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* Guassian5x5 Avg7))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5)) (div (* Std7 Ent11) (IfThenElse
+     Avg7 Std7 Guassian3x3))) (+ (* (IfThenElse
+     3.862996839098875 Std11 Guassian5x5) (+ -9.134275217691986
+     -9.875555242834515)) (* (IfThenElse Guassian5x5
+     Guassian3x3 Guassian3x3) (div Guassian3x3
+     -4.047188022454479)))) (+ (IfThenElse (*
+     (div Avg5 Guassian5x5) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+     Ent11 Ent11) (* Std7 Guassian3x3) (+ Ent7
+     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (div (IfThenElse Guassian5x5 Guassian3x3
-     Avg5) (+ (IfThenElse Ent11 -4.853643364113893
-     (IfThenElse Avg5 Avg7 Std7)) Ent7))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
+     Std11 Guassian5x5) (+ -9.134275217691986
+     -9.875555242834515)) (* (IfThenElse Guassian5x5
+     Guassian3x3 Guassian3x3) (div Guassian3x3
+     -4.047188022454479)))) (+ (IfThenElse (*
+     (div Avg5 Guassian5x5) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+     Ent11 Ent11) (* Std7 Guassian3x3) (- Std11
+     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
 Tree 0:
- (div (IfThenElse (IfThenElse Avg7 Std11 Guassian5x5)
-     (IfThenElse Avg5 Guassian5x5 Guassian3x3)
-     (+ Avg7 Ent7)) (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (* (IfThenElse (IfThenElse Ent11
-         Guassian3x3 Avg7) (+ Guassian5x5 Guassian5x5)
-         (+ Avg5 1.8621768371365506)) (* (div Avg7
-         Ent7) (IfThenElse -3.7639091037283867 Guassian3x3
-         Ent7)))))))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Guassian3x3)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (* (div Guassian3x3 Guassian5x5)
+     (- Std7 Std7)))) (div (div (- Std7 Ent7)
+     (IfThenElse Ent7 Avg5 Avg5)) (div (* Std7
+     Ent11) (IfThenElse Avg7 Std7 Guassian3x3)))
+     (+ (* (IfThenElse 3.862996839098875 Std11
+         Guassian5x5) (+ -9.134275217691986 -9.875555242834515))
+         (* (IfThenElse Guassian5x5 Guassian3x3 Guassian3x3)
+             (div Guassian3x3 -4.047188022454479)))) (+
+     (IfThenElse (* (div Avg5 Guassian5x5) (div
+         -10.326519004347006 Guassian5x5)) (IfThenElse
+         (IfThenElse Guassian5x5 Ent11 Ent11) (* Std7
+         Guassian3x3) (+ Ent7 Ent7)) (div (* Ent7
+         Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (IfThenElse Ent11 Guassian3x3 Avg5)
+         (+ Avg5 3.2768525120185905))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.34 Adjusted=0.7462686567164178 Hits=528
+Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
 Tree 0:
- (+ (IfThenElse 0.1952207417971354 Ent11 Ent7)
-     (IfThenElse Ent11 -4.853643364113893 (* Std11
-         (* (IfThenElse (IfThenElse Ent11 Guassian3x3
-             Avg7) (+ Guassian5x5 Guassian5x5) (+ Avg5
-             1.8621768371365506)) (* (div Avg7 Ent7) (IfThenElse
-             -3.7639091037283867 Guassian3x3 Ent7))))))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (IfThenElse Std7 Std11 Avg7)
+     (- Avg5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (+ Std11 Std11) (IfThenElse
+     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (* Std7 -6.182524571094834) Avg5) (* Ent7
+     Std7) (div (div (div Avg5 Guassian3x3) (*
+     Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
 Tree 0:
- (div (IfThenElse Avg5 Avg7 Std7) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (IfThenElse Std7 Std11 Avg7)
+     (- Avg5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) Guassian5x5 (IfThenElse
+     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (* Std7 -6.182524571094834) Avg5) (* Ent7
+     Std7) (div (div (div Avg5 Guassian3x3) (*
+     Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
 Tree 0:
- (div (IfThenElse Guassian3x3 (- Avg5 Std11)
-     -2.1359127120365247) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (IfThenElse Std7 Std11 Avg7)
+     (- Avg5 Std11))) (IfThenElse (IfThenElse
+     (div (div Std11 Ent7) Guassian3x3) Guassian5x5
+     (IfThenElse Std11 Std7 Avg5)) (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     Std7 Avg7)) (IfThenElse (- (* Std7 -6.182524571094834)
+     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.32875 Adjusted=0.7525870178739418 Hits=537
 Tree 0:
- (+ -5.32247310949076 Ent11)
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (IfThenElse Ent11
+     Avg7 Std11) (* (IfThenElse Guassian5x5 Guassian3x3
+     Guassian3x3) (div Guassian3x3 -4.047188022454479))))
+     (+ (IfThenElse (IfThenElse Avg5 0.9477373015876067
+         Guassian3x3) (IfThenElse (IfThenElse Guassian5x5
+         Ent11 Ent11) (IfThenElse Avg5 Std7 Guassian5x5)
+         (+ Std11 Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
+         -5.2370240960804875))) (div Avg7 (+ Avg5
+         3.2768525120185905))))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.32875 Adjusted=0.7525870178739418 Hits=537
 Tree 0:
- (div (div (+ Std7 Std7) (IfThenElse -4.853643364113893
-     (- Guassian3x3 Std7) (* Avg7 Std7))) (+ -5.32247310949076
-     Ent11))
+ (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
+     Avg7)) (div (IfThenElse Ent11 Guassian3x3
+     Guassian5x5) (- Guassian5x5 Ent7))) (div
+     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
+         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
+     Std7 Guassian3x3))) (+ (IfThenElse Ent11
+     Avg7 Std11) (* (IfThenElse Guassian5x5 Guassian3x3
+     Guassian3x3) (- Std7 Avg5)))) (+ (IfThenElse
+     (IfThenElse Avg5 0.9477373015876067 Guassian3x3)
+     (IfThenElse (IfThenElse Guassian5x5 Ent11
+         Ent11) (IfThenElse Avg5 Std7 Guassian5x5)
+         (+ Std11 Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div Avg7 (+ Avg5
+     3.2768525120185905))))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.32125 Adjusted=0.7568590350047304 Hits=543
 Tree 0:
- (div (+ Std7 Std7) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
+     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent7)
+         Guassian5x5 (IfThenElse Std11 Std7 Avg5))
+         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
+             Ent11) (* Std7 Avg7)) (IfThenElse (- (* Std7
+         -6.182524571094834) Avg5) (* Ent7 Std7) (div
+         (div (div Avg5 Guassian3x3) (* Avg5 Std7))
+         3.8824444451447966))))
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.32125 Adjusted=0.7568590350047304 Hits=543
 Tree 0:
- (div (* (IfThenElse (+ Avg7 Ent7) (* Std11
-     Std11) (IfThenElse (- 1.8984798720034293
-     Std11) Ent11 Ent7)) (div Ent7 Std11)) (+
-     -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
+     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent7)
+         Guassian5x5 (IfThenElse Std11 Std7 Avg5))
+         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
+             Ent11) (* Std7 Avg7)) (IfThenElse (- (* Std7
+         -6.182524571094834) Avg5) (* Ent7 Std7) (div
+         (div (div (IfThenElse Ent11 Guassian3x3 Avg5)
+             (+ Avg5 3.2768525120185905)) (* Avg5 Std7))
+         3.8824444451447966))))
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.32 Adjusted=0.7575757575757576 Hits=544
 Tree 0:
- (div (div (* Avg7 (IfThenElse (+ (- 3.999813726074837
-     Avg7) (+ Ent11 Guassian3x3)) (* (IfThenElse
-     (- 1.8984798720034293 Std11) (- Std7 (div
-     Std11 Ent11)) (div Guassian3x3 Guassian3x3))
-     (* Avg5 Guassian5x5)) (div (* 2.8599718233919
-     Std11) (IfThenElse 0.10691737445656657 Ent11
-     Std7)))) (IfThenElse -4.853643364113893 (*
-     Guassian3x3 1.9439111159620246) (* Avg7 Std7)))
-     (div (IfThenElse Avg5 Avg7 Std7) (+ -5.32247310949076
-         Ent11)))
+ (+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (IfThenElse Std7 Std11 Avg7)
+     (- Avg5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (div (IfThenElse Ent11
+     Guassian3x3 Guassian5x5) (* (div Guassian3x3
+     Guassian5x5) (* (div (- Guassian3x3 1.4656767396248775)
+     Avg7) (- Std7 Std7)))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     Std7 Avg7)) (IfThenElse (- (+ (div Guassian3x3
+     Std11) (+ Guassian5x5 Std11)) Avg5) (* Ent7
+     Std7) (div (div Ent7 (* Avg5 Std7)) 3.8824444451447966))))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (+ Std11 Std11) (IfThenElse Std11 Std7 Avg5))
+         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
+             Ent11) (* Std7 Avg7)) (IfThenElse (div (IfThenElse
+         Ent11 Guassian3x3 Guassian5x5) (div (IfThenElse
+         Ent11 Guassian3x3 Guassian5x5) (- Guassian5x5
+         Ent7))) (div (div (- Std7 Ent7) (IfThenElse
+         Ent7 Avg5 Avg5)) (div (* Std7 Ent11) (IfThenElse
+         Avg7 (+ (* Ent11 -8.716814701147342) (- Guassian5x5
+         3.0396803383393585)) Guassian3x3))) (div
+         (+ (IfThenElse (* (div Avg5 Guassian5x5)
+             (div -10.326519004347006 Guassian5x5)) (IfThenElse
+             (IfThenElse Guassian5x5 Ent11 Ent11) (* Std7
+             Guassian3x3) (div (+ (IfThenElse Ent11 Std7
+             Avg5) (div -0.8811947849325932 Ent11)) (div
+             (+ Ent11 Ent7) (- Std11 Ent11)))) (div (+
+             Avg5 Std7) (* Guassian5x5 -5.2370240960804875)))
+             (div (IfThenElse Ent11 Guassian3x3 Avg5)
+                 (+ Avg5 3.2768525120185905))) 3.8824444451447966))))
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.305 Adjusted=0.7662835249042146 Hits=556
+Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
 Tree 0:
- (div (div (* Avg7 (IfThenElse (+ (- 3.999813726074837
-     Avg7) (+ Ent11 Guassian3x3)) (* (IfThenElse
-     Guassian5x5 Std7 Ent7) (* Avg5 Guassian5x5))
-     (IfThenElse 0.10691737445656657 Ent11 Std7)))
-     (IfThenElse -4.853643364113893 (* Avg7 (IfThenElse
-         (+ (- 3.999813726074837 Avg7) (+ Ent11 Guassian3x3))
-         (* (IfThenElse Guassian5x5 Std7 Ent7) (*
-             Avg5 Guassian5x5)) (IfThenElse 0.10691737445656657
-         Ent11 Std7))) (IfThenElse Std11 Ent11 Avg5)))
-     (div (IfThenElse 0.1952207417971354 Ent11
-         Ent7) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
+     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     (IfThenElse Ent11 Guassian5x5 Avg7) (+ -9.134275217691986
+     -9.875555242834515))) (IfThenElse (- (* Std7
+     -6.182524571094834) Avg5) (* Ent7 Std7) (div
+     (div (div Avg5 Guassian3x3) (* Avg5 Std7))
+     3.8824444451447966))))
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.30375 Adjusted=0.7670182166826462 Hits=557
+Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (+ Avg5 Std7)) (+ Ent11 Guassian3x3))
-     (+ (+ Std11 5.4480543188959345) (IfThenElse
-         (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
+     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     (- Avg5 Std11) (+ -9.134275217691986 -9.875555242834515)))
+     (IfThenElse (- (* Std7 -6.182524571094834)
+         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+         (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2975 Adjusted=0.7707129094412332 Hits=562
+Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
 Tree 0:
- (div (* (IfThenElse (+ Avg7 Ent7) (* (- (-
-     (* (IfThenElse Ent11 Ent7 (* Std7 Ent7))
-         (IfThenElse 0.1952207417971354 Ent11 Ent7))
-     (div (div Ent7 Ent11) (* Avg5 Std7))) (-
-     Guassian3x3 Avg7)) Std11) (- 1.8984798720034293
-     Std11)) (+ (+ Std11 5.4480543188959345) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
+     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     (IfThenElse Ent11 Guassian5x5 Avg7) (+ -9.134275217691986
+     -9.875555242834515))) (IfThenElse (- (div
+     -10.326519004347006 Guassian5x5) Avg5) (*
+     Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2975 Adjusted=0.7707129094412332 Hits=562
+Fitness: Standardized=0.29375 Adjusted=0.7729468599033816 Hits=565
 Tree 0:
- (div (* (IfThenElse (+ Avg7 (+ (IfThenElse
-     0.1952207417971354 Ent11 Ent7) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (div (*
-     Guassian3x3 1.9439111159620246) (IfThenElse
-     Guassian5x5 Std7 Ent7)))))) (* (- (- (* (IfThenElse
-     Ent11 Ent7 (* Std7 Ent7)) (IfThenElse 0.1952207417971354
-     Ent11 Ent7)) (div (div Ent7 Ent11) (* Avg5
-     Std7))) (- Guassian3x3 Avg7)) Std11) (- 1.8984798720034293
-     Std11)) (+ (+ Std11 5.4480543188959345) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         (div (* Guassian5x5 Guassian3x3) (+ Avg5
+             3.2768525120185905))))) (- (div (* Ent7 Avg7)
+     (* Guassian5x5 -5.2370240960804875)) (- Avg5
+     Std11))) (IfThenElse Avg7 (IfThenElse (div
+     Guassian3x3 Ent11) (* Ent11 Ent11) (div Guassian3x3
+     (- (* Std7 -6.182524571094834) Avg5))) (IfThenElse
+     (IfThenElse (* (div Avg5 Guassian5x5) (div
+         -10.326519004347006 Guassian5x5)) (IfThenElse
+         Ent11 Guassian5x5 Guassian5x5) (div (* Ent7
+         Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2875 Adjusted=0.7766990291262136 Hits=570
+Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
 Tree 0:
- (div (div (* Guassian3x3 1.9439111159620246)
-     (IfThenElse -4.853643364113893 (IfThenElse
-         Ent11 -4.853643364113893 (IfThenElse Avg5
-         Avg7 (+ (IfThenElse Guassian3x3 Ent7 Guassian3x3)
-         (IfThenElse (+ 5.643203524024253 Std7) -4.853643364113893
-             (div (* (* Avg5 Ent11) (+ 5.643203524024253
-                 Std7)) Avg7))))) (* Avg7 Std7))) (div (div
-     (* (+ (div (+ (- Ent7 Std7) (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-         Ent11 -4.853643364113893 Guassian5x5)) (+
-         Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         (+ (div Guassian3x3 Std11) (+ Guassian5x5
+             Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
+         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2875 Adjusted=0.7766990291262136 Hits=570
+Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
 Tree 0:
- (div (div (* Guassian3x3 1.9439111159620246)
-     (IfThenElse -4.853643364113893 (IfThenElse
-         Ent11 -4.853643364113893 (IfThenElse Avg5
-         Avg7 (+ (IfThenElse Guassian3x3 Ent7 Guassian3x3)
-         (IfThenElse (+ 5.643203524024253 Std7) -4.853643364113893
-             (div (* (* Avg5 Ent11) (+ 5.643203524024253
-                 Std7)) Avg7))))) (* Avg7 Std7))) (div (div
-     (* (+ (div (+ (- Ent7 Std7) (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-         Ent11 -4.853643364113893 Guassian5x5)) (+
-         Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         (+ (div Guassian3x3 Std11) (+ Guassian5x5
+             Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
+         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2875 Adjusted=0.7766990291262136 Hits=570
+Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
 Tree 0:
- (div (div (* Guassian3x3 1.9439111159620246)
-     (IfThenElse -4.853643364113893 (IfThenElse
-         Ent11 -4.853643364113893 (IfThenElse Avg5
-         Avg7 (+ (IfThenElse Guassian3x3 Ent7 Guassian3x3)
-         (IfThenElse (+ 5.643203524024253 Std7) -4.853643364113893
-             (div (* (* Avg5 Ent11) (+ 5.643203524024253
-                 Std7)) Avg7))))) (* Avg7 Std7))) (div (div
-     (* (+ (div (+ (- Ent7 Std7) (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-         Ent11 -4.853643364113893 Guassian5x5)) (+
-         Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div (+ Ent11 Guassian3x3)
-             (+ -5.32247310949076 (div (+ Avg7 Ent7) (+
-                 -5.32247310949076 Ent11)))) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (+ (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875))
+         (- (div (+ 1.8444274225440092 Guassian3x3)
+             (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2825 Adjusted=0.7797270955165693 Hits=574
+Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
 Tree 0:
- (div (* (* (+ (div (+ (- Ent7 Std7) (div
-     (* Std11 Ent7) (+ -5.32247310949076 Ent11)))
-     (IfThenElse Ent11 -4.853643364113893 Guassian5x5))
-     (* Std11 Ent7)) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     (+ (- (+ (IfThenElse Avg7 (* (* Std11 Ent7)
-         (div Avg7 Guassian5x5)) Std7) (IfThenElse
-         Std11 Ent11 -12.34606456639795)) (IfThenElse
-         (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-             Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-         (- 3.071984967688702 Avg7) (div Avg7 Std11)))
-         (IfThenElse (- -1.9629812349951505 Guassian3x3)
-             (IfThenElse (+ (- 3.999813726074837 Avg7)
-                 (* Avg7 Std7)) (* (+ Avg7 Avg7) (div (* (+
-                 Ent7 4.135780404329475) (+ 5.643203524024253
-                 Std7)) (+ (+ Ent11 Guassian3x3) Ent11)))
-                 (div (* 2.8599718233919 Std11) (IfThenElse
-                     0.10691737445656657 Ent11 Std7))) (- Avg5
-             Std11)))) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (* Guassian5x5 -5.2370240960804875) Avg5)
+     (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (IfThenElse Ent11
-     Ent7 (* Std7 Ent7))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 (IfThenElse Std11 Std7 Avg5) Avg5)))
+     (IfThenElse (div Guassian3x3 Ent11) (* Ent11
+         Ent11) (* Std7 Avg7)) (IfThenElse (- (+ (+
+     (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
+     Ent11)) (- (div (+ 1.8444274225440092 Guassian3x3)
+     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.2675 Adjusted=0.7889546351084812 Hits=586
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (IfThenElse Ent11
-     Ent7 (* Std7 Ent7))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian3x3
+         1.4656767396248775))) (- (IfThenElse Std7
+     Std11 Avg7) (+ Guassian5x5 Std11))) (IfThenElse
+     (IfThenElse (- Guassian5x5 Ent11) (IfThenElse
+         (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 Guassian5x5)) (IfThenElse
+         (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+         Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+         -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+         (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+     Std7 Avg7)) (IfThenElse (- (+ (* (div Ent7
+     (- Avg5 Guassian5x5)) (+ (* (div Ent7 (-
+     Avg5 Guassian5x5)) (+ (div Guassian3x3 Std11)
+     (+ Guassian5x5 Std11))) (+ Guassian5x5 Std11)))
+     (- (div (+ 1.8444274225440092 Guassian3x3)
+         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.26375 Adjusted=0.7912957467853611 Hits=589
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (IfThenElse Ent11
-     Ent7 (* Std7 Ent7))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
+     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
+         Guassian3x3 Std11) (+ Guassian5x5 Std11)))
+     (- (div (+ 1.8444274225440092 Guassian3x3)
+         (IfThenElse Std11 Ent7 Avg7)) (- (IfThenElse
+         (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
+         Std7 (IfThenElse Guassian5x5 Ent11 Ent11)))
+         Std11))) Avg5) (* Ent7 Std7) (div (div (*
+     Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.2375 Adjusted=0.8080808080808081 Hits=610
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- Guassian3x3 Std7) (- Avg5
-     Std11)))) (div (IfThenElse Avg5 Ent7 (- Guassian3x3
-     Guassian3x3)) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 (+ (div (- Guassian3x3
+     1.4656767396248775) Avg7) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (+ Std11 Std11) (IfThenElse
+     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (div (IfThenElse Ent11 Guassian3x3 Guassian5x5)
+         (div (IfThenElse Ent11 Guassian3x3 Guassian5x5)
+             Guassian3x3)) (div (div (- Std7 Ent7) (IfThenElse
+     Ent7 Avg5 Avg5)) (div (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ (div Guassian3x3 Std11)
+     (+ Guassian5x5 Std11))) (IfThenElse Avg7
+     (+ (* Ent11 -8.716814701147342) (- Guassian5x5
+         3.0396803383393585)) (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7))))) (div (+ (IfThenElse (*
+     (div Avg5 Guassian5x5) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+     Ent11 Ent11) (* Std7 Guassian3x3) (div (+
+     (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
+     Ent11)) (div (+ Ent11 Ent7) (div -10.326519004347006
+     Guassian5x5)))) (div (+ Avg5 Std7) (* Guassian5x5
+     -5.2370240960804875))) (div (IfThenElse Ent11
+     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905)))
+     3.8824444451447966)))) Avg7) (+ Guassian5x5
+     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
+     Ent11) (IfThenElse (+ Avg5 3.2768525120185905)
+     (IfThenElse (+ Avg7 Avg7) (* Std7 Guassian3x3)
+         (+ 3.8403651393628557 Avg5)) (div (* Ent7
+     Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
+     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         Std11) (- (div (+ 1.8444274225440092 Guassian3x3)
+         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
+         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.23625 Adjusted=0.8088978766430738 Hits=611
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- Guassian3x3 Std7) (- Avg5
-     Std11)))) (div (IfThenElse Avg5 Ent7 (div
-     (div (* Guassian3x3 1.9439111159620246) (IfThenElse
-         -4.853643364113893 (IfThenElse Ent11 -4.853643364113893
-         (IfThenElse Avg5 Avg7 (+ (IfThenElse Guassian3x3
-             Ent7 Guassian3x3) (IfThenElse (+ 5.643203524024253
-             Std7) -4.853643364113893 (IfThenElse Ent11
-             Ent7 (+ Guassian3x3 Avg7)))))) (+ Guassian3x3
-         (- Ent7 Ent11)))) (div (div (* (+ (div (+
-     (- Ent7 Std7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (+ Ent11 Guassian3x3)) (+ (+
-     Std11 5.4480543188959345) (IfThenElse (-
-     (div Std7 Std7) (+ 4.6852219980680845 Std7))
-     (- Guassian3x3 Std7) (- Avg5 Std11)))) Std7)
-     (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-     Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse (IfThenElse (- Guassian5x5
+     Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 (div Avg5 Guassian5x5) Avg5))) (IfThenElse
+     Guassian5x5 (* Ent11 Ent11) (IfThenElse (*
+     (div (IfThenElse (div Guassian3x3 Std11)
+         Ent7 Ent7) Avg7) (- Std7 Std7)) Guassian3x3
+     -0.9121617474395196)) (IfThenElse (- (* (div
+     (+ (div (IfThenElse (- Guassian5x5 Ent11)
+         (+ Std11 Std11) (div (- Guassian3x3 1.4656767396248775)
+         Avg7)) (* (div Guassian3x3 Guassian5x5) (-
+         Std7 Std7))) (IfThenElse (div Ent7 Avg7)
+         (- (div Avg7 Std11) (+ -2.9649760998030277
+             Guassian5x5)) (* (div Ent11 Ent7) (- Std11
+         -1.7625369021237278)))) Avg7) (- Std7 Std7))
+     Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
+     (* Avg5 Std7)) 3.8824444451447966))) (+ Guassian5x5
+     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
+     Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
+     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
+     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+     (div (div Avg7 5.756228806896625) (IfThenElse
+         Ent7 (IfThenElse Std11 Avg5 Avg5) Avg5)))
+     (IfThenElse (div Guassian3x3 Ent11) (* Ent11
+         Ent11) (* Std7 Avg7)) (IfThenElse (- (+ (div
+     (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875))
+     (- (div (IfThenElse (- (* Std7 -6.182524571094834)
+         Avg5) (* Ent7 Std7) (div (div (* (IfThenElse
+         Std11 Std11 Avg7) Guassian3x3) (* Avg5 Std7))
+         3.8824444451447966)) (IfThenElse Std11 Ent7
+         Avg7)) (- Avg5 Std11))) Avg5) (* Ent7 Std7)
+     (div (div (div Avg5 Guassian3x3) (* Avg5
+         Std7)) 3.8824444451447966))))
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- Guassian3x3 Std7) (- Avg5
-     Std11)))) (div (IfThenElse Avg5 Ent7 (div
-     (div (* Guassian3x3 1.9439111159620246) (IfThenElse
-         -4.853643364113893 (IfThenElse Ent11 -4.853643364113893
-         (- (+ (IfThenElse Avg7 (* (* Std11 Ent7)
-             (div Avg7 Guassian5x5)) Std7) (IfThenElse
-             Std11 Ent11 -12.34606456639795)) (IfThenElse
-             (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-                 Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-             (- 3.071984967688702 Avg7) (div Avg7 Std11))))
-         (+ Guassian3x3 (- Ent7 Ent11)))) (div (div
-     (* (+ (div (+ (- Ent7 Std7) (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-         Ent11 -4.853643364113893 Guassian5x5)) (+
-         Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-     Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ (div Guassian3x3 Std11)
+     (+ Guassian5x5 Std11))) (* Std7 Avg7)) (IfThenElse
+     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         (+ (div Guassian3x3 Std11) (- (IfThenElse
+             Std7 Std11 Avg7) (+ Guassian5x5 Std11))))
+         (- (+ Avg5 Std11) (IfThenElse Guassian3x3
+             Avg5 Avg5))) Avg5) (* Ent7 Std7) (div (div
+     (* Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) (IfThenElse 0.1952207417971354 Ent11
-         Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-     Std11)) (IfThenElse Avg5 Avg7 Std7))))) (+
-     Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- -1.9629812349951505 Guassian3x3)
-     (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ (div Guassian3x3 Std11)
+     (+ Guassian5x5 Std11))) (* Std7 Avg7)) (IfThenElse
+     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         (+ (div Guassian3x3 Std11) (- (IfThenElse
+             Std7 Std11 Avg7) (+ Guassian5x5 Std11))))
+         (- (+ Avg5 Std11) (IfThenElse Guassian3x3
+             Avg5 Avg5))) Avg5) (* Ent7 Std7) (div (div
+     (* Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- Guassian3x3 Std7) (- Avg5
-     Std11)))) (div (IfThenElse Avg5 Ent7 (div
-     (div (* Guassian3x3 1.9439111159620246) (IfThenElse
-         -4.853643364113893 (IfThenElse Ent11 -4.853643364113893
-         (IfThenElse Avg5 Avg7 (+ (IfThenElse Guassian3x3
-             Ent7 Guassian3x3) (IfThenElse (+ 5.643203524024253
-             Std7) -4.853643364113893 (IfThenElse Ent11
-             Ent7 (+ Guassian3x3 Avg7)))))) (+ Guassian3x3
-         (- Ent7 Ent11)))) (div (div (* (+ (div (+
-     (- Ent7 Std7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (+ Ent11 Guassian3x3)) (+ (+
-     Std11 5.4480543188959345) (IfThenElse (-
-     (* Avg5 Ent11) (IfThenElse (- (div Std7 Std7)
-     (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11))) (- Guassian3x3 Std7)
-     (- Avg5 Std11)))) Std7) (+ -5.32247310949076
-     Ent11)))) (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (div Ent7
+     (- Avg5 Guassian5x5))) (div (* Ent7 Avg7)
+     (* Guassian5x5 -5.2370240960804875))) (div
+     (div Avg7 5.756228806896625) (IfThenElse
+     Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
+     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
+         Guassian3x3 Std11) (- (IfThenElse Std7 Std11
+         Avg7) (+ Guassian5x5 Std11)))) (- (+ Avg5
+     Std11) (IfThenElse Guassian3x3 Avg5 Avg5)))
+     Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27625 Adjusted=0.7835455435847208 Hits=579
+Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- Guassian3x3 Std7) (- Avg5
-     Std11)))) (div (IfThenElse Avg5 Ent7 (div
-     (div (* Guassian3x3 1.9439111159620246) (IfThenElse
-         -4.853643364113893 (IfThenElse Ent11 -4.853643364113893
-         (- (+ (IfThenElse Avg7 (- Guassian3x3 Std7)
-             Std7) (IfThenElse Std11 Ent11 -12.34606456639795))
-             (IfThenElse (* Guassian3x3 (div (* (- Guassian3x3
-                 Avg7) Avg5) (- Avg5 (+ -5.723817143738165
-                 9.247642535718478)))) (- 3.071984967688702
-                 Avg7) (div Avg7 Std11)))) (+ Guassian3x3
-         (- Ent7 Ent11)))) (div (div (* (+ (div (+
-     (- Ent7 Std7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (+ Ent11 Guassian3x3)) (+ (+
-     Std11 5.4480543188959345) (IfThenElse (-
-     (div Std7 Std7) (+ 4.6852219980680845 Std7))
-     (- Guassian3x3 Std7) (- Avg5 Std11)))) Std7)
-     (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-     Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
+     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
+     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
+     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
+         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
+         Std11) (+ -2.9649760998030277 Guassian5x5))
+         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
+             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
+     (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
+     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
+     (* Ent7 Std7) (div (div (* Ent11 Ent11) (*
+     Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2725 Adjusted=0.7858546168958743 Hits=582
+Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (+
-     Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- -1.9629812349951505 Guassian3x3)
-     (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
+     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
+     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
+     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
+         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
+         Std11) (+ -2.9649760998030277 Guassian5x5))
+         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
+             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
+     (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
+     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
+     (* Ent7 Std7) (div (div (* Ent11 Ent11) (*
+     Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2725 Adjusted=0.7858546168958743 Hits=582
+Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (div Ent7 Ent11)
-         (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-         (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7)))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- -1.9629812349951505 Guassian3x3)
-     (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
+     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
+     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
+     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
+         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
+         Std11) (+ -2.9649760998030277 Guassian5x5))
+         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
+             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
+     (* Std7 Guassian3x3) (+ 3.8403651393628557
+     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
+     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
+     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
+     (* Ent7 Std7) (div (div (IfThenElse (div
+     Guassian3x3 Ent11) (* Ent11 Ent11) (* Std7
+     Avg7)) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2725 Adjusted=0.7858546168958743 Hits=582
+Fitness: Standardized=0.22125 Adjusted=0.8188331627430911 Hits=623
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (+
-     Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- -1.9629812349951505 Guassian3x3)
-     (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (* Ent11 Ent11) (+ Guassian5x5
+     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
+     Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (- (+
+     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
+         Guassian3x3 Std11) (+ Guassian5x5 Std11)))
+     (- (div (+ 1.8444274225440092 Guassian3x3)
+         Avg5) (+ 9.194378415013368 Guassian5x5)))
+     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
+     Guassian5x5)) (+ (div Guassian3x3 Std11)
+     (+ Guassian5x5 Std11))) (* Guassian5x5 -5.2370240960804875))
+     (IfThenElse (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+         (+ (div Guassian3x3 Std11) (- (IfThenElse
+             Std7 Std11 Avg7) (div -10.326519004347006
+             Guassian5x5)))) (- (+ Avg5 Std11) (IfThenElse
+         Guassian3x3 Avg5 Avg5))) Avg5) (* Ent7 Std7)
+         (div -10.326519004347006 Guassian5x5))))
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27125 Adjusted=0.7866273352999017 Hits=583
+Fitness: Standardized=0.21875 Adjusted=0.8205128205128205 Hits=625
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (IfThenElse
-     (- (- (+ (- Ent7 Std7) (div (* (+ Avg7 Avg7)
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)))
-         (* (- (* (+ Ent7 (- Guassian3x3 Std7)) (+
-             5.643203524024253 Std7)) (- Guassian3x3 Avg7))
-             Std11))) (div (+ -5.723817143738165 9.247642535718478)
-         (+ Avg7 Avg7))) (- Guassian3x3 Avg7)) (+
-     (div Std7 Guassian3x3) (div Avg7 Std11))
-     (IfThenElse Avg5 Avg7 Std7))))) (+ Ent11
-     Guassian3x3)) (+ (div (* (- Guassian3x3 Avg7)
-     Avg5) (- Avg5 (+ -5.723817143738165 9.247642535718478)))
-     (IfThenElse (- -1.9629812349951505 Guassian3x3)
-         (+ -5.32247310949076 Ent11) (- Avg5 Std11))))
-     (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+         Ent11))) (- (div Avg7 5.756228806896625)
+     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+     -9.875555242834515) (div -10.326519004347006
+     (+ 3.8403651393628557 Avg5))) (IfThenElse
+     (+ Avg7 Avg7) (* Std7 Guassian3x3) (IfThenElse
+     Std11 Ent7 Avg7)) (div (div (div (div Avg5
+     Guassian3x3) (* Avg5 Std7)) 3.8824444451447966)
+     (+ 9.194378415013368 Guassian5x5))) (div
+     (div Avg7 5.756228806896625) (IfThenElse
+     Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ (div Guassian3x3 Std11) (+ Guassian5x5
+         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
+     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
+         Guassian3x3 Std11) (- (IfThenElse Std7 Std11
+         Avg7) (+ Guassian5x5 Std11)))) (- (+ Avg5
+     Std11) (IfThenElse Guassian3x3 Avg5 Avg5)))
+     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
+     (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27125 Adjusted=0.7866273352999017 Hits=583
+Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (IfThenElse
-     (- (- (+ (- Ent7 Std7) (div (* (+ Avg7 Avg7)
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)))
-         (* (- (* (+ Ent7 (- Guassian3x3 Std7)) (+
-             5.643203524024253 Std7)) (- Guassian3x3 Avg7))
-             Std11))) (div (+ -5.723817143738165 9.247642535718478)
-         (+ Avg7 Avg7))) (- Guassian3x3 Avg7)) (+
-     (div Std7 Guassian3x3) (div Avg7 Std11))
-     (IfThenElse Avg5 Avg7 Std7))))) (+ Ent11
-     Guassian3x3)) (+ (div (* (- Guassian3x3 Avg7)
-     Avg5) (- Avg5 (+ -5.723817143738165 9.247642535718478)))
-     (IfThenElse (- -1.9629812349951505 Guassian3x3)
-         (+ -5.32247310949076 Ent11) (- Avg5 Std11))))
-     (+ -5.32247310949076 Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
+     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 (+ 3.8403651393628557
+                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
+             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
+             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+         (div (div Avg7 5.756228806896625) (IfThenElse
+             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
+         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
+         (IfThenElse (- (+ (+ (IfThenElse (* (div
+             Avg5 Guassian5x5) (div -10.326519004347006
+             Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+             Ent11 Ent11) (* Std7 Guassian3x3) (div (+
+             (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
+             Ent11)) (div (+ Ent11 Ent7) (div -10.326519004347006
+             Guassian5x5)))) (div (+ Avg5 Std7) (* Guassian5x5
+             -5.2370240960804875))) (div (- Guassian5x5
+             Ent11) (IfThenElse Ent7 Avg5 Avg5))) (- (+
+             Avg5 Std11) (IfThenElse Guassian3x3 Avg5
+             Avg5))) Avg5) (* Ent7 Std7) (div (div (*
+             Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27125 Adjusted=0.7866273352999017 Hits=583
+Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         (+ -5.32247310949076 Ent11) Ent11 Ent7))
-         (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))))) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (- Avg5 (+
-         Ent7 4.135780404329475)) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)))) (- Guassian3x3 Avg7)) (+ (div Std7
-         Guassian3x3) (div Avg7 Std11)) (IfThenElse
-         Avg5 Avg7 Std7))))) (+ Ent11 Guassian3x3))
-     (+ (+ -5.32247310949076 Ent11) (IfThenElse
-         (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-         Guassian3x3) (- Avg5 Std11)))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
+     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 (+ 3.8403651393628557
+                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
+             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
+             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+         (div (div Avg7 5.756228806896625) (IfThenElse
+             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
+         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
+         (IfThenElse (- (+ -9.134275217691986 -9.875555242834515)
+             Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
+             (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27125 Adjusted=0.7866273352999017 Hits=583
+Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         (+ -5.32247310949076 Ent11) Ent11 Ent7))
-         (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))))) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (- Avg5 (+
-         Ent7 4.135780404329475)) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)))) (- Guassian3x3 Avg7)) (+ (div Std7
-         Guassian3x3) (div Avg7 Std11)) (IfThenElse
-         Avg5 Avg7 Std7))))) (+ Ent11 Guassian3x3))
-     (+ (+ -5.32247310949076 Ent11) (IfThenElse
-         (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-         Guassian3x3) (- Avg5 Std11)))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
+     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 (+ 3.8403651393628557
+                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
+             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
+             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+         (div (IfThenElse Guassian3x3 Avg5 Avg5) (IfThenElse
+             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
+         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
+         (IfThenElse (- (+ -9.134275217691986 -9.875555242834515)
+             Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
+             (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27125 Adjusted=0.7866273352999017 Hits=583
+Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
 Tree 0:
- (div (* (* (+ (div (+ (- 3.999813726074837
-     Avg7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     5.4480543188959345)) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (IfThenElse (+ (+ -5.32247310949076 Ent11)
-         (IfThenElse (- -1.9629812349951505 Guassian3x3)
-             Ent7 (- Avg5 Std11))) Avg7 (div Std7 Std7))))
-     (* Std11 Ent7)) (+ (+ -5.32247310949076 Ent11)
-     (IfThenElse (- -1.9629812349951505 Guassian3x3)
-         (- -1.9629812349951505 Guassian3x3) (- Avg5
-         Std11))))) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     (+ (- (+ (IfThenElse Avg7 (div (div Ent7
-         Ent11) Avg5) Std7) (IfThenElse Std11 Ent11
-         -12.34606456639795)) (IfThenElse (* Guassian3x3
-         (div (* (- Guassian3x3 Avg7) Avg5) (- Avg5
-             (+ Ent7 4.135780404329475)))) (- 3.071984967688702
-         Avg7) (div Avg7 Std11))) (IfThenElse (- (div
-         (div (+ (IfThenElse 0.1952207417971354 Ent11
-             Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-             (+ Ent11 Guassian3x3)))) (+ Avg5 Std7)) (-
-         Avg5 Std11)) Guassian3x3) (IfThenElse (+
-         (- 3.999813726074837 Avg7) (* Avg7 Std7))
-         (* (+ Avg7 Avg7) (div (* (+ Ent7 4.135780404329475)
-             (+ 5.643203524024253 Std7)) (+ (div Std7
-             Guassian3x3) Ent11))) (div (* 2.8599718233919
-         Std11) (IfThenElse 0.10691737445656657 Ent11
-         Std7))) (- Avg5 Std11)))) (+ -5.32247310949076
-     Ent11))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
+     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 (+ 3.8403651393628557
+                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
+             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
+             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+         (div (div Avg7 5.756228806896625) (IfThenElse
+             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
+         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
+         (IfThenElse (- (+ (+ (IfThenElse (* (div
+             Avg5 Guassian5x5) (div -10.326519004347006
+             Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
+             Ent11 Ent11) (* Std7 Guassian3x3) (div Avg5
+             Guassian3x3)) (div (+ Avg5 Std7) (* Guassian5x5
+             -5.2370240960804875))) (div (- Guassian5x5
+             Ent11) (IfThenElse Ent7 Avg5 Avg5))) (- (+
+             Avg5 Std11) (IfThenElse Guassian3x3 Avg5
+             Avg5))) Avg5) (* Ent7 Std7) (div (div (*
+             Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2675 Adjusted=0.7889546351084812 Hits=586
+Fitness: Standardized=0.20625 Adjusted=0.8290155440414507 Hits=635
 Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (- (* (* (+ (div (+ Ent11 (* (+ -5.723817143738165
-     9.247642535718478) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11)))))
-     (IfThenElse Ent11 -4.853643364113893 Guassian5x5))
-     (+ Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     (IfThenElse 0.1952207417971354 Ent11 Ent7))
-     (div (div Ent7 Ent11) (IfThenElse Std11 Std7
-         Std11))))) (div (IfThenElse Avg5 Ent7 (div
-     -5.32247310949076 (div (div (* (+ (div (+
-     (- Ent7 Std7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (+ Ent11 Ent11)) (+ (* (+ Avg7
-     Avg7) (+ (div (+ (- 3.999813726074837 Avg7)
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* Std11 Ent7))) (IfThenElse
-     (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 41
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2675 Adjusted=0.7889546351084812 Hits=586
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 Guassian3x3)) (+ (+ -5.32247310949076
-     Ent11) (- (* (* (+ (div (+ Ent11 (* (+ -5.723817143738165
-     9.247642535718478) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11)))))
-     (IfThenElse Ent11 -4.853643364113893 Guassian5x5))
-     (+ Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-     (IfThenElse (div Std7 Std7) (- Guassian3x3
-         Std7) (- Avg5 Std11)))) (IfThenElse 0.1952207417971354
-     Ent11 Ent7)) (div (div Ent7 Ent11) (IfThenElse
-     Std11 Std7 Std11))))) (div (IfThenElse Avg5
-     Ent7 (div -5.32247310949076 (div (div (*
-     (+ (div (+ (- Ent7 Std7) (div (* Std11 Ent7)
-         (+ -5.32247310949076 Ent11))) (IfThenElse
-         Ent11 -4.853643364113893 Guassian5x5)) (+
-         Ent11 Ent11)) (+ (* (+ Avg7 Avg7) (+ (div
-     (+ (- 3.999813726074837 Avg7) (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 Guassian5x5)) (*
-     Std11 Ent7))) (IfThenElse (- (div Std7 Std7)
-     (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) Std7) (+ -5.32247310949076
-     Ent11)))) (+ -5.32247310949076 Ent11)))
-
-Generation: 42
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2675 Adjusted=0.7889546351084812 Hits=586
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (* (IfThenElse Ent11 Ent7
-     (+ Guassian3x3 Avg7)) (IfThenElse 0.1952207417971354
-     Ent11 Ent7)) (* Ent7 Std11)))))) (+ Ent11
-     Guassian3x3)) (+ (+ -5.32247310949076 Ent11)
-     (- (* (* (+ (div (+ Ent11 (* (+ -5.723817143738165
-         9.247642535718478) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11)))))
-         (IfThenElse Ent11 -4.853643364113893 Guassian5x5))
-         (+ Ent11 Guassian3x3)) (+ (+ Std11 5.4480543188959345)
-         (IfThenElse (- (div Std7 Std7) (+ 4.6852219980680845
-             Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-         (IfThenElse 0.1952207417971354 Ent11 Ent7))
-         (div (div Ent7 Ent11) (IfThenElse Std11 Std7
-             Std11))))) (div (IfThenElse Avg5 Ent7 (div
-     -5.32247310949076 (div (div (* (+ (div (+
-     (- Ent7 Std7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (+ Ent11 Ent11)) (+ (* (+ Avg7
-     Avg7) (+ (div (+ (- 3.999813726074837 Avg7)
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* Std11 Ent7))) (IfThenElse
-     (- (div Std7 Std7) (+ 4.6852219980680845
-         Std7)) (- Guassian3x3 Std7) (- Avg5 Std11))))
-     Std7) (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 43
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26625 Adjusted=0.7897334649555776 Hits=587
-Tree 0:
- (div (* (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     5.4480543188959345)) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (*
-     Std11 Ent7)) (+ (+ (- (- (* (IfThenElse Ent11
-     Ent7 (- Ent7 (* Std11 Ent7))) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) Ent11) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-     Guassian3x3) (- Avg5 Std11))))) (+ (+ Std11
-     5.4480543188959345) (IfThenElse (- (div Std7
-     Std7) (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ (- (+ (IfThenElse
-     Avg7 (div (div Ent7 Ent11) Avg5) Std7) (IfThenElse
-     Std11 Ent11 -12.34606456639795)) (IfThenElse
-     (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-         Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-     (- 3.071984967688702 Avg7) (div Avg7 Std11)))
-     (IfThenElse (+ Guassian3x3 (- Ent7 Ent11))
-         (IfThenElse (+ (- 3.999813726074837 Avg7)
-             (* Avg7 Std7)) (* (+ Avg7 Avg7) (div (* (+
-             Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (div Std7 Guassian3x3) Ent11)))
-             (+ (IfThenElse 0.1952207417971354 Ent11 (*
-                 (IfThenElse (- (- (* (IfThenElse Ent11 Ent7
-                     (+ Guassian3x3 Avg7)) (IfThenElse 0.1952207417971354
-                     Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                     (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                     Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-                     Std11)) (* Avg7 (+ (div Ent7 Ent11) (IfThenElse
-                     (- (- Guassian3x3 Std7) (+ 4.6852219980680845
-                         Std7)) 1.9439111159620246 (- Guassian3x3
-                     Avg7))))) (+ Ent7 4.135780404329475))) (div
-                 (* Std11 Ent7) (+ -5.32247310949076 Ent11))))
-         (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
-
-Generation: 44
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26625 Adjusted=0.7897334649555776 Hits=587
-Tree 0:
- (div (* (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     5.4480543188959345)) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (*
-     Std11 Ent7)) (+ (+ (- (- (* (IfThenElse Ent11
-     Ent7 (- Ent7 (* Std11 Ent7))) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) Ent11) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-     Guassian3x3) (- Avg5 Std11))))) (+ (+ Std11
-     5.4480543188959345) (IfThenElse (- (div Std7
-     Std7) (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ (- (+ (IfThenElse
-     Avg7 (div (div Ent7 Ent11) Avg5) Std7) (IfThenElse
-     Std11 Ent11 -12.34606456639795)) (IfThenElse
-     (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-         Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-     (- 3.071984967688702 Avg7) (div Avg7 Std11)))
-     (IfThenElse (+ Guassian3x3 (- Ent7 Ent11))
-         (IfThenElse (+ (- 3.999813726074837 Avg7)
-             (* Avg7 Std7)) (* (+ Avg7 Avg7) (div (* (+
-             Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (div Std7 Guassian3x3) Ent11)))
-             (+ (IfThenElse 0.1952207417971354 Ent11 (*
-                 (IfThenElse (- (- (* (IfThenElse Ent11 Ent7
-                     (+ (div Std7 Guassian3x3) (div Avg7 Std11)))
-                     (IfThenElse 0.1952207417971354 Ent11 Ent7))
-                     (div (+ -5.723817143738165 9.247642535718478)
-                         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                     Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-                     Std11)) (* Avg7 (+ (div Ent7 Ent11) (IfThenElse
-                     (- (- Guassian3x3 Std7) (+ 4.6852219980680845
-                         Std7)) 1.9439111159620246 (- Guassian3x3
-                     Avg7))))) (+ Ent7 4.135780404329475))) (div
-                 (* Std11 Ent7) (+ -5.32247310949076 Ent11))))
-         (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
-
-Generation: 45
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26625 Adjusted=0.7897334649555776 Hits=587
-Tree 0:
- (div (* (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     5.4480543188959345)) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (*
-     Std11 Ent7)) (+ (+ (- (- (* (IfThenElse Ent11
-     Ent7 (- Ent7 (* Std11 Ent7))) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) Ent11) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-     Guassian3x3) (- Avg5 Std11))))) (+ (+ Std11
-     5.4480543188959345) (IfThenElse (- (div Std7
-     Std7) (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ (- (+ (IfThenElse
-     Avg7 (div (div Ent7 Ent11) Avg5) Std7) (IfThenElse
-     Std11 Ent11 -12.34606456639795)) (IfThenElse
-     (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-         Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-     (- 3.071984967688702 Avg7) (div Avg7 Std11)))
-     (IfThenElse (+ Guassian3x3 (- Ent7 Ent11))
-         (IfThenElse (+ (- 3.999813726074837 Avg7)
-             (* Avg7 Std7)) (* (+ Avg7 Avg7) (div (* (+
-             Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (div Std7 Guassian3x3) Ent11)))
-             (+ (IfThenElse 0.1952207417971354 Ent11 (*
-                 (IfThenElse (- (- (div (* (* (IfThenElse
-                     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-                     0.1952207417971354 Ent11 Ent7)) (+ (+ -5.32247310949076
-                     Ent11) (IfThenElse (- -1.9629812349951505
-                     Guassian3x3) (- -1.9629812349951505 Guassian3x3)
-                     (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
-                     (div (+ -5.723817143738165 9.247642535718478)
-                         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                     Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-                     Std11)) (* Avg7 (+ (div Ent7 Ent11) (IfThenElse
-                     (- (- Guassian3x3 Std7) (+ 4.6852219980680845
-                         Std7)) 1.9439111159620246 (- Guassian3x3
-                     Avg7))))) (+ Ent7 4.135780404329475))) (div
-                 (* Std11 Ent7) (+ -5.32247310949076 Ent11))))
-         (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
-
-Generation: 46
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26625 Adjusted=0.7897334649555776 Hits=587
-Tree 0:
- (div (* (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 Ent7) (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11))) (IfThenElse Ent11 -4.853643364113893
-     Guassian5x5)) (* (+ (div (+ (IfThenElse 0.1952207417971354
-     Ent11 (* (IfThenElse (- (- (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) (+ (div Std7 Guassian3x3)
-     (div Avg7 Std11)) (IfThenElse Avg5 Avg7 Std7))
-     5.4480543188959345)) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-         Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-     (* Std11 (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) (IfThenElse
-         0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- (div Std7 Std7) (+
-         4.6852219980680845 Std7)))) (- Guassian3x3
-         Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-         Std11)) (IfThenElse Avg5 Avg7 Std7))))) (*
-     Std11 Ent7)) (+ (+ (- (- (* (IfThenElse Ent11
-     Ent7 (- Ent7 (* Std11 Ent7))) (IfThenElse
-     0.1952207417971354 Ent11 Ent7)) (div (+ -5.723817143738165
-     9.247642535718478) (+ -5.32247310949076 Ent11)))
-     (- Guassian3x3 Avg7)) Ent11) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- -1.9629812349951505
-     Guassian3x3) (- Avg5 Std11))))) (+ (+ Std11
-     5.4480543188959345) (IfThenElse (- (div Std7
-     Std7) (+ 4.6852219980680845 Std7)) (- Guassian3x3
-     Std7) (- Avg5 Std11)))) (+ (- (+ (IfThenElse
-     Avg7 (div (div Ent7 Ent11) Avg5) Std7) (IfThenElse
-     Std11 Ent11 -12.34606456639795)) (IfThenElse
-     (* Guassian3x3 (div (* (- Guassian3x3 Avg7)
-         Avg5) (- Avg5 (+ Ent7 4.135780404329475))))
-     (- 3.071984967688702 Avg7) (div Avg7 Std11)))
-     (IfThenElse (+ (+ -5.32247310949076 Ent11)
-         (IfThenElse (- -1.9629812349951505 Guassian3x3)
-             (- -1.9629812349951505 Guassian3x3) (- Avg5
-             Std11))) (IfThenElse (+ (- 3.999813726074837
-         Avg7) (* Avg7 Std7)) (* (+ Avg7 Avg7) (div
-         (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (div Std7 Guassian3x3) Ent11)))
-         (+ (IfThenElse 0.1952207417971354 Ent11 (*
-             (IfThenElse (- (- (* (IfThenElse Ent11 Ent7
-                 (+ Guassian3x3 Avg7)) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                 Avg7)) (+ (div Std7 Guassian3x3) (div Avg7
-                 Std11)) (* Avg7 (+ (div Ent7 Ent11) (IfThenElse
-                 (- (- Guassian3x3 Std7) (+ 4.6852219980680845
-                     Std7)) 1.9439111159620246 (- Guassian3x3
-                 Avg7))))) (+ Ent7 4.135780404329475))) (div
-             (* Std11 Ent7) (+ -5.32247310949076 Ent11))))
-         (- Avg5 Std11)))) (+ -5.32247310949076 Ent11))
-
-Generation: 47
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- -1.9629812349951505
-     Guassian3x3) (- (- Avg5 Std11) (div (div
-     Ent7 Ent11) Avg5)) (- Avg5 Std11)))) (div
-     (+ Guassian3x3 Avg7) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 48
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (IfThenElse Ent11 Ent7
-     (* Std7 Ent7)) Guassian3x3) (- (- Avg5 Std11)
-     (div (div Ent7 Ent11) Avg5)) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 49
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (IfThenElse Ent11 Ent7
-     (* Std7 Ent7)) Guassian3x3) (- (- Avg5 Std11)
-     (div (div Ent7 Ent11) Avg5)) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 50
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11)))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (IfThenElse Ent11 Ent7
-     (* Std7 Ent7)) Guassian3x3) (- (- Avg5 Std11)
-     (div (div Ent7 Ent11) Avg5)) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 51
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (+ (div Std7 Guassian3x3)
-     (div (+ -5.723817143738165 9.247642535718478)
-         (- (IfThenElse Guassian3x3 (- 3.071984967688702
-             Avg7) (div Avg7 Std11)) (+ 4.6852219980680845
-             Std7)))) Guassian3x3) (- (- Avg5 Std11) (div
-     (div Ent7 Ent11) Avg5)) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 52
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.32247310949076 Ent11)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) Ent11))))) (IfThenElse
-     Avg5 Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (- Guassian3x3
-         Std7)) Ent11) Ent7))) (+ (div (div Ent7 Ent11)
-     (IfThenElse Std11 Std7 Std11)) (IfThenElse
-     (- -1.9629812349951505 Guassian3x3) (- (-
-     Avg5 Std11) (div (div Ent7 Ent11) Avg5))
-     (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 53
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (div Std7 Guassian3x3) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (+
-         4.6852219980680845 Std7) (div (* Std11 Ent7)
-         (+ -5.32247310949076 Ent11)))))) (IfThenElse
-     Avg5 Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (+ Avg7
-         Avg7))))) (+ Ent11 (* (* (IfThenElse Ent11
-     Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (IfThenElse
-         Ent11 Ent7 (* Std7 Ent7)) Guassian3x3) (-
-         (- Avg5 Std11) (div (div Ent7 Ent11) Avg5))
-         (+ -5.32247310949076 Ent11)))) (div (+ Guassian3x3
-     Avg7) (+ -5.32247310949076 Ent11)))
-
-Generation: 54
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.2625 Adjusted=0.7920792079207921 Hits=590
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 (div Ent7 Ent11))
-         Guassian3x3) (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (+ (+
-     Std11 5.4480543188959345) (IfThenElse (-
-     (div Std7 Std7) (+ 4.6852219980680845 Std7))
-     (- Guassian3x3 Std7) (+ Avg7 Avg7))) (- (*
-     Avg5 Guassian5x5) (div (div Ent7 Ent11) (*
-     Ent7 Std11))))))) (+ Ent11 (* (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (IfThenElse
-         Ent11 Ent7 (* Std7 Ent7)) Guassian3x3) (-
-         (- Avg5 Std11) (div (div Ent7 Ent11) Avg5))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 55
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26 Adjusted=0.7936507936507936 Hits=592
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11)) Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (+ -5.723817143738165 9.247642535718478)
-     (* Ent7 Std11)))))) (+ Ent11 (* (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (+
-         (div Std7 Guassian3x3) (div (+ -5.723817143738165
-         9.247642535718478) (- (IfThenElse Guassian3x3
-         (- 3.071984967688702 Avg7) (div Avg7 Std11))
-         (+ 4.6852219980680845 Std7)))) Guassian3x3)
-         (- (- Avg5 Std11) (* (+ Ent7 4.135780404329475)
-             (+ 5.643203524024253 Std7))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 56
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26 Adjusted=0.7936507936507936 Hits=592
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (+ (div Std7 Guassian3x3)
-         Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (+ -5.32247310949076 Ent11) (div
-         (IfThenElse -5.816393962756392 (- Avg5 Std11)
-             Guassian3x3) (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)))))) (IfThenElse Avg5 Avg7 Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (+
-         Guassian3x3 Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div Ent7 Ent11)) Guassian3x3) (- (- Avg5
-     Std11) (div (div Ent7 Ent11) Avg5)) (- Avg5
-     Std11)))) (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 57
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26 Adjusted=0.7936507936507936 Hits=592
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11)) Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (+ (+ Ent11 Guassian3x3)
-     Ent11) (* Ent7 Std11)))))) (+ Ent11 (* (*
-     (IfThenElse Ent11 Ent7 (+ Guassian3x3 Avg7))
-     Ent11) Ent7))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (+ (div Std7 Guassian3x3) (div (+ -5.723817143738165
-         9.247642535718478) (- (IfThenElse Guassian3x3
-         (- 3.071984967688702 Avg7) (div Avg7 Std11))
-         (+ 4.6852219980680845 Std7)))) Guassian3x3)
-     (- (- Avg5 Std11) (* (+ Ent7 4.135780404329475)
-         (+ 5.643203524024253 Std7))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 58
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.26 Adjusted=0.7936507936507936 Hits=592
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (- Avg5 (+ -5.723817143738165
-             9.247642535718478))))) (IfThenElse (- Guassian3x3
-         Avg7) Ent11 Ent7)) (IfThenElse Ent11 Ent7
-         (+ Guassian3x3 Avg7))) (- Guassian3x3 Avg7))
-     (IfThenElse Ent11 -4.853643364113893 (* Std11
-         (- (* Avg5 Guassian5x5) (div (IfThenElse
-             -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-             (div (* Std11 Ent7) (+ -5.32247310949076
-                 Ent11)))))) (IfThenElse Avg5 (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11)) Std7))
-     (+ Ent7 4.135780404329475))) (div (* Std11
-     Ent7) (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (+ -5.723817143738165 9.247642535718478)
-     (* Ent7 Std11)))))) (+ Ent11 (* (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (+
-         (div Std7 Guassian3x3) (div (+ -5.723817143738165
-         9.247642535718478) (- (IfThenElse Guassian3x3
-         (- 3.071984967688702 Avg7) (div Avg7 Std11))
-         (+ 4.6852219980680845 Std7)))) Guassian3x3)
-         (- (- Avg5 Std11) (* (+ Ent7 4.135780404329475)
-             (+ 5.643203524024253 Std7))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 59
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.25875 Adjusted=0.7944389275074478 Hits=593
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (* Ent11 Avg5) (+ -5.32247310949076
-             Ent11)))) (IfThenElse 0.1952207417971354
-         Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 (div (* Std11
-     Ent7) (IfThenElse 0.1952207417971354 (+ -5.32247310949076
-     Ent11) (* (+ -5.32247310949076 Ent11) (+
-     Ent7 4.135780404329475)))) Std7)) (+ Ent7
-     4.135780404329475))) (div (* Std11 Ent7)
-     (+ -5.32247310949076 Ent11))) (IfThenElse
-     Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-     Guassian5x5) (div (+ -5.723817143738165 9.247642535718478)
-     (* Ent7 Std11)))))) (+ Ent11 (* (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (+
-         (div Std7 Guassian3x3) (div (+ -5.723817143738165
-         9.247642535718478) (- (IfThenElse Guassian3x3
-         (- 3.071984967688702 Avg7) (div Avg7 Std11))
-         (+ 4.6852219980680845 Std7)))) Guassian3x3)
-         (- (- Avg5 Std11) (* (+ Ent7 4.135780404329475)
-             (+ 5.643203524024253 Std7))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 60
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.25875 Adjusted=0.7944389275074478 Hits=593
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (+ Ent7 4.135780404329475) (- Avg5 Std11))))
-         (IfThenElse 0.1952207417971354 Ent11 Ent7))
-         (div (+ -5.723817143738165 9.247642535718478)
-             (- Guassian3x3 Avg7))) (- Guassian3x3 Avg7))
-     (IfThenElse Ent11 -4.853643364113893 (* Std11
-         (- (* Avg5 Guassian5x5) (div (IfThenElse
-             -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-             (div (* Std11 Ent7) Ent11))))) (IfThenElse
-     (div (* (* Std11 Ent7) Ent7) (+ -5.32247310949076
-         Ent11)) Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (- Guassian3x3
-         Std7)) Ent11) Ent7))) (- Guassian3x3 Std7))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 61
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.25625 Adjusted=0.7960199004975124 Hits=595
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (+ Ent7 4.135780404329475) (- Avg5 Std11))))
-         (IfThenElse Avg7 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- Guassian3x3 Avg7)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) Ent11))))) (IfThenElse
-     (div (* (* Std11 Ent7) Ent7) (+ -5.32247310949076
-         Ent11)) Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (- Guassian3x3
-         Std7)) Ent11) Ent7))) (- Guassian3x3 Std7))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 62
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.25625 Adjusted=0.7960199004975124 Hits=595
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (+ Ent7 4.135780404329475) (- Avg5 Std11))))
-         (IfThenElse Avg7 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- Guassian3x3 Avg7)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) Ent11))))) (IfThenElse
-     (div (* (* Std11 Ent7) Ent7) (+ -5.32247310949076
-         Ent11)) Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (- Guassian3x3
-         Std7)) Ent11) Ent7))) (- Guassian3x3 Std7))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 63
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.25625 Adjusted=0.7960199004975124 Hits=595
-Tree 0:
- (div (* (+ (div (+ (IfThenElse 0.1952207417971354
-     (+ -5.32247310949076 Ent11) (* (IfThenElse
-     (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-         (div (+ Ent7 4.135780404329475) (- Avg5 Std11))))
-         (IfThenElse Avg7 Ent11 Ent7)) (div (+ -5.723817143738165
-         9.247642535718478) (- Guassian3x3 Avg7)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (* Std11 Ent7) Ent11))))) (IfThenElse
-     (div (* (* Std11 Ent7) Ent7) (+ -5.32247310949076
-         Ent11)) Avg7 Std7)) (+ Ent7 4.135780404329475)))
-     (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11))) (IfThenElse Ent11 -4.853643364113893
-     (* Std11 (- (* Avg5 Guassian5x5) (* (* (IfThenElse
-         Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent11) Ent7)))))
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (-
-         Guassian3x3 Std7)) Ent11) Ent7))) (- Guassian3x3
-     Std7)) (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 64
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                 Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (* Std11 (- (* Avg5 Guassian5x5) (div (IfThenElse
-                 -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-                 (div (* Std11 Ent7) (+ -5.32247310949076
-                     Ent11)))))) (IfThenElse Avg5 (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)) Std7))
-             (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 65
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (- Guassian3x3
-                 Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 66
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (IfThenElse
-                 Std11 Ent11 -12.34606456639795)) (IfThenElse
-             Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-             Guassian5x5) (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))))) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 67
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (- Guassian3x3 Avg7) Ent11) Ent7))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (IfThenElse 0.1952207417971354
-             Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (* Std11 (- (IfThenElse Ent11 (IfThenElse
-                 Ent11 Ent7 (+ Guassian3x3 Avg7)) Avg7) (div
-                 (IfThenElse -5.816393962756392 (- Avg5 Std11)
-                     Guassian3x3) (div (* Std11 Ent7) (+ -5.32247310949076
-                 Ent11)))))) (IfThenElse Avg5 (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)) Std7))
-             (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 68
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ (- (+ -5.32247310949076
-                 Ent11) (div (IfThenElse -5.816393962756392
-                 -5.32247310949076 Guassian3x3) (div (* Std11
-                 Ent7) (IfThenElse Avg5 Avg7 Std7)))) 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (IfThenElse
-                 Std11 Ent11 -12.34606456639795)) (IfThenElse
-             Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-             Guassian5x5) (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))))) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 69
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22875 Adjusted=0.8138351983723296 Hits=617
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (+
-         Ent11 (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (div (+ -5.723817143738165 9.247642535718478)
-                 (+ -5.32247310949076 Ent11))) (div (+ Guassian3x3
-                 Avg7) (+ -5.32247310949076 Ent11))) (IfThenElse
-             Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-             Guassian5x5) (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))))) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 70
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.22625 Adjusted=0.8154943934760448 Hits=619
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (* (* (IfThenElse Ent11 Ent7 (+ Guassian3x3
-         Avg7)) Ent11) Ent7))) (+ (+ Guassian3x3 Avg7)
-     (IfThenElse (- (div (* Std11 Ent7) (div (-
-         (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (+ Ent7 4.135780404329475) (- Avg5 Std11))))
-             (IfThenElse Avg7 Ent11 Ent7)) (div (+ -5.723817143738165
-             9.247642535718478) (- Guassian3x3 Avg7)))
-         (- Guassian3x3 Avg7)) Ent11)) Guassian3x3)
-         (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-             (+ -5.32247310949076 Ent11) (* (IfThenElse
-             (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-                 (div (* Ent11 Avg5) (+ -5.32247310949076
-                     Ent11)))) (IfThenElse 0.1952207417971354
-                 Ent11 Ent7)) (- (- (+ (IfThenElse Ent11 Ent7
-                 (+ Guassian3x3 Avg7)) (* Avg7 Std7)) -5.32247310949076)
-                 (- Guassian3x3 (+ Guassian3x3 Avg7)))) (-
-                 Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 71
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 72
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 73
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 74
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (div (* Std11 Ent7) (+ -5.32247310949076
-                 Ent11))) (IfThenElse Avg5 (div (* Std11 Ent7)
-             (+ -5.32247310949076 Ent11)) Std7)) (+ Ent7
-             4.135780404329475)))) (- Avg5 Std11)))) (div
-     (+ Guassian3x3 Avg7) (+ -5.32247310949076
-     Ent11)))
-
-Generation: 75
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (-
-         (* Avg5 Guassian5x5) (div (IfThenElse -5.816393962756392
-         Guassian5x5 Guassian3x3) (* Ent7 Std11))))
-         Ent11) Ent7)))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (div (* Std11 Ent7) (div (* Guassian3x3
-         (div (- Guassian3x3 Avg7) (+ -5.32247310949076
-             Ent7))) Ent11)) Guassian3x3) (- (- Avg5 Std11)
-     (IfThenElse 0.1952207417971354 (+ -5.32247310949076
-         Ent11) (* (IfThenElse (- (- (* (IfThenElse
-         Ent11 Ent7 (* Guassian3x3 (div (* Ent11 Avg5)
-         (+ -5.32247310949076 Ent11)))) (+ -5.32247310949076
-         Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) (IfThenElse Ent11 -4.853643364113893
-         (+ -5.32247310949076 Ent11)) (IfThenElse
-         Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-     (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 76
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (div (* (+ Ent7 4.135780404329475) (+ 5.643203524024253
-             Std7)) (+ (+ Ent11 Guassian3x3) Ent11)) -4.853643364113893
-         (IfThenElse Avg5 Avg7 Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (IfThenElse
-             Ent11 Ent7 (IfThenElse 0.1952207417971354
-             Ent11 Ent7))) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (div (+ (* (* (+ -5.32247310949076 Ent11)
-             Ent7) Guassian5x5) (+ Guassian3x3 Avg7))
-             (IfThenElse Ent11 -4.853643364113893 (* Std11
-                 (- (* Avg5 Guassian5x5) (div (IfThenElse
-                     -5.816393962756392 Guassian5x5 Guassian3x3)
-                     (* Ent7 Std11))))))))) (div (+ Guassian3x3
-     Avg7) (+ -5.32247310949076 Ent11)))
-
-Generation: 77
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21625 Adjusted=0.8221993833504625 Hits=627
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (+ Guassian3x3 Avg7))) (IfThenElse 0.1952207417971354
-             Ent11 Ent7)) Ent11) (+ -5.32247310949076
-             Ent11)) (IfThenElse Ent11 -4.853643364113893
-         (* Std11 (- (* Avg5 (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))) (div
-             (IfThenElse -5.816393962756392 (- Avg5 Std11)
-                 Guassian3x3) (div (- Avg5 Std11) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 (* (* (+ -5.32247310949076
-         Ent11) (IfThenElse 0.1952207417971354 Ent11
-         Ent7)) Guassian5x5) Std7))) Ent11) Ent7))))
-     (+ (+ Guassian3x3 Avg7) (IfThenElse (- (div
-         (* Std11 Ent7) (div (* Guassian3x3 (div (-
-         Guassian3x3 Avg7) (+ -5.32247310949076 Ent7)))
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-         0.1952207417971354 (+ -5.32247310949076 Ent11)
-         (* (IfThenElse (- (- (* (IfThenElse Ent11
-             Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-             -5.32247310949076 Ent11)))) (+ -5.32247310949076
-             Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) (IfThenElse Ent11 -4.853643364113893
-             (+ -5.32247310949076 Ent11)) (IfThenElse
-             Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-             Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-         (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 78
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (+ -5.723817143738165
-     9.247642535718478) (* Ent7 Std11))))) (+
-     Ent11 (+ Ent11 (* (* (IfThenElse Ent11 Ent7
-     (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 Guassian5x5 Guassian3x3)
-         (* Ent7 Std11)))) Ent11) Ent7)))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div (+ Ent7 4.135780404329475) Ent11)) Guassian3x3)
-     (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-         (+ -5.32247310949076 Ent11) (* (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (* Ent11 Avg5) (+ -5.32247310949076
-                 Ent11)))) (+ -5.32247310949076 Ent11)) (div
-             (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 79
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (+ -5.723817143738165
-     9.247642535718478) (* Ent7 Std11))))) (+
-     Ent11 (+ Ent11 (* (* (IfThenElse Ent11 Ent7
-     (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 Guassian5x5 Guassian3x3)
-         (* Ent7 Std11)))) Ent11) Ent7)))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div (+ Ent7 4.135780404329475) Ent11)) Guassian3x3)
-     (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-         (+ -5.32247310949076 Ent11) (* (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (* Ent11 Avg5) (+ -5.32247310949076
-                 Ent11)))) (+ -5.32247310949076 Ent11)) (div
-             (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 80
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (+ -5.723817143738165
-     9.247642535718478) (* Ent7 Std11))))) (+
-     Ent11 (+ Ent11 (* (* (IfThenElse Ent11 Ent7
-     (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 Guassian5x5 Guassian3x3)
-         (* Ent7 Std11)))) Ent11) Ent7)))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div (+ Ent7 4.135780404329475) Ent11)) Guassian3x3)
-     (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-         (+ -5.32247310949076 Ent11) (* (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (* Ent11 Avg5) (+ -5.32247310949076
-                 Ent11)))) (+ -5.32247310949076 Ent11)) (div
-             (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 81
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (+ -5.723817143738165
-     9.247642535718478) (* Ent7 Std11))))) (+
-     Ent11 (+ Ent11 (* (* (IfThenElse Ent11 Ent7
-     (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 Guassian5x5 Guassian3x3)
-         (* Ent7 Std11)))) Ent11) Ent7)))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div (+ Ent7 4.135780404329475) Ent11)) Guassian3x3)
-     (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-         (+ -5.32247310949076 Ent11) (* (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (* Ent11 Avg5) (+ -5.32247310949076
-                 Ent11)))) (+ -5.32247310949076 Ent11)) (div
-             (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 82
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (IfThenElse -5.816393962756392
-     Guassian5x5 Guassian3x3) (* Ent7 Std11))))))
-     (+ Ent11 (+ Ent11 (* (* (IfThenElse Ent11
-         Ent7 (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (+ Guassian3x3 Avg7)))
-         (IfThenElse 0.1952207417971354 Ent11 Ent7))
-         Ent11) (+ Guassian3x3 Avg7)) (IfThenElse
-         Ent11 -4.853643364113893 (* Std11 (- (* Avg5
-         (div (IfThenElse -5.816393962756392 (- Avg5
-             Std11) Guassian3x3) (div (* Std11 Ent7) (+
-             -5.32247310949076 Ent11)))) (div (IfThenElse
-         -5.816393962756392 (- Avg5 Std11) Guassian3x3)
-         (div (- Avg5 Std11) (+ -5.32247310949076
-             Ent11)))))) (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7)))
-         Ent11) Ent7)))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (div (* Std11 Ent7) (div (+ Ent7 4.135780404329475)
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-     0.1952207417971354 (+ -5.32247310949076 Ent11)
-     (* (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (div (IfThenElse -5.816393962756392
-         Guassian5x5 Guassian3x3) (* Ent7 Std11))))
-         (+ -5.32247310949076 Ent11)) (div (+ -5.723817143738165
-         9.247642535718478) (+ -5.32247310949076 Ent11)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-         (+ -5.32247310949076 Ent11)) (IfThenElse
-         Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-     (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 83
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (IfThenElse
-     Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-     Ent11)) Std7) (* Ent7 Std11))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (-
-         (* Avg5 Guassian5x5) (div (IfThenElse -5.816393962756392
-         Guassian5x5 Guassian3x3) (* Ent7 Std11))))
-         Ent11) Ent7)))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (div (* Std11 Ent7) (div (+ Ent7 4.135780404329475)
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-     0.1952207417971354 (+ -5.32247310949076 Ent11)
-     (* (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (div (* Ent11 Avg5) (+
-         -5.32247310949076 Ent11)))) (+ -5.32247310949076
-         Ent11)) (div (+ -5.723817143738165 9.247642535718478)
-         (+ -5.32247310949076 Ent11))) (- Guassian3x3
-         Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 84
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* Avg5 Guassian5x5)
-     (div (IfThenElse -5.816393962756392 Guassian5x5
-         Guassian3x3) (* Ent7 Std11)))))) (+ Ent11
-     (+ Ent11 (* (* (IfThenElse Ent11 Ent7 (IfThenElse
-         (- (- (div (* Ent11 Avg5) (+ -5.32247310949076
-             Ent11)) Ent11) (div (* (+ Ent7 4.135780404329475)
-             (+ 5.643203524024253 Std7)) (+ (+ Ent11 Guassian3x3)
-             Ent11))) (IfThenElse Ent11 -4.853643364113893
-         (* Std11 (- (* Avg5 (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))) (div
-             (IfThenElse -5.816393962756392 (- Avg5 Std11)
-                 Guassian3x3) (div (- Avg5 Std11) (+ -5.32247310949076
-             Ent11)))))) (- (* Avg5 Guassian5x5) (div
-         (IfThenElse -5.816393962756392 (- (* Avg5
-             Guassian5x5) (div (* Std11 Ent7) (* Ent7
-             (- Avg5 Std11)))) Guassian3x3) (* Ent7 Std11)))))
-         Ent11) Ent7)))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (div (* Std11 Ent7) (div (+ Ent7 4.135780404329475)
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-     0.1952207417971354 (+ -5.32247310949076 Ent11)
-     (* (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (div (IfThenElse -5.816393962756392
-         Guassian5x5 Guassian3x3) (* Ent7 Std11))))
-         (+ -5.32247310949076 Ent11)) (div (+ -5.723817143738165
-         9.247642535718478) (+ -5.32247310949076 Ent11)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-         (+ -5.32247310949076 Ent11)) (IfThenElse
-         Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-     (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
-
-Generation: 85
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (div (+ -5.723817143738165
-     9.247642535718478) (* Ent7 Std11))))) (+
-     Ent11 (+ Ent11 (* (* (IfThenElse Ent11 Ent7
-     (- (* Avg5 Guassian5x5) (div (IfThenElse
-         -5.816393962756392 Guassian5x5 Guassian3x3)
-         (* Ent7 Std11)))) Ent11) Ent7)))) (+ (+ Guassian3x3
-     Avg7) (IfThenElse (- (div (* Std11 Ent7)
-     (div (+ Ent7 4.135780404329475) Ent11)) Guassian3x3)
-     (- (- Avg5 Std11) (IfThenElse 0.1952207417971354
-         (+ -5.32247310949076 Ent11) (* (IfThenElse
-         (- (- (* (IfThenElse Ent11 Ent7 (* Guassian3x3
-             (div (* Ent11 Avg5) (+ -5.32247310949076
-                 Ent11)))) (+ -5.32247310949076 Ent11)) (div
-             (+ -5.723817143738165 9.247642535718478)
-             (+ -5.32247310949076 Ent11))) (- Guassian3x3
-             Avg7)) Ent11 (IfThenElse Avg5 (div (* Std11
-         Ent7) (+ -5.32247310949076 Ent11)) Std7))
-         (+ Ent7 4.135780404329475)))) (- Avg5 Std11))))
-     (div (+ Guassian3x3 Avg7) (+ -5.32247310949076
-         Ent11)))
-
-Generation: 86
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=0.21 Adjusted=0.8264462809917356 Hits=632
-Tree 0:
- (div (* (+ (div (+ (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (div (* Std11 Ent7) (+
-     -5.32247310949076 Ent11))) (IfThenElse Ent11
-     -4.853643364113893 (* Std11 (- (* (* (+ -5.32247310949076
-     Ent11) (IfThenElse 0.1952207417971354 Ent11
-     Ent7)) Guassian5x5) (+ Ent11 (* (IfThenElse
-     Ent11 Ent7 (+ Guassian3x3 Avg7)) Ent7))))))
-     (+ Ent11 (+ Ent11 (* (* (IfThenElse Ent11
-         Ent7 (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (+ Guassian3x3 Avg7)))
-         (IfThenElse 0.1952207417971354 Ent11 Ent7))
-         Ent11) (IfThenElse (div (* (+ Ent7 4.135780404329475)
-         (+ 5.643203524024253 Std7)) (+ (+ Ent11 Guassian3x3)
-         Ent11)) -4.853643364113893 (IfThenElse Avg5
-         Avg7 Std7))) (IfThenElse Ent11 -4.853643364113893
-         (* Std11 (- (* Avg5 (div (IfThenElse -5.816393962756392
-             (- Avg5 Std11) Guassian3x3) (div (* Std11
-             Ent7) (+ -5.32247310949076 Ent11)))) (div
-             (IfThenElse -5.816393962756392 (- Avg5 Std11)
-                 Guassian3x3) (div (- Avg5 Std11) (+ -5.32247310949076
-             Ent11)))))) (+ -5.32247310949076 Ent11)))
-         Ent11) Ent7)))) (+ (+ Guassian3x3 Avg7) (IfThenElse
-     (- (div (* Std11 Ent7) (div (+ Ent7 4.135780404329475)
-         Ent11)) Guassian3x3) (- (- Avg5 Std11) (IfThenElse
-     0.1952207417971354 (+ -5.32247310949076 Ent11)
-     (* (IfThenElse (- (- (* (IfThenElse Ent11
-         Ent7 (* Guassian3x3 (div (IfThenElse -5.816393962756392
-         Guassian5x5 Guassian3x3) (* Ent7 Std11))))
-         (+ -5.32247310949076 Ent11)) (div (+ -5.723817143738165
-         9.247642535718478) (+ -5.32247310949076 Ent11)))
-         (- Guassian3x3 Avg7)) (IfThenElse Ent11 -4.853643364113893
-         (+ -5.32247310949076 Ent11)) (IfThenElse
-         Avg5 (div (* Std11 Ent7) (+ -5.32247310949076
-         Ent11)) Std7)) (+ Ent7 4.135780404329475))))
-     (- Avg5 Std11)))) (div (+ Guassian3x3 Avg7)
-     (+ -5.32247310949076 Ent11)))
+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
+     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
+     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
+         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
+             (div -10.326519004347006 (+ 3.8403651393628557
+                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
+             Guassian3x3) (div Ent7 (div Avg7 5.756228806896625)))
+             (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
+         (div (div Avg7 5.756228806896625) (IfThenElse
+             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
+         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
+         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
+         (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
+             (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
+                 Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
+             (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
+             (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
+             -9.875555242834515) (div -10.326519004347006
+             (+ 3.8403651393628557 Avg5))) (IfThenElse
+             (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
+             Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
+             -5.2370240960804875))) (div (div Avg7 5.756228806896625)
+             (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
+             3.8403651393628557 (* (div Ent7 (- Avg5 Guassian5x5))
+             (+ Avg5 (+ Guassian5x5 Std11))) (* Std7 Avg7))
+             (IfThenElse (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
+                 (+ (IfThenElse (IfThenElse (IfThenElse (+
+                     Avg7 Guassian3x3) (+ Avg7 Avg5) Std7) (-
+                     (div Avg7 Std11) (+ -2.9649760998030277 Guassian5x5))
+                     (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
+                         Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
+                     (* Std7 Guassian3x3) (+ 3.8403651393628557
+                     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
+                     (+ (div (div (* Ent7 Avg7) (* Guassian5x5
+                         -5.2370240960804875)) 3.8824444451447966)
+                         (+ Guassian5x5 Std11)))) (- (IfThenElse Std7
+                     Std11 Avg7) (+ Guassian5x5 Std11)))) (- Std7
+                 Std7)) Avg5) (* Avg5 Std7) (div (div (* Ent11
+                 Ent11) (* Avg5 Std7)) 3.8824444451447966))))))
