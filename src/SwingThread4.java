@@ -21,6 +21,8 @@ public class SwingThread4 implements Runnable{
 	
 	//OK COIN PUBLIC API DATA
 	
+	
+	
 	@Override
 	public void run() {
 		//This code here is made to ignore SSL Certificate Requirements of the API
@@ -64,8 +66,9 @@ public class SwingThread4 implements Runnable{
 						String[] apiData = apiDataFull.split(",");
 						for(int i = 0; i< apiData.length; i++){
 							apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-							
 						}
+						apiData[0] = HelperMethods.TimestampToDate(apiData[0]);
+
 						BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
 								headers[2] + apiData[2] + "\n" + 
 								headers[3] + apiData[3] + "\n" + 
