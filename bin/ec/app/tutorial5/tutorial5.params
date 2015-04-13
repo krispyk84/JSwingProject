@@ -1,0 +1,71 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = ../../gp/koza/koza.params
+#generations = 50
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# We have five functions in the function set.  They are:
+gp.fs.0.size = 15
+gp.fs.0.func.0 = ec.app.tutorial5.Div
+gp.fs.0.func.0.nc = nc2
+gp.fs.0.func.1 = ec.app.tutorial5.Add
+gp.fs.0.func.1.nc = nc2
+gp.fs.0.func.2 = ec.app.tutorial5.Sub
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = ec.app.tutorial5.Mul
+gp.fs.0.func.3.nc = nc2
+
+#For the image quality sets
+gp.fs.0.func.4 = ec.app.tutorial5.t1
+gp.fs.0.func.4.nc = nc0
+gp.fs.0.func.5 = ec.app.tutorial5.t2
+gp.fs.0.func.5.nc = nc0
+gp.fs.0.func.6 = ec.app.tutorial5.t3
+gp.fs.0.func.6.nc = nc0
+gp.fs.0.func.7 = ec.app.tutorial5.t4
+gp.fs.0.func.7.nc = nc0
+gp.fs.0.func.8 = ec.app.tutorial5.t5
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = ec.app.tutorial5.t6
+gp.fs.0.func.9.nc = nc0
+gp.fs.0.func.10 = ec.app.tutorial5.t7
+gp.fs.0.func.10.nc = nc0
+gp.fs.0.func.11 = ec.app.tutorial5.t8
+gp.fs.0.func.11.nc = nc0
+gp.fs.0.func.12 = ec.app.tutorial5.t9
+gp.fs.0.func.12.nc = nc0
+gp.fs.0.func.13 = ec.app.tutorial5.t10
+gp.fs.0.func.13.nc = nc0
+gp.fs.0.func.14 = ec.app.tutorial5.t11
+gp.fs.0.func.14.nc = nc0
+
+
+eval.problem = ec.app.tutorial5.MultiValuedRegression
+eval.problem.data = ec.app.tutorial5.DoubleData
+eval.problem.file = $brodatz2x2.png
+eval.problem.size = 262144
+
+#generations = 5000
+
+seed.1 = -1566258474
+seed.2 = -1242222133
+
+evalthreads = 3
+breedthreads = auto
+
+select.tournament.size = 3
+
+
+# Experiments
+#breed.elite.0 = 2
+#select.tournament.size = 3
