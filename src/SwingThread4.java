@@ -54,6 +54,7 @@ public class SwingThread4 implements Runnable{
 	        String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
 			int x = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			while(x < 100000000){
 		
 					String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
@@ -79,6 +80,8 @@ public class SwingThread4 implements Runnable{
 					}
 
 =======
+=======
+>>>>>>> 26cc10324e3536402c9f6b25b2eee867df8953db
 			long startTime = System.currentTimeMillis();
 			while((System.currentTimeMillis()-startTime) < 604800000){				
 				Thread.sleep(5000);
@@ -100,6 +103,9 @@ public class SwingThread4 implements Runnable{
 					headers[6] + apiData[6] + "\n" + 
 					headers[4] + apiData[4] + "\n" + 
 					headers[5] + apiData[5]);
+<<<<<<< HEAD
+>>>>>>> 26cc10324e3536402c9f6b25b2eee867df8953db
+=======
 >>>>>>> 26cc10324e3536402c9f6b25b2eee867df8953db
 				x++;			 
 			}	
