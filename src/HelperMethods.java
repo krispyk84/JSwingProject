@@ -5,8 +5,6 @@ public class HelperMethods {
 	
 	public static String TimestampToDate(String unixtime)
 	{
-		//long unixSeconds = 1372339860;
-		System.out.println(unixtime);
 		Long timestamp = Long.valueOf(unixtime).longValue();
 		Date date = new Date(timestamp*1000L); // *1000 is to convert seconds to milliseconds
 		SimpleDateFormat sdf = new SimpleDateFormat("MM:dd:yyyy:HH:mm:ss:z"); // the format of your date

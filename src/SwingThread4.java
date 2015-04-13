@@ -64,6 +64,8 @@ public class SwingThread4 implements Runnable{
 				for(int i = 0; i< apiData.length; i++){
 					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");		
 				}
+				//convert unix timestamp to date format
+				apiData[0] = HelperMethods.TimestampToDate(apiData[0]);
 				BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
 					headers[2] + apiData[2] + "\n" + 
 					headers[3] + apiData[3] + "\n" + 
