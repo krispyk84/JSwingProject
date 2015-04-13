@@ -1,12 +1,7 @@
 
-import java.awt.Color;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -17,6 +12,10 @@ import javax.swing.JTextField;
 
 public class BasicSwing extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JPanel p = new JPanel();
 	JButton b = new JButton("Hello World!");
 	JTextField t = new JTextField("Hi", 20);
@@ -31,7 +30,7 @@ public class BasicSwing extends JFrame {
 	public static JLabel jl3 = new JLabel("What's up?");
 	public static JLabel jl4 = new JLabel("What's up?");
 	String[] choices = {"Hallo", "Bonjour", "Conichuwa" };
-	JComboBox jc = new JComboBox(choices);
+	//JComboBox jc = new JComboBox(choices);
 
 	
 	
@@ -57,7 +56,7 @@ public class BasicSwing extends JFrame {
 	}
 	
 	public BasicSwing() throws Exception{
-		super("Genetic Algorithm Bitcoin Trader");
+		super("Genetic Programming Bitcoin Trader");
 		setSize(1920,1080);
 		setResizable(false);
 		
@@ -90,7 +89,7 @@ public class BasicSwing extends JFrame {
 		p.add(jl2);
 		p.add(jl3);
 		p.add(jl4);
-		p.add(jc);
+		
 		add(p);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);

@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 import java.net.URL;
 
@@ -15,17 +14,34 @@ public class SwingThread2 implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
-		String[] headers = {"Mid: ", "Bid: ", "Ask: ", "Last: ", "TimeStamp: "};
-		
-		// TODO Auto-generated method stub
-		int x = 0;
-		while(x < 100000000){
-			try {
-				String[] apiData = readUrl("https://api.bitfinex.com/v1/ticker/btcusd").split(",");
+		FileWriter fw;
+		BufferedWriter bw = null;
+		try {
+	        File file = new File("bitFinexHistoricalData.txt");
+	        if (!file.exists()) {
+				file.createNewFile();
+			}
+	
+			
+			fw = new FileWriter(file.getAbsoluteFile());
+			bw = new BufferedWriter(fw);
+			
+			String[] headers = {"Mid: ", "Bid: ", "Ask: ", "Last: ", "TimeStamp: "};
+			
+			// TODO Auto-generated method stub
+			int x = 0;
+			long startTime = System.currentTimeMillis();
+			while((System.currentTimeMillis()-startTime) < 604800000){
+				Thread.sleep(5000);
+				String apiDataFull = readUrl("https://api.bitfinex.com/v1/ticker/btcusd");
+				bw.write(apiDataFull);
+				bw.newLine();
+				bw.write(System.currentTimeMillis()+"");
+				bw.newLine();
+				bw.flush();
+				String[] apiData = apiDataFull.split(",");
 				for(int i = 0; i< apiData.length; i++){
-					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-					
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");				
 				}
 				BasicSwing.marketsHeaderBitfinex.setText("X:" + x + "\n" +
 						headers[0] + apiData[0] + "\n" + 
@@ -33,12 +49,14 @@ public class SwingThread2 implements Runnable{
 						headers[2] + apiData[2] + "\n" + 
 						headers[3] + apiData[3] + "\n" + 
 						headers[4] + apiData[4] + "\n");
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+
+				x++;			 
 			}
-			x++;			 
-		}	
+			bw.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	private static String readUrl(String urlString) throws Exception {
