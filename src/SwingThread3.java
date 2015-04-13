@@ -38,7 +38,8 @@ public class SwingThread3 implements Runnable{
         }
 
         SSLContext.setDefault(ctx);
-		String[] headers = {"High: ", "Low: ", "Average: ", "Volume: ", "VolCur: ", "Last: ", "Buy: ", "Sell: ", "Updated: ", "TimeStamp: "};
+
+        String[] headers = {"High: ", "Low: ", "Average: ", "Volume: ", "VolCur: ", "Last: ", "Buy: ", "Sell: ", "Updated: ", "TimeStamp: "};
 		
 		// TODO Auto-generated method stub
 		int x = 0;

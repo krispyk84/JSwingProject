@@ -54,7 +54,7 @@ public class SwingThread4 implements Runnable{
 	        String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
 			String tempOldData = "";
 			int x = 0;
-			while(x < 100000000){
+			while(x < 100){
 				try {
 					String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
 					if(!apiDataFull.equals(tempOldData)){
