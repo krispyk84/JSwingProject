@@ -15,13 +15,27 @@ public class SwingThread2 implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+
+		String[] headers = {"Mid: ", "Bid: ", "Ask: ", "Last: ", "TimeStamp: "};
+		
+		// TODO Auto-generated method stub
 		int x = 0;
 		while(x < 100000000){
 			try {
-				BasicSwing.jl.setText("BITFINEX: " + "X:" + x + " : " + readUrl("https://api.bitfinex.com/v1/ticker/btcusd"));
-			} catch (Exception e) {
+				String[] apiData = readUrl("https://api.bitfinex.com/v1/ticker/btcusd").split(",");
+				for(int i = 0; i< apiData.length; i++){
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
+					
+				}
+				BasicSwing.marketsHeaderBitfinex.setText("X:" + x + "\n" +
+						headers[0] + apiData[0] + "\n" + 
+						headers[1] + apiData[1] + "\n" + 
+						headers[2] + apiData[2] + "\n" + 
+						headers[3] + apiData[3] + "\n" + 
+						headers[4] + apiData[4] + "\n");
+			} catch (Exception e1) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e1.printStackTrace();
 			}
 			x++;			 
 		}	

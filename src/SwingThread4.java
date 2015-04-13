@@ -38,35 +38,34 @@ public class SwingThread4 implements Runnable{
         }
 
         SSLContext.setDefault(ctx);
-		String[] headers = {"Date: ", "Buy: ", "High: ", "Last: ", "Low: ", "Sell: ", "Volume: "};
-		//{"date":"1428907588","ticker":{"buy":"235.88","high":"237.38","last":"235.91","low":"233.43","sell":"235.96","vol":"8658.663"}}
-        try {
-			String[] apiData = readUrl("https://www.okcoin.com/api/ticker.do?ok=1").split(",");
-			for(int i = 0; i<apiData.length; i++){
-				apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
-				System.out.println(headers[i] + apiData[i]);
-			}
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-        
-        		
-		
+		String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
+				
 		// TODO Auto-generated method stub
 		int x = 0;
 		while(x < 100000000){
 			try {
-				BasicSwing.jl4.setText("OK-COIN: " + "X:" + x + " : " + readUrl("https://www.okcoin.com/api/ticker.do?ok=1"));
-			} catch (Exception e) {
+				String[] apiData = readUrl("https://www.okcoin.com/api/ticker.do?ok=1").split(",");
+				for(int i = 0; i< apiData.length; i++){
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
+					
+				}
+				BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
+						headers[2] + apiData[2] + "\n" + 
+						headers[3] + apiData[3] + "\n" + 
+						headers[0] + apiData[0] + "\n" + 
+						headers[1] + apiData[1] + "\n" + 
+						headers[6] + apiData[6] + "\n" + 
+						headers[4] + apiData[4] + "\n" + 
+						headers[5] + apiData[5]);
+			} catch (Exception e1) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e1.printStackTrace();
 			}
 			x++;			 
 		}	
-		
-		
 	}
+		
+		
 	
 	private static String readUrl(String urlString) throws Exception {
 	    BufferedReader reader = null;

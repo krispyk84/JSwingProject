@@ -38,18 +38,31 @@ public class SwingThread3 implements Runnable{
         }
 
         SSLContext.setDefault(ctx);
-		
-		
-		
+		String[] headers = {"High: ", "Low: ", "Average: ", "Volume: ", "VolCur: ", "Last: ", "Buy: ", "Sell: ", "Updated: ", "TimeStamp: "};
 		
 		// TODO Auto-generated method stub
 		int x = 0;
 		while(x < 100000000){
 			try {
-				BasicSwing.jl3.setText("BTC-E: " + "X:" + x + " : " + readUrl("https://btc-e.com/api/2/btc_usd/ticker"));
-			} catch (Exception e) {
+				String[] apiData = readUrl("https://btc-e.com/api/2/btc_usd/ticker").split(",");
+				for(int i = 0; i< apiData.length; i++){
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
+					
+				}
+				BasicSwing.marketsHeaderBtcE.setText("X:" + x + "\n" +
+						headers[0] + apiData[0] + "\n" + 
+						headers[1] + apiData[1] + "\n" + 
+						headers[2] + apiData[2] + "\n" + 
+						headers[3] + apiData[3] + "\n" + 
+						headers[4] + apiData[4] + "\n" + 
+						headers[5] + apiData[5] + "\n" +
+						headers[6] + apiData[6] + "\n" +
+						headers[7] + apiData[7] + "\n" +
+						headers[8] + apiData[8] + "\n" +
+						headers[9] + apiData[9]);
+			} catch (Exception e1) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e1.printStackTrace();
 			}
 			x++;			 
 		}	
