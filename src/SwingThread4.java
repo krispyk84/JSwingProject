@@ -9,7 +9,6 @@ import javax.net.ssl.X509TrustManager;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class SwingThread4 implements Runnable{
 	//Do not make public/static because then they'll merge the threads
@@ -53,8 +52,8 @@ public class SwingThread4 implements Runnable{
 	        
 	        //The Header Titles for the data returned by the API
 	        String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
-			String tempOldData = "";
 			int x = 0;
+<<<<<<< HEAD
 			while(x < 100000000){
 		
 					String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
@@ -79,6 +78,29 @@ public class SwingThread4 implements Runnable{
 								headers[5] + apiData[5]);
 					}
 
+=======
+			long startTime = System.currentTimeMillis();
+			while((System.currentTimeMillis()-startTime) < 604800000){				
+				Thread.sleep(5000);
+				String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
+				bw.write(apiDataFull);
+				bw.newLine();
+				bw.write(System.currentTimeMillis()+"");
+				bw.newLine();
+				bw.flush();
+				String[] apiData = apiDataFull.split(",");
+				for(int i = 0; i< apiData.length; i++){
+					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");		
+				}
+				BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
+					headers[2] + apiData[2] + "\n" + 
+					headers[3] + apiData[3] + "\n" + 
+					headers[0] + apiData[0] + "\n" + 
+					headers[1] + apiData[1] + "\n" + 
+					headers[6] + apiData[6] + "\n" + 
+					headers[4] + apiData[4] + "\n" + 
+					headers[5] + apiData[5]);
+>>>>>>> 26cc10324e3536402c9f6b25b2eee867df8953db
 				x++;			 
 			}	
 			
