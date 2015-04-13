@@ -1,9 +1,11 @@
 import java.io.*;
 import java.net.URL;
 import java.security.cert.X509Certificate;
+
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -44,23 +46,21 @@ public class SwingThread4 implements Runnable{
 				file.createNewFile();
 			}
 	
-			
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
-	
-			
 	        
 	        //The Header Titles for the data returned by the API
 	        String[] headers = {"TimeStamp: ", "Bid: ", "High: ", "Last: ", "Low: ", "Ask: ", "Volume: "};
 			String tempOldData = "";
 			int x = 0;
-			while(x < 100){
-				try {
+			while(x < 100000000){
+		
 					String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
 					if(!apiDataFull.equals(tempOldData)){
 						tempOldData = apiDataFull;
 						bw.write(apiDataFull);
 						bw.newLine();
+						bw.flush();
 						String[] apiData = apiDataFull.split(",");
 						for(int i = 0; i< apiData.length; i++){
 							apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
@@ -75,17 +75,13 @@ public class SwingThread4 implements Runnable{
 								headers[4] + apiData[4] + "\n" + 
 								headers[5] + apiData[5]);
 					}
-					
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+
 				x++;			 
 			}	
 			
 			bw.close();
 		
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

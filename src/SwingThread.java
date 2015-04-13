@@ -33,7 +33,7 @@ public class SwingThread implements Runnable{
 			String[] headers = {"High: ", "Last: ", "TimeStamp: ", "Bid: ", "VWAP: ", "Volume: ", "Low: ", "Ask: "};
 			String tempOldData = "";
 	
-			while(x < 100){
+			while(x < 100000000){
 				try {
 					String apiDataFull = readUrl("https://www.bitstamp.net/api/ticker/");
 					if(!apiDataFull.equals(tempOldData)){
