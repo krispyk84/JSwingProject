@@ -65,8 +65,8 @@ public class bitThread implements Runnable{
 				marketHeader.append("Last:" 	+ apiData[h[1]] + "\n");
 				marketHeader.append("Bid:" 		+ apiData[h[2]] + "\n");
 				marketHeader.append("Ask:" 		+ apiData[h[3]] + "\n");
-				marketHeader.append("Volume:" 	+ (h[4] < 0 ? apiData[h[4]] : "N/A") + "\n");
-				marketHeader.append(apiData[h[0]] + "\nUpdated Every " + updateRate + "sec");
+				marketHeader.append("Volume:" 	+ (h[4] >= 0 ? apiData[h[4]] : "N/A") + "\n");
+				marketHeader.append(apiData[h[0]] + "\nUpdated Every " + updateRate + " sec");
 
 				if(BasicSwing.currentMarketTrading == 0){
 					BasicSwing.currentMarketPrice = Double.parseDouble(apiData[h[3]]);
