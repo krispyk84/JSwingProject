@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.URL;
 import java.security.cert.X509Certificate;
+
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
@@ -45,7 +46,7 @@ public class SwingThread3 implements Runnable{
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
 			
-	        String[] headers = {"High: ", "Low: ", "Average: ", "Volume: ", "VolCur: ", "Last: ", "Buy: ", "Sell: ", "Updated: ", "TimeStamp: "};
+	        String[] headers = {"High: ", "Low: ", "Average: ", "Volume: ", "VolCur: ", "Last: ", "Bid: ", "Ask: ", "Updated: ", "TimeStamp: "};
 			
 			// TODO Auto-generated method stub
 			int x = 0;
@@ -64,17 +65,13 @@ public class SwingThread3 implements Runnable{
 				for(int i = 0; i< apiData.length; i++){
 					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");				
 				}
-				BasicSwing.marketsHeaderBtcE.setText("X:" + x + "\n" +
-					headers[0] + apiData[0] + "\n" + 
-					headers[1] + apiData[1] + "\n" + 
-					headers[2] + apiData[2] + "\n" + 
+				apiData[9] = HelperMethods.TimestampToDate(apiData[9]);
+				BasicSwing.marketsHeaderBtcE.setText(
+					headers[5] + apiData[5] + "\n" + 
+					headers[6] + apiData[6] + "\n" + 
+					headers[7] + apiData[7] + "\n" + 
 					headers[3] + apiData[3] + "\n" + 
-					headers[4] + apiData[4] + "\n" + 
-					headers[5] + apiData[5] + "\n" +
-					headers[6] + apiData[6] + "\n" +
-					headers[7] + apiData[7] + "\n" +
-					headers[8] + apiData[8] + "\n" +
-					headers[9] + apiData[9]);
+					apiData[9] + "\nUpdated Every 5 sec");
 				x++;			 
 			}
 			bw.close();

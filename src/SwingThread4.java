@@ -66,14 +66,12 @@ public class SwingThread4 implements Runnable{
 				}
 				//convert unix timestamp to date format
 				apiData[0] = HelperMethods.TimestampToDate(apiData[0]);
-				BasicSwing.marketsHeaderOKCoin.setText("X:" + x + "\n" +
-					headers[2] + apiData[2] + "\n" + 
-					headers[3] + apiData[3] + "\n" + 
-					headers[0] + apiData[0] + "\n" + 
-					headers[1] + apiData[1] + "\n" + 
-					headers[6] + apiData[6] + "\n" + 
-					headers[4] + apiData[4] + "\n" + 
-					headers[5] + apiData[5]);
+				BasicSwing.marketsHeaderOKCoin.setText(
+						headers[3] + apiData[3] + "\n" +
+						headers[1] + apiData[1] + "\n" +
+						headers[5] + apiData[5] + "\n" +
+						headers[6] + apiData[6] + "\n" +
+						apiData[0] + "\nUpdated Every 5 sec");
 				x++;			 
 			}	
 			

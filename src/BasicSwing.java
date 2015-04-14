@@ -1,4 +1,6 @@
 
+import java.awt.Font;
+import java.awt.GridLayout;
 import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
@@ -24,7 +26,14 @@ public class BasicSwing extends JFrame {
 	public static JTextArea marketsHeaderOKCoin = new JTextArea("Loading Market Data...");
 	public static JTextArea marketsHeaderBitfinex = new JTextArea("Loading Market Data...");
 	public static JTextArea marketsHeaderBtcE = new JTextArea("Loading Market Data...");
-
+	public static JLabel marketSectionTitle = new JLabel("Market Snapshot");
+	
+	public static JLabel accountBalancesTitle = new JLabel("Account Balances");
+	public static JTextField usdBalance = new JTextField("$1000.00 USD");
+	public static JLabel usdBtcEquivalent = new JLabel("Loading...");
+	public static JTextField btcBalance = new JTextField("0.00000000 BTC");
+	public static JLabel btcUsdEquivalent = new JLabel("Loading...");
+	
 	public static JLabel jl = new JLabel("What's up?");
 	public static JLabel jl2 = new JLabel("What's up?");
 	public static JLabel jl3 = new JLabel("What's up?");
@@ -32,7 +41,10 @@ public class BasicSwing extends JFrame {
 	String[] choices = {"Hallo", "Bonjour", "Conichuwa" };
 	//JComboBox jc = new JComboBox(choices);
 
-	
+	public static int currentMarketTrading = 0;
+	public static double currentMarketPrice = 0;
+	public static double currentUSDBalance = 1000.00;
+	public static double currentBTCBalance = 0.00000000;
 	
 	public static void main(String[] args) throws Exception{
 		
@@ -60,28 +72,62 @@ public class BasicSwing extends JFrame {
 		setSize(1920,1080);
 		setResizable(false);
 		
+		p.add(marketSectionTitle);
+		marketSectionTitle.setLocation(400,20);
+		marketSectionTitle.setSize(200,20);
+		Font myFont = new Font("Helvetica", Font.PLAIN, 18);
+		marketSectionTitle.setFont(myFont);
+				
 		//Specify that no layout is set for the main panel
 		p.setLayout(null);
 		p.add(marketsHeaderBitstamp);
 		marketsHeaderBitstamp.setLocation(50,50);
-		marketsHeaderBitstamp.setSize(200,200);
+		marketsHeaderBitstamp.setSize(200,120);
 		marketsHeaderBitstamp.setBorder(BorderFactory.createTitledBorder("Bistamp"));
 		
 		p.add(marketsHeaderOKCoin);
 		marketsHeaderOKCoin.setLocation(260,50);
-		marketsHeaderOKCoin.setSize(200,200);
+		marketsHeaderOKCoin.setSize(200,120);
 		marketsHeaderOKCoin.setBorder(BorderFactory.createTitledBorder("OKCoin"));
 		
 		p.add(marketsHeaderBitfinex);
 		marketsHeaderBitfinex.setLocation(470,50);
-		marketsHeaderBitfinex.setSize(200,200);
+		marketsHeaderBitfinex.setSize(200,120);
 		marketsHeaderBitfinex.setBorder(BorderFactory.createTitledBorder("BitFinex"));
 		
 		p.add(marketsHeaderBtcE);
 		marketsHeaderBtcE.setLocation(680,50);
-		marketsHeaderBtcE.setSize(200,200);
+		marketsHeaderBtcE.setSize(200,120);
 		marketsHeaderBtcE.setBorder(BorderFactory.createTitledBorder("BTC-E"));
 		
+		p.add(accountBalancesTitle);
+		accountBalancesTitle.setLocation(1175,60);
+		accountBalancesTitle.setSize(200,20);
+		accountBalancesTitle.setFont(myFont);
+		
+		p.add(usdBalance);
+		usdBalance.setLocation(1000,100);
+		usdBalance.setSize(200,30);
+		Font myFontBalance = new Font("Helvetica", Font.BOLD, 22);
+		usdBalance.setFont(myFontBalance);
+		usdBalance.setHorizontalAlignment(JTextField.CENTER);
+		
+		p.add(usdBtcEquivalent);
+		usdBtcEquivalent.setLocation(1000,140);
+		usdBtcEquivalent.setSize(200,20);
+		usdBtcEquivalent.setFont(myFont);
+		
+		p.add(btcBalance);
+		btcBalance.setLocation(1300,100);
+		btcBalance.setSize(200,30);
+		btcBalance.setFont(myFontBalance);
+		btcBalance.setHorizontalAlignment(JTextField.CENTER);
+		
+		p.add(btcUsdEquivalent);
+		btcUsdEquivalent.setLocation(1300,140);
+		btcUsdEquivalent.setSize(200,20);
+		btcUsdEquivalent.setFont(myFont);
+			
 		//p.add(b);
 		p.add(t);
 		p.add(ta);

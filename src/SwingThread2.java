@@ -43,12 +43,13 @@ public class SwingThread2 implements Runnable{
 				for(int i = 0; i< apiData.length; i++){
 					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");				
 				}
-				BasicSwing.marketsHeaderBitfinex.setText("X:" + x + "\n" +
-						headers[0] + apiData[0] + "\n" + 
-						headers[1] + apiData[1] + "\n" + 
-						headers[2] + apiData[2] + "\n" + 
-						headers[3] + apiData[3] + "\n" + 
-						headers[4] + apiData[4] + "\n");
+				apiData[4] = HelperMethods.TimestampToDate(apiData[4]);
+				BasicSwing.marketsHeaderBitfinex.setText(
+						headers[3] + apiData[3] + "\n" +
+						headers[1] + apiData[1] + "\n" +
+						headers[2] + apiData[2] + "\n" +
+						"Volume: N-A \n" + 
+						apiData[4] + "\nUpdated Every 5 sec");
 
 				x++;			 
 			}

@@ -27,8 +27,6 @@ public class SwingThread implements Runnable{
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
 	
-			int x = 0;
-			
 			String[] headers = {"High: ", "Last: ", "TimeStamp: ", "Bid: ", "VWAP: ", "Volume: ", "Low: ", "Ask: "};
 	
 			long startTime = System.currentTimeMillis();
@@ -44,16 +42,18 @@ public class SwingThread implements Runnable{
 				for(int i = 0; i< apiData.length; i++){
 					apiData[i] = apiData[i].replaceAll("[^0-9.,]+","");
 				}
-				BasicSwing.marketsHeaderBitstamp.setText("X:" + x + "\n" +
-					headers[0] + apiData[0] + "\n" + 
-					headers[1] + apiData[1] + "\n" + 
-					headers[2] + apiData[2] + "\n" + 
-					headers[3] + apiData[3] + "\n" + 
-					headers[5] + apiData[5] + "\n" + 
-					headers[6] + apiData[6] + "\n" + 
-					headers[7] + apiData[7]);
-		
-				x++;			 
+				apiData[2] = HelperMethods.TimestampToDate(apiData[2]);
+				BasicSwing.marketsHeaderBitstamp.setText(
+						headers[1] + apiData[1] + "\n" +
+						headers[3] + apiData[3] + "\n" +
+						headers[7] + apiData[7] + "\n" +
+						headers[5] + apiData[5] + "\n" +
+						apiData[2] + "\nUpdated Every 5 sec");
+				if(BasicSwing.currentMarketTrading == 0){
+					BasicSwing.currentMarketPrice = Double.parseDouble(apiData[7]);
+					BasicSwing.usdBtcEquivalent.setText("Buys: BTC "+ (BasicSwing.currentUSDBalance/(Double.parseDouble(apiData[7]))));
+					BasicSwing.btcUsdEquivalent.setText("Sells For: $" + (BasicSwing.currentBTCBalance*Double.parseDouble(apiData[7])));
+				}
 			}	
 			
 			bw.close();
