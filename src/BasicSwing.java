@@ -51,12 +51,11 @@ public class BasicSwing extends JFrame {
 		System.out.println("Spawning Threads");
 		ArrayList<Thread> threads = new ArrayList<Thread>();
 		
-			threads.add(new Thread(new SwingThread()));
-			threads.add(new Thread(new SwingThread2()));
-			threads.add(new Thread(new SwingThread3()));
-			threads.add(new Thread(new SwingThread4()));
-			
-			
+		threads.add(new Thread(new bitThread("https://www.bitstamp.net/api/ticker/",marketsHeaderBitstamp,"bitstampHistoricData.txt",new int[]{2,1,3,7,5})));
+		threads.add(new Thread(new bitThread("https://api.bitfinex.com/v1/ticker/btcusd",marketsHeaderBitfinex,"bitFinexHistoricalData.txt",new int[]{4,3,1,2,-1})));
+		threads.add(new Thread(new bitThread("https://btc-e.com/api/2/btc_usd/ticker",marketsHeaderBtcE,"btcEHistoricalData.txt",new int[]{9,5,6,7,3})));
+		threads.add(new Thread(new bitThread("https://www.okcoin.com/api/ticker.do?ok=1",marketsHeaderOKCoin,"okcoinHistoricData.txt",new int[]{0,3,1,5,6})));
+		
 		for(int i = 0; i<threads.size(); i++){
 			threads.get(i).start();
 		}
