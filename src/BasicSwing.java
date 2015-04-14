@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 public class BasicSwing extends JFrame {
 	
 	/**
-	 * 
+	 * test
 	 */
 	private static final long serialVersionUID = 1L;
 	JPanel p = new JPanel();
