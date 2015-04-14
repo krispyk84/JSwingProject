@@ -21,7 +21,6 @@ public class SwingThread2 implements Runnable{
 	        if (!file.exists()) {
 				file.createNewFile();
 			}
-	
 			
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
@@ -33,7 +32,7 @@ public class SwingThread2 implements Runnable{
 			long startTime = System.currentTimeMillis();
 			while((System.currentTimeMillis()-startTime) < 604800000){
 				Thread.sleep(5000);
-				String apiDataFull = readUrl("https://api.bitfinex.com/v1/ticker/btcusd");
+				String apiDataFull = HelperMethods.readUrl("https://api.bitfinex.com/v1/ticker/btcusd");
 				bw.write(apiDataFull);
 				bw.newLine();
 				bw.write(System.currentTimeMillis()+"");
@@ -59,7 +58,7 @@ public class SwingThread2 implements Runnable{
 			e.printStackTrace();
 		}
 	}
-	
+	/*
 	private static String readUrl(String urlString) throws Exception {
 	    BufferedReader reader = null;
 	    try {
@@ -77,7 +76,7 @@ public class SwingThread2 implements Runnable{
 	            reader.close();
 	    }
 	}
-	
+	*/
 	public static String getCurrentString(){
 		String current = currentString;
 		return current;

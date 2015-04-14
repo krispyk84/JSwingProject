@@ -54,7 +54,7 @@ public class SwingThread4 implements Runnable{
 			long startTime = System.currentTimeMillis();
 			while((System.currentTimeMillis()-startTime) < 604800000){				
 				Thread.sleep(5000);
-				String apiDataFull = readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
+				String apiDataFull = HelperMethods.readUrl("https://www.okcoin.com/api/ticker.do?ok=1");
 				bw.write(apiDataFull);
 				bw.newLine();
 				bw.write(System.currentTimeMillis()+"");
@@ -82,9 +82,7 @@ public class SwingThread4 implements Runnable{
 			e.printStackTrace();
 		}
 	}
-		
-		
-	
+	/*	
 	private static String readUrl(String urlString) throws Exception {
 	    BufferedReader reader = null;
 	    try {
@@ -102,7 +100,7 @@ public class SwingThread4 implements Runnable{
 	            reader.close();
 	    }
 	}
-	
+	*/
 	public static String getCurrentString(){
 		String current = currentString;
 		return current;

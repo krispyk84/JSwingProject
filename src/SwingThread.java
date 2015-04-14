@@ -23,7 +23,6 @@ public class SwingThread implements Runnable{
 				file.createNewFile();
 			}
 	
-			
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
 	
@@ -32,7 +31,7 @@ public class SwingThread implements Runnable{
 			long startTime = System.currentTimeMillis();
 			while((System.currentTimeMillis()-startTime) < 604800000){
 				Thread.sleep(5000);
-				String apiDataFull = readUrl("https://www.bitstamp.net/api/ticker/");
+				String apiDataFull = HelperMethods.readUrl("https://www.bitstamp.net/api/ticker/");
 				bw.write(apiDataFull);
 				bw.newLine();
 				bw.write(System.currentTimeMillis()+"");
@@ -63,7 +62,7 @@ public class SwingThread implements Runnable{
 			e.printStackTrace();
 		}
 	}
-	
+	/*
 	private static String readUrl(String urlString) throws Exception {
 	    BufferedReader reader = null;
 	    try {
@@ -81,7 +80,7 @@ public class SwingThread implements Runnable{
 	            reader.close();
 	    }
 	}
-	
+	*/
 	public static String getCurrentString(){
 		String current = currentString;
 		return current;

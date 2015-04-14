@@ -1,4 +1,5 @@
 import java.io.*;
+import java.net.*;
 import java.net.URL;
 import java.security.cert.X509Certificate;
 
@@ -42,7 +43,6 @@ public class SwingThread3 implements Runnable{
 				file.createNewFile();
 			}
 	
-			
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
 			
@@ -55,7 +55,8 @@ public class SwingThread3 implements Runnable{
 			
 			while((System.currentTimeMillis()-startTime) < 604800000){
 				Thread.sleep(5000);
-				String apiDataFull = readUrl("https://btc-e.com/api/2/btc_usd/ticker");
+				String apiDataFull = HelperMethods.readUrl("https://btc-e.com/api/2/btc_usd/ticker");
+				if(apiDataFull == null) { break; } //added this check if returned null value
 				bw.write(apiDataFull);
 				bw.newLine();
 				bw.write(System.currentTimeMillis()+"");
@@ -80,29 +81,9 @@ public class SwingThread3 implements Runnable{
 			e.printStackTrace();
 		}
 	}
-	private static String readUrl(String urlString) throws Exception {
-	    BufferedReader reader = null;
-	    try {
-	        URL url = new URL(urlString);
-	        reader = new BufferedReader(new InputStreamReader(url.openStream()));
-	        StringBuffer buffer = new StringBuffer();
-	        int read;
-	        char[] chars = new char[1024];
-	        while ((read = reader.read(chars)) != -1)
-	            buffer.append(chars, 0, read); 
-
-	        return buffer.toString();
-	    } finally {
-	        if (reader != null)
-	            reader.close();
-	    }
-	}
 	
 	public static String getCurrentString(){
 		String current = currentString;
 		return current;
-	}
-
-	
-	
+	}	
 }
