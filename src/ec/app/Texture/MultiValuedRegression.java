@@ -39,21 +39,21 @@ public class MultiValuedRegression extends GPProblem implements
 	public int testingSetSize;
 
 	//Integers that state the number of historic records we have for each market
-	public int okCoinNumOfRecords = 776930;
-	public static int bitstampNumOfRecords = 776930;
-	public int btceNumOfRecords = 776930;
-	public int bitfinexNumOfRecords = 776930;
+	public int okCoinNumOfRecords;
+	public static int bitstampNumOfRecords;
+	public int btceNumOfRecords;
+	public int bitfinexNumOfRecords;
 	
-	public static String[] okCoinRecords  = FinancialFunctions.buildRecordsArray("okcoinEvery10Seconds.txt");
-	public static String[] bitStampRecords  = FinancialFunctions.buildRecordsArray("bitstampEvery10Seconds.txt");
-	public static String[] btceRecords  = FinancialFunctions.buildRecordsArray("btceEvery10Seconds.txt");
-	public static String[] bitfinexRecords  = FinancialFunctions.buildRecordsArray("bitfinexEvery10Seconds.txt");
+	public static String[] okCoinRecords;
+	public static String[] bitStampRecords;
+	public static String[] btceRecords;
+	public static String[] bitfinexRecords;
 	
 	public static int[] expectedResults;
 	public static int[] expectedTraining;
 	public static int[] expectedTesting;
 	
-	public static double buyAndHoldEarnings = 1000/(Double.parseDouble(bitStampRecords[0]))*(Double.parseDouble(bitStampRecords[776929]));
+	public static double buyAndHoldEarnings;
 	
 	public double currentQuality;
 	
@@ -120,15 +120,27 @@ public class MultiValuedRegression extends GPProblem implements
 	final Parameter base) {
 		super.setup(state, base);
 
+		totalSize = state.parameters.getInt(base.push(P_SIZE), null, 1);
+		trainingSetSize = state.parameters.getInt(base.push(P_TRAIN), null, 1);
+		testingSetSize = totalSize - trainingSetSize;
+		
+		okCoinNumOfRecords = totalSize;
+		bitstampNumOfRecords = totalSize;
+		btceNumOfRecords = totalSize;
+		bitfinexNumOfRecords = totalSize;
+		
+		okCoinRecords  = FinancialFunctions.buildRecordsArray("okcoinEvery10Seconds.txt");
+		bitStampRecords  = FinancialFunctions.buildRecordsArray("bitstampEvery10Seconds.txt");
+		btceRecords  = FinancialFunctions.buildRecordsArray("btceEvery10Seconds.txt");
+		bitfinexRecords  = FinancialFunctions.buildRecordsArray("bitfinexEvery10Seconds.txt");
+				
+		buyAndHoldEarnings =  1000/(Double.parseDouble(bitStampRecords[0]))*(Double.parseDouble(bitStampRecords[totalSize-1]));
+
 		expectedResults = new int[bitstampNumOfRecords];
 		for(int i = 0; i<bitstampNumOfRecords; i++){
 			expectedResults[i] = FinancialFunctions.buyHoldSell(bitStampRecords, i);
 		}
 				
-		totalSize = state.parameters.getInt(base.push(P_SIZE), null, 1);
-		trainingSetSize = state.parameters.getInt(base.push(P_TRAIN), null, 1);
-		testingSetSize = totalSize - trainingSetSize;
-
 		if (trainingSetSize < 1)
 			state.output.fatal(
 					"Training Set Size must be an integer greater than 0",
@@ -144,23 +156,17 @@ public class MultiValuedRegression extends GPProblem implements
 			trainingRandomValues.add(next);
 		}
 		
-				
-		//
 		training = new double[trainingSetSize][10];
 		testing = new double[testingSetSize][10];
 		expectedTraining = new int[trainingSetSize];
-		//We need to shuffle the training points
 		expectedTesting = new int[testingSetSize];
 		
-		
-
 		//Set the training terminal nodes by calling the filter functions
 		int i = 0;
-		for(Integer index : trainingRandomValues){
+		for(Integer start : trainingRandomValues){
 			if(i%1000 == 0){
 				System.out.println("TR" + i);	
 			}
-			int start = index;
 			
 			//training[i][0] = FinancialFunctions.averageOverX(30, start, bitStampRecords);
 			//training[i][1] = FinancialFunctions.averageOverX(60, start, bitStampRecords);
@@ -216,11 +222,10 @@ public class MultiValuedRegression extends GPProblem implements
 		testingValues.removeAll(trainingRandomValues);
 		
 		i = 0;
-		for(Integer index : testingValues){
+		for(Integer start : testingValues){
 			if(i%5000 == 0){
 				System.out.println("TE" + i);	
 			}
-			int start = index;
 			
 			//testing[i][0] = FinancialFunctions.averageOverX(30, start, bitStampRecords);
 			//testing[i][1] = FinancialFunctions.averageOverX(60, start, bitStampRecords);

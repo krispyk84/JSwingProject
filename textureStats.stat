@@ -3,1034 +3,1142 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
+Fitness: Standardized=0.03499156829679595 Adjusted=0.9661914460285131 Hits=2289
 Tree 0:
- (sin 10.014703087451624)
+ (- -1.647626470247543 (+ VarBwBSandBT240s
+     MacdValue))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
+Fitness: Standardized=0.03499156829679595 Adjusted=0.9661914460285131 Hits=2289
 Tree 0:
- -6.715046377529213
+ (cos (exp (div (IfThenElse (rlog AverageOver120s)
+     MinValueOver120s VarBwBSandBF240s) (* VarBwBSandBF240s
+     VarBwBSandOK240s))))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
+Fitness: Standardized=0.03456998313659359 Adjusted=0.9665851670741646 Hits=2290
 Tree 0:
- (IfThenElse -3.6186371078492154 AverageOver120s
-     -7.035915168783924)
+ (- (cos (sin 3.9397081215051206)) (+ VarBwBSandBT240s
+     MacdValue))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
+Fitness: Standardized=0.03456998313659359 Adjusted=0.9665851670741646 Hits=2290
 Tree 0:
- (- (cos (+ MinValueOver120s (exp RateOfChangeOver120s)))
-     (rlog (- (+ RateOfChangeOver120s VolatilityOver120s)
-         (rlog (sin (div MacdValue AverageOver120s))))))
+ (- (cos (sin 5.571093697085804)) (+ VarBwBSandBT240s
+     MacdValue))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03456998313659359 Adjusted=0.9665851670741646 Hits=2290
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (- (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+     (div AverageOver120s VarBwBSandOK240s)) (+
+     (+ MinValueOver120s RateOfChangeOver120s)
+     (- (rlog (sin (sin AverageOver120s))) (-
+         (IfThenElse (cos MacdValue) (cos RateOfChangeOver120s)
+             (+ VarBwBSandBF240s RateOfChangeOver120s))
+         (sin (- MacdValue RateOfChangeOver120s)))))))
+     (+ VarBwBSandBT240s MacdValue))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (- (- (rlog VolatilityOver120s) (+ VarBwBSandBT240s
+     MacdValue)) (exp (div (rlog MacdValue) (rlog
+     AverageOver120s))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (- (- (rlog VolatilityOver120s) (+ VarBwBSandBT240s
+     MacdValue)) (exp (div (rlog MacdValue) (rlog
+     AverageOver120s))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (- (- (rlog VolatilityOver120s) (+ VarBwBSandBT240s
+     MacdValue)) (exp (div (rlog MacdValue) (rlog
+     AverageOver120s))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s VarBwBSandBF240s) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (sin VarBwBSandOK240s))
+     (exp (rlog (sin (+ (sin (sin MaxValueOver120s))
+         (- MacdValue RateOfChangeOver120s)))))))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
+ (- (rlog -3.8003253045163805) (+ VarBwBSandBT240s
+     MacdValue))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (+ (* (- (cos MacdValue) (+ (- -4.335731439197811
-     (exp (rlog VarBwBSandOK240s))) (rlog VarBwBSandBT240s)))
-     MacdValue) (- (sin (sin -2.821827122134384))
-     MinValueOver120s)) (exp (rlog -4.732378181722608)))
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s VarBwBSandBF240s) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (sin VarBwBSandOK240s))
+     (exp (rlog (sin (+ (sin (sin MaxValueOver120s))
+         (- MacdValue (- (- -2.481147266891836 VolatilityOver120s)
+             (+ VarBwBSandBT240s MacdValue)))))))))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03414839797639123 Adjusted=0.9669792091316755 Hits=2291
 Tree 0:
- (- (+ (* (- (cos MacdValue) (+ (- -4.335731439197811
-     (exp (rlog VarBwBSandOK240s))) (sin (cos
-     VolatilityOver120s)))) MacdValue) (- (sin
-     (- MacdValue VolatilityOver120s)) MinValueOver120s))
-     (exp (rlog -4.732378181722608)))
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s VarBwBSandBF240s) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (cos (- (div
+     (+ MinValueOver120s RateOfChangeOver120s)
+     (div (+ MaxValueOver120s -7.584331644601566)
+         VarBwBSandOK240s)) (sin (cos -8.200584701245134))))
+     (+ VarBwBSandBT240s MacdValue))) (exp (rlog
+     MacdValue))))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (rlog RateOfChangeOver120s) (* RateOfChangeOver120s
-         5.428767330444556)) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (sin (sin MaxValueOver120s)) (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (* AverageOver120s RateOfChangeOver120s)))))
+         VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (- (rlog (sin (cos -5.432740813528499)))
+             (- (IfThenElse (cos MacdValue) (cos RateOfChangeOver120s)
+                 (cos MaxValueOver120s)) -5.625277869984869)))))
+         (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+         (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+             MacdValue)) (- MacdValue MinValueOver120s)
+         (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (sin (sin MaxValueOver120s)) (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (* AverageOver120s RateOfChangeOver120s)))))
+         VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (- (rlog (sin (cos -5.432740813528499)))
+             (* -11.058952376120356 MaxValueOver120s)))))
+         (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+         (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+             MacdValue)) (- MacdValue MinValueOver120s)
+         (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (rlog (sin (sin (cos VolatilityOver120s))))
-         VolatilityOver120s)) (rlog (- (sin RateOfChangeOver120s)
-     (+ (+ AverageOver120s VarBwBSandOK240s) (+
-         RateOfChangeOver120s (- (sin (sin 3.727000519511334))
-         AverageOver120s))))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
-     MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (* -11.058952376120356 MaxValueOver120s)
+             (IfThenElse VarBwBSandOK240s AverageOver120s
+                 (- (div -8.236887671088844 MinValueOver120s)
+                     (+ VarBwBSandBT240s MacdValue)))))) VarBwBSandOK240s))
+         (+ VarBwBSandBT240s MacdValue))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (cos (- (div
+     (+ MinValueOver120s RateOfChangeOver120s)
+     (div (+ MaxValueOver120s -7.584331644601566)
+         VarBwBSandOK240s)) (+ (+ MinValueOver120s
+     RateOfChangeOver120s) (- (rlog (sin (cos
+     -5.432740813528499))) (* -11.058952376120356
+     MaxValueOver120s))))) (+ VarBwBSandBT240s
+     MacdValue))) (exp (IfThenElse (- (sin (cos
+     -5.432740813528499)) (+ VarBwBSandBT240s
+     MacdValue)) (- MacdValue MinValueOver120s)
+     (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
-     (+ RateOfChangeOver120s (- (div (- (div VarBwBSandOK240s
-         RateOfChangeOver120s) VolatilityOver120s)
-         MacdValue) AverageOver120s))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse VarBwBSandOK240s
+         (cos -9.17491296585992) (cos VarBwBSandOK240s)))
+         (+ VarBwBSandBT240s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (cos (- (div
+     (+ MinValueOver120s RateOfChangeOver120s)
+     (div (+ MaxValueOver120s -7.584331644601566)
+         VarBwBSandOK240s)) (+ (+ MinValueOver120s
+     RateOfChangeOver120s) (- (rlog (sin (cos
+     -5.432740813528499))) (- (IfThenElse (cos
+     MacdValue) (cos RateOfChangeOver120s) (cos
+     MaxValueOver120s)) -5.625277869984869)))))
+     (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+     (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+         MacdValue)) (- MacdValue MinValueOver120s)
+     (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
-     (+ RateOfChangeOver120s (- (exp (div (sin
-         VolatilityOver120s) (sin -1.606936261764396)))
-         AverageOver120s))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (sin (sin MaxValueOver120s)) (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (* AverageOver120s RateOfChangeOver120s)))))
+         VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (- (rlog (cos (- (sin (sin (* VarBwBSandBF240s
+             VarBwBSandOK240s))) (+ VarBwBSandBT240s MacdValue))))
+             (- (IfThenElse (cos MacdValue) (cos RateOfChangeOver120s)
+                 (cos MaxValueOver120s)) -5.625277869984869)))))
+         (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+         (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+             (- (cos (IfThenElse VarBwBSandOK240s AverageOver120s
+                 (sin (sin (+ (- (div (+ MinValueOver120s
+                     RateOfChangeOver120s) (IfThenElse VarBwBSandBT240s
+                     MinValueOver120s VarBwBSandBF240s)) (IfThenElse
+                     VarBwBSandOK240s AverageOver120s (+ MinValueOver120s
+                     RateOfChangeOver120s))) (+ VarBwBSandBT240s
+                     MacdValue)))))) (+ VarBwBSandBT240s MacdValue))))
+         (- MacdValue MinValueOver120s) (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ (+
-         (+ (exp (- (sin (- (* MacdValue -4.886583491521939)
-             (sin VolatilityOver120s))) (- (cos (- VarBwBSandOK240s
-             RateOfChangeOver120s)) (exp (IfThenElse MacdValue
-             AverageOver120s VarBwBSandBF240s))))) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (exp RateOfChangeOver120s))
-         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (sin (sin MaxValueOver120s)) (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (* AverageOver120s RateOfChangeOver120s)))))
+         VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (div (cos RateOfChangeOver120s) VarBwBSandOK240s)
+         (cos (- (- (cos (+ (+ MinValueOver120s RateOfChangeOver120s)
+             (+ VarBwBSandOK240s -1.793212357544702)))
+             (+ VarBwBSandBT240s MacdValue)) (cos (+ MinValueOver120s
+             RateOfChangeOver120s))))))) (+ VarBwBSandBT240s
+         MacdValue))) (exp (IfThenElse (- (+ VarBwBSandBT240s
+         MacdValue) (+ VarBwBSandBT240s MacdValue))
+         (- MacdValue MinValueOver120s) (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (IfThenElse (cos (-
-     (- (- (IfThenElse 3.1382874244244148 RelativeStrengthIndexOver120s
-         AverageOver120s) (div MaxValueOver120s -1.2813856056808912))
-         VolatilityOver120s) RateOfChangeOver120s))
-     (rlog -4.335731439197811) (- (- (* MacdValue
-     -4.886583491521939) (IfThenElse VarBwBSandBT240s
-     (- (cos RateOfChangeOver120s) (exp (rlog
-         -4.732378181722608))) RelativeStrengthIndexOver120s))
-     (IfThenElse MinValueOver120s MaxValueOver120s
-         MinValueOver120s))) (- (div (rlog RateOfChangeOver120s)
-     (+ (cos RateOfChangeOver120s) (- (sin AverageOver120s)
-         VolatilityOver120s))) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-         (- (IfThenElse MacdValue AverageOver120s
-             VarBwBSandBF240s) AverageOver120s))))) (-
-     VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (IfThenElse VarBwBSandOK240s AverageOver120s
+             (sin (+ (- (rlog VarBwBSandBT240s) (cos -5.432740813528499))
+                 (div VarBwBSandOK240s (div RateOfChangeOver120s
+                     AverageOver120s))))) (* (IfThenElse RelativeStrengthIndexOver120s
+             VarBwBSandBF240s VarBwBSandBT240s) (* AverageOver120s
+             RateOfChangeOver120s))))) VarBwBSandOK240s))
+         (+ VarBwBSandBT240s MacdValue))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (cos (- (div
+     (+ MinValueOver120s RateOfChangeOver120s)
+     (div (+ MaxValueOver120s -7.584331644601566)
+         VarBwBSandOK240s)) (+ (+ MinValueOver120s
+     RateOfChangeOver120s) (- (rlog (sin (cos
+     -5.432740813528499))) (- (IfThenElse (cos
+     MacdValue) (cos RateOfChangeOver120s) (cos
+     MaxValueOver120s)) -5.625277869984869)))))
+     (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+     (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+         MacdValue)) (- MacdValue MinValueOver120s)
+     (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) VolatilityOver120s))
-     (rlog (- (sin (rlog AverageOver120s)) (+
-         (+ AverageOver120s VarBwBSandOK240s) (+ (+
-         (+ (exp (- (rlog (+ AverageOver120s (sin
-             MaxValueOver120s))) (- (cos (- VarBwBSandOK240s
-             RateOfChangeOver120s)) (exp (IfThenElse MacdValue
-             AverageOver120s VarBwBSandBF240s))))) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (exp RateOfChangeOver120s))
-         (- (sin (- (* MacdValue -4.886583491521939)
-             (sin VolatilityOver120s))) AverageOver120s)))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse VarBwBSandOK240s
+         (+ (cos (cos (cos 2.8811950242654074))) (div
+             (rlog MacdValue) (IfThenElse VarBwBSandBF240s
+             VarBwBSandBT240s VarBwBSandOK240s))) (cos
+         VarBwBSandOK240s))) (+ VarBwBSandBT240s MacdValue))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (cos (- (cos (div AverageOver120s (rlog MacdValue)))
+             (cos RateOfChangeOver120s))) (- (rlog (sin
+         (cos -5.432740813528499))) (- (IfThenElse
+         (cos MacdValue) (cos RateOfChangeOver120s)
+         (cos MaxValueOver120s)) -5.625277869984869)))))
+         (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+         (- (sin (cos -5.432740813528499)) (+ VarBwBSandBT240s
+             MacdValue)) (- MacdValue MinValueOver120s)
+         (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (+ (cos (- -6.517649123210598
-     (exp (- VarBwBSandBF240s RateOfChangeOver120s))))
-     (- (cos (- VarBwBSandBF240s MacdValue)) VolatilityOver120s))
-     (rlog (rlog (* MaxValueOver120s VolatilityOver120s)))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (div (rlog (sin
+         (+ (+ VarBwBSandBT240s MacdValue) (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (* AverageOver120s RateOfChangeOver120s)))))
+         VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (- (+ -6.7174065228003705 -1.793212357544702)
+             (- (IfThenElse (cos MacdValue) (cos RateOfChangeOver120s)
+                 (+ VarBwBSandBF240s (- (div (- (- (+ VarBwBSandBT240s
+                     MacdValue) (+ VarBwBSandBT240s MacdValue))
+                     (+ VarBwBSandBT240s MacdValue)) (* VarBwBSandBF240s
+                     VarBwBSandOK240s)) (+ VarBwBSandBT240s MacdValue))))
+                 (rlog (exp (cos (cos (exp (div (IfThenElse
+                     VarBwBSandBT240s MinValueOver120s VarBwBSandBF240s)
+                     (* VarBwBSandBF240s VarBwBSandOK240s))))))))))))
+         (+ VarBwBSandBT240s MacdValue))) (IfThenElse
+         VarBwBSandOK240s AverageOver120s (- (cos
+         (IfThenElse VarBwBSandBT240s AverageOver120s
+             (sin (cos (IfThenElse VarBwBSandOK240s AverageOver120s
+                 (- (cos (IfThenElse -2.5024523520759283 -6.348288777323249
+                     -5.0724711374466915)) (+ VarBwBSandBT240s
+                     MacdValue))))))) (+ VarBwBSandBT240s MacdValue)))))
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03372681281618887 Adjusted=0.9673735725938009 Hits=2292
 Tree 0:
- (- (- (IfThenElse (- (- (IfThenElse (+ (cos
-     RateOfChangeOver120s) (sin (- (- -7.042945270095103
-     RateOfChangeOver120s) (* (rlog (cos -3.719940034699931))
-     (rlog VarBwBSandOK240s))))) (- (IfThenElse
-     (div (rlog RateOfChangeOver120s) (* RateOfChangeOver120s
-         5.428767330444556)) VarBwBSandOK240s (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (div (- RateOfChangeOver120s
-     RateOfChangeOver120s) RateOfChangeOver120s)
-     VolatilityOver120s))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (+ AverageOver120s VarBwBSandOK240s))
-     MacdValue) (sin (* RateOfChangeOver120s 5.428767330444556))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- VarBwBSandBF240s MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse VarBwBSandOK240s
+         (+ (cos (cos (cos 2.8811950242654074))) (div
+             (rlog MacdValue) (IfThenElse VarBwBSandBF240s
+             VarBwBSandBT240s VarBwBSandOK240s))) (cos
+         VarBwBSandOK240s))) (+ VarBwBSandBT240s MacdValue))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (cos (- (cos (cos -5.432740813528499)) (IfThenElse
+             (- (- (cos (- (cos VarBwBSandOK240s) (+ VarBwBSandBT240s
+                 MacdValue))) (+ VarBwBSandBT240s MacdValue))
+                 (IfThenElse (+ VarBwBSandBT240s MacdValue)
+                     (cos (exp (div (cos -5.432740813528499) (*
+                         VarBwBSandBF240s VarBwBSandOK240s)))) (+
+                     (sin (sin VarBwBSandOK240s)) (exp (rlog (div
+                     AverageOver120s VarBwBSandOK240s)))))) (+
+             (+ MinValueOver120s RateOfChangeOver120s)
+             (- (exp (div (IfThenElse VarBwBSandBT240s
+                 MinValueOver120s VarBwBSandBF240s) (* VarBwBSandBF240s
+                 VarBwBSandOK240s))) VarBwBSandBT240s)) (cos
+             RelativeStrengthIndexOver120s)))) (- (rlog
+         (sin (cos -5.432740813528499))) (- (IfThenElse
+         (cos MacdValue) (cos RateOfChangeOver120s)
+         (cos MaxValueOver120s)) -5.625277869984869)))))
+         (+ VarBwBSandBT240s MacdValue))) (exp (IfThenElse
+         (- (+ VarBwBSandBT240s MacdValue) (+ VarBwBSandBT240s
+             MacdValue)) (- MacdValue MinValueOver120s)
+         (cos RelativeStrengthIndexOver120s)))))
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (rlog VarBwBSandOK240s) RateOfChangeOver120s)
-         VolatilityOver120s)) (rlog (- (sin (sin (*
-     (rlog (- -4.859797153795124 (exp -1.9755944897386453)))
-     (sin 3.727000519511334)))) (+ (+ AverageOver120s
-     VarBwBSandOK240s) (+ RateOfChangeOver120s
-     (* (+ VarBwBSandOK240s MacdValue) (div -5.520305035113157
-         MacdValue)))))) (- VarBwBSandBF240s VarBwBSandBT240s))
-     (cos MacdValue)) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (div (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             RateOfChangeOver120s))) (+ VarBwBSandBT240s
+         MacdValue))) (+ VarBwBSandBT240s MacdValue)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) (- (rlog (sin (cos
+             -5.432740813528499))) (* -11.058952376120356
+             MaxValueOver120s)))))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- -11.058952376120356 MacdValue))
+         (+ VarBwBSandBT240s MacdValue))) (exp MacdValue)))
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
-     (- (div (rlog RateOfChangeOver120s) (sin
-         3.727000519511334)) VolatilityOver120s))
-     (rlog (- -1.129754403231393 (+ (+ AverageOver120s
-         VarBwBSandOK240s) (rlog (exp (div VolatilityOver120s
-         -1.490361082446331)))))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
-     MacdValue))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (div (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             RateOfChangeOver120s))) (+ VarBwBSandBT240s
+         MacdValue))) (+ VarBwBSandBT240s MacdValue)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) (- (rlog (sin (cos
+             -5.432740813528499))) (* -11.058952376120356
+             MaxValueOver120s)))))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (cos (- -11.058952376120356 MacdValue))
+         (+ VarBwBSandBT240s MacdValue))) (exp MacdValue)))
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
-     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
-     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
-     (- MacdValue MinValueOver120s) (exp (sin
-     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
-     AverageOver120s)))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (cos MacdValue) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (sin -10.063594212403416)
+             (+ VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
-     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
-     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
-     (- MacdValue MinValueOver120s) (exp (+ (cos
-     MacdValue) (sin 3.727000519511334)))) (-
-     (sin (sin 3.727000519511334)) AverageOver120s))))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (cos RateOfChangeOver120s) (+ VarBwBSandBT240s
+             MacdValue)) (+ -8.236887671088844 (cos RateOfChangeOver120s)))
+             RateOfChangeOver120s (+ VarBwBSandBF240s
+             RateOfChangeOver120s))))) (- MacdValue (-
+         (sin -10.063594212403416) (+ VarBwBSandBT240s
+         MacdValue))))) (+ MinValueOver120s RateOfChangeOver120s)))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (- MacdValue (- (sin -10.063594212403416)
+         (+ VarBwBSandBT240s MacdValue))))
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
-     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
-     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
-     (- MacdValue MinValueOver120s) (exp (sin
-     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
-     AverageOver120s)))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (cos MacdValue) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (sin -10.063594212403416)
+             (+ VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (- (+
+     -6.7174065228003705 -1.793212357544702) (-
+     (* VarBwBSandBF240s VarBwBSandOK240s) (rlog
+     (rlog (sin (exp (- -3.7699814105700105 -3.413913752594441)))))))
+     (+ VarBwBSandBT240s MacdValue))))
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
-     RateOfChangeOver120s) MacdValue) (- (- (IfThenElse
-     (cos (- VarBwBSandBF240s MacdValue)) (rlog
-     (- (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
-     (+ (+ RateOfChangeOver120s 0.4156749391858123)
-         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-             MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (cos MacdValue) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (sin -10.063594212403416)
+             (+ VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (- (+
+     -6.7174065228003705 -1.793212357544702) (-
+     (* VarBwBSandBF240s VarBwBSandOK240s) (rlog
+     (rlog (sin (IfThenElse RelativeStrengthIndexOver120s
+         VarBwBSandBF240s VarBwBSandBT240s)))))) (+
+     VarBwBSandBT240s MacdValue))))
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
-     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
-     MacdValue) (- (IfThenElse (div (- RateOfChangeOver120s
-     RateOfChangeOver120s) RateOfChangeOver120s)
-     (- MacdValue MinValueOver120s) (exp (sin
-     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
-     AverageOver120s)))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (cos (exp (div (IfThenElse
+         VarBwBSandBT240s MinValueOver120s (- (exp
+         (div (cos -5.432740813528499) (* VarBwBSandBF240s
+             VarBwBSandOK240s))) (+ VarBwBSandBT240s MacdValue)))
+         (* VarBwBSandBF240s VarBwBSandOK240s)))))
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (div (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             RateOfChangeOver120s)))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (cos (- (*
+     (IfThenElse VarBwBSandBT240s MinValueOver120s
+         VarBwBSandBF240s) (- MacdValue VarBwBSandBT240s))
+     (cos VarBwBSandBT240s))) (- (cos (div (rlog
+     (sin (+ (sin (+ MinValueOver120s -3.8003253045163805))
+         (* (IfThenElse RelativeStrengthIndexOver120s
+             VarBwBSandBF240s VarBwBSandBT240s) (* AverageOver120s
+             RateOfChangeOver120s))))) VarBwBSandOK240s))
+     (+ VarBwBSandBT240s MacdValue)))) (exp VarBwBSandOK240s)))
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (div (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             RateOfChangeOver120s))) (+ VarBwBSandBT240s
+         MacdValue))) (+ VarBwBSandBT240s MacdValue)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) (- (rlog (sin (cos
+             -5.432740813528499))) (* -11.058952376120356
+             MaxValueOver120s)))))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin MacdValue) (exp MacdValue)))
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (div (* (IfThenElse
+             RelativeStrengthIndexOver120s VarBwBSandBF240s
+             VarBwBSandBT240s) (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             RateOfChangeOver120s))) (+ VarBwBSandBT240s
+         MacdValue))) (+ VarBwBSandBT240s MacdValue)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (exp (div (cos RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s))) (-
+             (rlog (sin (cos -5.432740813528499))) (*
+             -11.058952376120356 MaxValueOver120s))))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (exp (div
+     (- (cos (IfThenElse VarBwBSandOK240s (exp
+         (IfThenElse (- (+ VarBwBSandBT240s MacdValue)
+             (+ VarBwBSandBT240s MacdValue)) (- MacdValue
+             MinValueOver120s) (sin (sin (* VarBwBSandBF240s
+             VarBwBSandOK240s))))) (cos VarBwBSandOK240s)))
+         (+ VarBwBSandBT240s MacdValue)) (* VarBwBSandBF240s
+     VarBwBSandOK240s))) (+ VarBwBSandBT240s MacdValue)))
+     (exp MacdValue)))
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03330522765598651 Adjusted=0.9677682578539373 Hits=2293
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (IfThenElse VarBwBSandOK240s
+     (+ (cos (cos (exp (+ VarBwBSandBT240s MacdValue))))
+         (div (rlog MacdValue) (IfThenElse VarBwBSandBF240s
+             (- MacdValue MinValueOver120s) VarBwBSandOK240s)))
+     (rlog (sin (exp (div (IfThenElse VarBwBSandOK240s
+         AverageOver120s (sin (sin (+ (- (div (cos
+         MacdValue) (IfThenElse VarBwBSandBT240s MinValueOver120s
+         VarBwBSandBF240s)) (IfThenElse VarBwBSandOK240s
+         AverageOver120s (+ MinValueOver120s RateOfChangeOver120s)))
+         (+ VarBwBSandBT240s MacdValue))))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))))) (cos (exp (div (IfThenElse
+     VarBwBSandBT240s MinValueOver120s (- VarBwBSandOK240s
+     (+ VarBwBSandBT240s MacdValue))) (* VarBwBSandBF240s
+     VarBwBSandOK240s)))) (+ (- (cos VarBwBSandBT240s)
+     (+ VarBwBSandBT240s MacdValue)) (exp VarBwBSandBF240s)))
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (cos (- VarBwBSandBF240s
-     MacdValue)) MacdValue) (+ (- -9.047207476913803
-     MacdValue) (- (IfThenElse (div (div -5.520305035113157
-     MacdValue) RateOfChangeOver120s) (+ (sin
-     (sin (rlog MinValueOver120s))) (div (- MaxValueOver120s
-     -0.06269684604635516) -1.490361082446331))
-     (exp (sin VarBwBSandBF240s))) (- (sin (sin
-     3.727000519511334)) AverageOver120s))))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-         (- (* RateOfChangeOver120s 5.428767330444556)
-             VarBwBSandBT240s)) (rlog (- (- MacdValue
-         VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-         0.4156749391858123) (+ RateOfChangeOver120s
-         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (sin (* MacdValue
-         (rlog (- (sin (rlog AverageOver120s)) (-
-             VarBwBSandBF240s MacdValue))))) (rlog (-
-         (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
-         (+ (+ RateOfChangeOver120s 0.4156749391858123)
-             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-                 MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (+ MaxValueOver120s
+     -7.584331644601566) (+ (+ VarBwBSandBT240s
+     (cos (IfThenElse VarBwBSandOK240s AverageOver120s
+         (- -3.7699814105700105 -3.413913752594441))))
+     (+ VarBwBSandBT240s MacdValue)))) (exp MacdValue)))
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
-             VarBwBSandBF240s) VolatilityOver120s)) (+
-         RateOfChangeOver120s (- (- (sin (+ MacdValue
-         (- (div RateOfChangeOver120s RateOfChangeOver120s)
-             VolatilityOver120s))) (- (- MacdValue VarBwBSandBT240s)
-         VolatilityOver120s)) AverageOver120s)) (*
-         -2.2975150044658705 -4.859797153795124))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s)))
-         (rlog (- (sin (rlog AverageOver120s)) (+
-             (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
-             2.039074361570953)))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
-         (+ (+ RateOfChangeOver120s 0.4156749391858123)
-             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-                 MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (sin (sin
-         VolatilityOver120s)) (+ (rlog (- -4.859797153795124
-         VarBwBSandOK240s)) (+ (+ (+ (+ (+ (sin (+
-         MaxValueOver120s VolatilityOver120s)) (IfThenElse
-         VarBwBSandBF240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-         RelativeStrengthIndexOver120s)) VarBwBSandBT240s)
-         (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-             VarBwBSandOK240s) RateOfChangeOver120s))))
-         (exp RateOfChangeOver120s)) (IfThenElse 1.141523029395536
-         (+ VarBwBSandBF240s VarBwBSandBF240s) RelativeStrengthIndexOver120s))))
-         (- (rlog (- (sin RateOfChangeOver120s) 3.7007694421447273))
-             VolatilityOver120s) (- VarBwBSandBF240s VarBwBSandBT240s))
-         (rlog (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ MaxValueOver120s
+     -7.584331644601566))))
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div (- RateOfChangeOver120s
-     AverageOver120s) VarBwBSandOK240s) (rlog
-     (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (- (sin (sin
-     3.727000519511334)) AverageOver120s) MacdValue)
-     (+ (- -9.047207476913803 MacdValue) (- (IfThenElse
-         (div (- (+ VarBwBSandOK240s MacdValue) RateOfChangeOver120s)
-             RateOfChangeOver120s) (- MacdValue MinValueOver120s)
-         (exp (sin VarBwBSandBF240s))) (- (sin (sin
-         MacdValue)) AverageOver120s)))))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (+ MaxValueOver120s
+     -7.584331644601566) (+ (+ VarBwBSandBT240s
+     (cos (IfThenElse VarBwBSandOK240s AverageOver120s
+         (IfThenElse RelativeStrengthIndexOver120s
+             VarBwBSandBF240s VarBwBSandBT240s)))) (+
+     VarBwBSandBT240s MacdValue)))) (exp MacdValue)))
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         (+ RateOfChangeOver120s VolatilityOver120s))
-         (- (- (IfThenElse (cos (- VarBwBSandBF240s
-             MacdValue)) (rlog (- (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))
-             (+ (+ AverageOver120s VarBwBSandOK240s) (+
-                 RateOfChangeOver120s VolatilityOver120s))))
-             (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-             -5.520305035113157)) MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (cos MacdValue) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (sin -10.063594212403416)
+             (+ MinValueOver120s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (sin (-
+     (exp (div (- (cos (IfThenElse VarBwBSandOK240s
+         (exp (IfThenElse (IfThenElse RelativeStrengthIndexOver120s
+             VarBwBSandBF240s VarBwBSandBT240s) (- MacdValue
+             MinValueOver120s) (* -11.058952376120356
+             MaxValueOver120s))) (cos VarBwBSandOK240s)))
+         (+ MinValueOver120s RateOfChangeOver120s))
+         (* VarBwBSandBF240s VarBwBSandOK240s))) (+
+     VarBwBSandBT240s MacdValue)))))
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (+ (exp
-         3.7007694421447273) (cos VolatilityOver120s)))
-         (rlog (- (- (IfThenElse (sin (- RateOfChangeOver120s
-             RateOfChangeOver120s)) (sin RateOfChangeOver120s)
-             (+ (sin VarBwBSandOK240s) (- (cos (cos VarBwBSandBF240s))
-                 MacdValue))) 0.4156749391858123) MacdValue))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- (rlog (- VarBwBSandBF240s VarBwBSandBT240s))
-                 MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MacdValue RateOfChangeOver120s)
+             (div (+ (+ MinValueOver120s RateOfChangeOver120s)
+                 RateOfChangeOver120s) VarBwBSandOK240s))
+             (* -11.058952376120356 MaxValueOver120s)))
+         (+ VarBwBSandBT240s MacdValue))) (div -7.28772652484934
+         VarBwBSandOK240s) (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         VarBwBSandOK240s)))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (+ MaxValueOver120s -7.584331644601566)
+         (+ (cos RateOfChangeOver120s) (- (+ -6.7174065228003705
+             -1.793212357544702) (- (+ VarBwBSandBT240s
+             MacdValue) (rlog (exp RateOfChangeOver120s)))))))
+         (exp MacdValue)))
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
-             VarBwBSandBF240s) VolatilityOver120s)) (+
-         RateOfChangeOver120s (- (- (sin (+ MacdValue
-         (- (div RateOfChangeOver120s RateOfChangeOver120s)
-             VolatilityOver120s))) (- (- MacdValue VarBwBSandBT240s)
-         VolatilityOver120s)) AverageOver120s)) (*
-         -2.2975150044658705 -4.859797153795124))
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s)))
-         (rlog (- (sin (- VarBwBSandBF240s RateOfChangeOver120s))
-             (+ (+ AverageOver120s VarBwBSandOK240s) (+
-                 RateOfChangeOver120s 2.039074361570953))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (sin (+ (rlog (cos VolatilityOver120s))
-             VarBwBSandBF240s)) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (+ MaxValueOver120s
+     -7.584331644601566) (+ (+ VarBwBSandBT240s
+     (+ MinValueOver120s RateOfChangeOver120s))
+     (+ VarBwBSandBT240s MacdValue)))) (exp MacdValue)))
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (sin (sin
-         VolatilityOver120s)) (+ (rlog (- -4.859797153795124
-         (- (sin (- -4.859797153795124 (* -2.2975150044658705
-             -4.859797153795124))) AverageOver120s)))
-         (+ (+ (+ (+ (+ (sin (+ MaxValueOver120s VolatilityOver120s))
-             (- VarBwBSandBF240s VarBwBSandBT240s)) VarBwBSandBT240s)
-             (- VarBwBSandBF240s RateOfChangeOver120s))
-             (exp RateOfChangeOver120s)) (IfThenElse 1.141523029395536
-             (+ (sin VarBwBSandOK240s) VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)))) (- (rlog
-         (- (sin RateOfChangeOver120s) 3.7007694421447273))
-         VolatilityOver120s) (- VarBwBSandBF240s VarBwBSandBT240s))
-         (rlog (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) (div (* (cos RateOfChangeOver120s)
+             (- -2.481147266891836 VolatilityOver120s))
+             (div -7.28772652484934 VarBwBSandOK240s))
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
-         MacdValue)) (rlog (+ (exp 3.7007694421447273)
-         (+ (div VarBwBSandBF240s VarBwBSandOK240s)
-             (- (div (+ (cos (div VarBwBSandBF240s VarBwBSandBF240s))
-                 (cos (- MacdValue -1.4649118028386001)))
-                 RateOfChangeOver120s) (div VolatilityOver120s
-                 AverageOver120s))))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (- MacdValue
-         VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
-         (cos -3.719940034699931)) (+ RateOfChangeOver120s
-         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (cos -5.432740813528499)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (cos (+ MinValueOver120s
+     RateOfChangeOver120s)) (exp MacdValue)))
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
-             VarBwBSandBF240s) VolatilityOver120s)) (+
-         RateOfChangeOver120s (cos (- (- (- VarBwBSandOK240s
-         RateOfChangeOver120s) MacdValue) (- VarBwBSandBF240s
-         VarBwBSandBT240s)))) (* -2.2975150044658705
-         -4.859797153795124)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s))) (rlog (- VarBwBSandOK240s
-         RateOfChangeOver120s)) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin (+ (rlog
-         (cos VolatilityOver120s)) (div (rlog (+ (+
-         -1.3207532123812251 VarBwBSandOK240s) (+
-         VarBwBSandBT240s (div VolatilityOver120s
-         AverageOver120s)))) (* RateOfChangeOver120s
-         5.428767330444556)))) (+ (+ RateOfChangeOver120s
-         0.4156749391858123) (+ RateOfChangeOver120s
-         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (+ VarBwBSandBT240s MacdValue)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (+ MaxValueOver120s
+     -7.584331644601566) (+ (+ VarBwBSandBT240s
+     (cos (IfThenElse (sin (- (cos VarBwBSandBT240s)
+         MacdValue)) VarBwBSandBT240s (- (+ VarBwBSandBT240s
+         MacdValue) (+ (+ MinValueOver120s RateOfChangeOver120s)
+         (- (rlog (sin (cos -5.432740813528499)))
+             (* -11.058952376120356 MaxValueOver120s)))))))
+     (+ VarBwBSandBT240s MacdValue)))) (exp MacdValue)))
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (- VarBwBSandBF240s
-             MacdValue) VolatilityOver120s)) (+ RateOfChangeOver120s
-         (- (- (sin (+ MacdValue (- (div RateOfChangeOver120s
-             RateOfChangeOver120s) VolatilityOver120s)))
-             (- -4.859797153795124 VarBwBSandOK240s))
-             AverageOver120s)) (* -2.2975150044658705
-         -4.859797153795124)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s))) (rlog (- (sin (rlog
-         AverageOver120s)) (+ (+ AverageOver120s (sin
-         VarBwBSandOK240s)) (+ RateOfChangeOver120s
-         2.039074361570953)))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin (+ (rlog
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (div
-         (rlog (+ (+ -1.3207532123812251 VarBwBSandOK240s)
-             (+ VarBwBSandBT240s (div VolatilityOver120s
-                 AverageOver120s)))) (* RateOfChangeOver120s
-         5.428767330444556)))) (+ (+ RateOfChangeOver120s
-         0.4156749391858123) (+ RateOfChangeOver120s
-         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (IfThenElse VarBwBSandOK240s
+     (+ (cos (cos (exp (+ VarBwBSandBT240s MacdValue))))
+         (div (rlog MacdValue) (IfThenElse VarBwBSandBF240s
+             (- (cos (* VarBwBSandBF240s VarBwBSandOK240s))
+                 (+ MinValueOver120s MacdValue)) VarBwBSandOK240s)))
+     (rlog (sin (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (cos -5.432740813528499))
+         (* VarBwBSandBF240s VarBwBSandOK240s))))))
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- VarBwBSandOK240s (+ VarBwBSandBT240s
+         MacdValue))) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (- (rlog (sin (cos -5.432740813528499)))
+         (+ VarBwBSandBT240s MacdValue)) (exp (cos
+         (rlog MinValueOver120s)))))
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (div (rlog
-             AverageOver120s) VarBwBSandBF240s) VolatilityOver120s))
-         (+ RateOfChangeOver120s (- (- (sin AverageOver120s)
-             (sin (+ MaxValueOver120s VolatilityOver120s)))
-             AverageOver120s)) (* -2.2975150044658705
-         -4.859797153795124)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s))) (rlog (- (sin (rlog
-         AverageOver120s)) (+ (+ AverageOver120s VarBwBSandOK240s)
-         (+ RateOfChangeOver120s 2.039074361570953))))
-         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
-         (- (sin (+ (rlog (cos VolatilityOver120s))
-             (div (rlog (+ (+ -1.3207532123812251 VarBwBSandOK240s)
-                 (+ VarBwBSandBT240s (- (- VarBwBSandOK240s
-                     RateOfChangeOver120s) MacdValue)))) (- RateOfChangeOver120s
-                 RateOfChangeOver120s)))) (+ (+ RateOfChangeOver120s
-             0.4156749391858123) (+ RateOfChangeOver120s
-             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
-         MacdValue)))) MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (div -7.28772652484934 VarBwBSandOK240s)
+             -5.432740813528499) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (cos (IfThenElse
+     (+ VarBwBSandBT240s MacdValue) (+ VarBwBSandBT240s
+     MacdValue) (- (div (+ MinValueOver120s RateOfChangeOver120s)
+     (div (+ MaxValueOver120s -7.584331644601566)
+         VarBwBSandOK240s)) (+ (+ MinValueOver120s
+     RateOfChangeOver120s) (- (rlog (sin (cos
+     -5.432740813528499))) (* VarBwBSandBF240s
+     VarBwBSandOK240s))))))) (exp MacdValue)))
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
-             VarBwBSandBF240s) VolatilityOver120s)) (+
-         RateOfChangeOver120s (- (- (sin (sin RateOfChangeOver120s))
-         (- (- MacdValue (+ RateOfChangeOver120s 0.4156749391858123))
-             VolatilityOver120s)) AverageOver120s)) (*
-         -2.2975150044658705 -4.859797153795124))
-         (+ AverageOver120s VarBwBSandOK240s)) (rlog
-         (- (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
-             VarBwBSandOK240s) (+ RateOfChangeOver120s
-             2.039074361570953)))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin (cos VarBwBSandBF240s))
-         (+ (+ RateOfChangeOver120s 0.4156749391858123)
-             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-                 MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (div
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (- -11.058952376120356 MacdValue))) (div
+         -7.28772652484934 VarBwBSandOK240s) (- (div
+         (+ MinValueOver120s RateOfChangeOver120s)
+         (div (+ MaxValueOver120s -7.584331644601566)
+             VarBwBSandOK240s)) (+ (+ MinValueOver120s
+         RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (+ MinValueOver120s
+     RateOfChangeOver120s) (+ (+ VarBwBSandBT240s
+     MinValueOver120s) (+ VarBwBSandBT240s MacdValue))))
+     (exp MacdValue)))
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
-     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
-         (+ (+ AverageOver120s VarBwBSandOK240s) (+
-             RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
-     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
-         MacdValue) (- (- (IfThenElse (- (IfThenElse
-         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
-             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
-             RelativeStrengthIndexOver120s)) (- (+ AverageOver120s
-             VarBwBSandOK240s) VolatilityOver120s)) (+
-         RateOfChangeOver120s (- (- (sin (+ MacdValue
-         (rlog (- -4.859797153795124 VarBwBSandOK240s))))
-         (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s))
-         AverageOver120s)) (* -2.2975150044658705
-         -4.859797153795124)) (+ (+ AverageOver120s
-         VarBwBSandOK240s) (+ RateOfChangeOver120s
-         VolatilityOver120s))) (rlog (- (sin (rlog
-         AverageOver120s)) (+ (+ AverageOver120s VarBwBSandOK240s)
-         (+ (+ RateOfChangeOver120s 0.4156749391858123)
-             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-                 MacdValue) AverageOver120s)))))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (rlog (- (sin (- (div
-         (- RateOfChangeOver120s RateOfChangeOver120s)
-         RateOfChangeOver120s) (+ (sin AverageOver120s)
-         (+ RateOfChangeOver120s VolatilityOver120s))))
-         (+ (+ RateOfChangeOver120s 0.4156749391858123)
-             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-                 MacdValue) AverageOver120s)))))) MacdValue))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (* -11.058952376120356
+             MaxValueOver120s))) (+ VarBwBSandBT240s MacdValue)))
+         MinValueOver120s (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         VarBwBSandOK240s)))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s))))
+     (+ (sin (- (- (div (+ (+ VarBwBSandBT240s
+         MacdValue) RateOfChangeOver120s) (div (+
+         MaxValueOver120s -7.584331644601566) VarBwBSandOK240s))
+         (+ (+ MinValueOver120s RateOfChangeOver120s)
+             (- (rlog (sin (cos -5.432740813528499)))
+                 (* -11.058952376120356 MaxValueOver120s))))
+         (+ (- (rlog (sin (cos -5.432740813528499)))
+             (* -11.058952376120356 MaxValueOver120s))
+             (+ (* VarBwBSandBF240s VarBwBSandOK240s)
+                 MacdValue)))) (exp MacdValue)))
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03541315345699832 Adjusted=0.9657980456026058 Hits=2288
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (- (IfThenElse (div VarBwBSandBF240s
-     VarBwBSandOK240s) (rlog (- (sin (- VarBwBSandOK240s
-     RateOfChangeOver120s)) (+ (IfThenElse MinValueOver120s
-     MaxValueOver120s MinValueOver120s) (+ RateOfChangeOver120s
-     VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (+ (- VarBwBSandBF240s
-     (- MacdValue VarBwBSandBT240s)) (- (IfThenElse
-     (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
-         RateOfChangeOver120s)) (div VarBwBSandOK240s
-         -0.4292253164906923))) (rlog (- (- VarBwBSandBF240s
-     VarBwBSandBT240s) (+ (+ AverageOver120s VarBwBSandOK240s)
-     (+ RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (sin
-     (+ MacdValue (- (div RateOfChangeOver120s
-         RateOfChangeOver120s) VolatilityOver120s)))))
-     VolatilityOver120s) (+ (rlog (- (sin 3.727000519511334)
-     (+ (+ RateOfChangeOver120s 0.4156749391858123)
-         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-             MacdValue) AverageOver120s))))) (+ RateOfChangeOver120s
-     VolatilityOver120s))))) (cos (- (- (cos (-
-     VarBwBSandBF240s MacdValue)) MacdValue) (+
-     (- -9.047207476913803 MacdValue) (- (IfThenElse
-     (- RateOfChangeOver120s RateOfChangeOver120s)
-     (+ (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
-         RateOfChangeOver120s)) (div VarBwBSandOK240s
-         -0.4292253164906923))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (exp (- VarBwBSandBF240s
-     VarBwBSandBT240s))) MinValueOver120s)))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (- (cos (IfThenElse (sin (-
+         (cos (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (* -11.058952376120356
+             MaxValueOver120s))) (cos -5.432740813528499)))
+         (div -7.28772652484934 VarBwBSandOK240s)
+         (- (div (+ MinValueOver120s RateOfChangeOver120s)
+             (div (+ MaxValueOver120s -7.584331644601566)
+                 VarBwBSandOK240s)) (+ (+ MinValueOver120s
+             RateOfChangeOver120s) VarBwBSandOK240s))))
+         (+ MinValueOver120s MacdValue)) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (+ (sin (- (- (div (+
+     MinValueOver120s RateOfChangeOver120s) (div
+     (+ MaxValueOver120s -7.584331644601566) VarBwBSandOK240s))
+     (cos (exp (div (- (cos (IfThenElse (sin (cos
+         -5.432740813528499)) (* VarBwBSandBF240s
+         VarBwBSandOK240s) (- (div (+ MinValueOver120s
+         RateOfChangeOver120s) (div (+ MaxValueOver120s
+         -7.584331644601566) VarBwBSandOK240s)) (+
+         (+ MinValueOver120s RateOfChangeOver120s)
+         VarBwBSandOK240s)))) (+ MinValueOver120s
+         MacdValue)) (* VarBwBSandBF240s VarBwBSandOK240s)))))
+     (+ (+ (+ VarBwBSandBT240s MacdValue) (+ MaxValueOver120s
+         -7.584331644601566)) (+ VarBwBSandBT240s
+         MacdValue)))) (exp MacdValue)))
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.03541315345699832 Adjusted=0.9657980456026058 Hits=2288
+Fitness: Standardized=0.03288364249578415 Adjusted=0.9681632653061225 Hits=2294
 Tree 0:
- (- (- (- (IfThenElse (div VarBwBSandBF240s
-     VarBwBSandOK240s) (rlog (- (sin (- VarBwBSandOK240s
-     RateOfChangeOver120s)) (+ (IfThenElse MinValueOver120s
-     MaxValueOver120s MinValueOver120s) (+ RateOfChangeOver120s
-     VolatilityOver120s)))) (- VarBwBSandBF240s
-     VarBwBSandBT240s)) (cos (- (- (+ (- VarBwBSandBF240s
-     (- MacdValue VarBwBSandBT240s)) (- (IfThenElse
-     (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
-         RateOfChangeOver120s)) (div VarBwBSandOK240s
-         -0.4292253164906923))) (rlog (- (- VarBwBSandBF240s
-     VarBwBSandBT240s) (+ (+ AverageOver120s VarBwBSandOK240s)
-     (+ RateOfChangeOver120s VolatilityOver120s))))
-     (- VarBwBSandBF240s VarBwBSandBT240s)) (sin
-     (+ MacdValue (- (div RateOfChangeOver120s
-         RateOfChangeOver120s) VolatilityOver120s)))))
-     VolatilityOver120s) (+ (rlog (- (sin 3.727000519511334)
-     (+ (+ RateOfChangeOver120s 0.4156749391858123)
-         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
-             MacdValue) AverageOver120s))))) (+ RateOfChangeOver120s
-     VolatilityOver120s))))) (cos (- (- (cos (-
-     VarBwBSandBF240s MacdValue)) MacdValue) (+
-     (- -9.047207476913803 MacdValue) (- (IfThenElse
-     (- RateOfChangeOver120s RateOfChangeOver120s)
-     (+ (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
-         RateOfChangeOver120s)) (div VarBwBSandOK240s
-         -0.4292253164906923))) (- VarBwBSandBF240s
-         VarBwBSandBT240s)) (exp (- VarBwBSandBF240s
-     VarBwBSandBT240s))) MinValueOver120s)))))
-     MacdValue)
+ (IfThenElse (+ VarBwBSandBT240s MacdValue)
+     (cos (exp (div (IfThenElse VarBwBSandBT240s
+         MinValueOver120s (- (cos (+ (cos (- (cos
+         RelativeStrengthIndexOver120s) (+ (sin VarBwBSandBT240s)
+         (IfThenElse (+ (IfThenElse (cos MacdValue)
+             (+ MaxValueOver120s -7.584331644601566) (+
+             VarBwBSandBT240s MacdValue)) (+ -8.236887671088844
+             -7.28772652484934)) RateOfChangeOver120s
+             (+ VarBwBSandBF240s RateOfChangeOver120s)))))
+         (- MacdValue (- (div (IfThenElse VolatilityOver120s
+             (+ VarBwBSandBT240s MacdValue) RateOfChangeOver120s)
+             (* VarBwBSandBF240s VarBwBSandOK240s)) (+
+             VarBwBSandBT240s MacdValue))))) (+ MinValueOver120s
+         RateOfChangeOver120s))) (* VarBwBSandBF240s
+         VarBwBSandOK240s)))) (- MacdValue (- (sin
+     -10.063594212403416) (+ VarBwBSandBT240s
+     MacdValue))))
 
 
 Performance of Best Individual on Testing Set:
 
-Positive Hits: 746408
-Negative Hits: 28150
+Positive Hits: 745790
+Negative Hits: 28768
 False Positives: 0
 False Negatives: 0
 True Positives: 0
 True Negatives: 0
 
-Fitness: Standardized=0.03634330805440006 Adjusted=0.9649312078613892 Hits=746408
+Fitness: Standardized=0.03714118245502596 Adjusted=0.9641888847118105 Hits=745790
