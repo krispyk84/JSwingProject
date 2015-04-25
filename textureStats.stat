@@ -3,1066 +3,1034 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.38375 Adjusted=0.7226738934056007 Hits=493
+Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
 Tree 0:
- (* (div (+ (IfThenElse Ent11 Guassian5x5
-     Guassian5x5) (- Std7 Avg5)) (IfThenElse (div
-     9.322080598473693 Avg7) (IfThenElse Guassian3x3
-     -3.4228719057655925 Guassian3x3) (+ Ent7
-     Std7))) (+ (IfThenElse (IfThenElse Ent7 Ent11
-     Guassian3x3) (IfThenElse Std11 Guassian5x5
-     Avg5) (* Ent11 Avg5)) (+ (IfThenElse Avg7
-     Std7 Std11) (- Std7 Std11))))
+ (sin 10.014703087451624)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
-     Std11 Guassian5x5) (+ -9.134275217691986
-     -9.875555242834515)) (* (IfThenElse Guassian5x5
-     Guassian3x3 Guassian3x3) (div Guassian3x3
-     -4.047188022454479)))) (+ (IfThenElse (*
-     (div Avg5 Guassian5x5) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-     Ent11 Ent11) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
+ -6.715046377529213
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
-     Std11 Guassian5x5) (+ -9.134275217691986
-     -9.875555242834515)) (* (IfThenElse Guassian5x5
-     Guassian3x3 Guassian3x3) (div Guassian3x3
-     -4.047188022454479)))) (+ (IfThenElse (*
-     (div Avg5 Guassian5x5) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-     Ent11 Ent11) (* Std7 Guassian3x3) (+ Ent7
-     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
+ (IfThenElse -3.6186371078492154 AverageOver120s
+     -7.035915168783924)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.03709949409780776 Adjusted=0.9642276422764228 Hits=2284
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
-     Std11 Guassian5x5) (+ -9.134275217691986
-     -9.875555242834515)) (* (IfThenElse Guassian5x5
-     Guassian3x3 Guassian3x3) (div Guassian3x3
-     -4.047188022454479)))) (+ (IfThenElse (*
-     (* Ent7 Std11) (div -10.326519004347006 Guassian5x5))
-     (IfThenElse (IfThenElse Guassian5x5 Ent11
-         Ent11) (* Std7 Guassian3x3) (+ 3.8403651393628557
-         Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
+ (- (cos (+ MinValueOver120s (exp RateOfChangeOver120s)))
+     (rlog (- (+ RateOfChangeOver120s VolatilityOver120s)
+         (rlog (sin (div MacdValue AverageOver120s))))))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5)) (div (* Std7 Ent11) (IfThenElse
-     Avg7 Std7 Guassian3x3))) (+ (* (IfThenElse
-     3.862996839098875 Std11 Guassian5x5) (+ -9.134275217691986
-     -9.875555242834515)) (* (IfThenElse Guassian5x5
-     Guassian3x3 Guassian3x3) (div Guassian3x3
-     -4.047188022454479)))) (+ (IfThenElse (*
-     (div Avg5 Guassian5x5) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-     Ent11 Ent11) (* Std7 Guassian3x3) (+ Ent7
-     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (* (IfThenElse 3.862996839098875
-     Std11 Guassian5x5) (+ -9.134275217691986
-     -9.875555242834515)) (* (IfThenElse Guassian5x5
-     Guassian3x3 Guassian3x3) (div Guassian3x3
-     -4.047188022454479)))) (+ (IfThenElse (*
-     (div Avg5 Guassian5x5) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-     Ent11 Ent11) (* Std7 Guassian3x3) (- Std11
-     Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.36125 Adjusted=0.7346189164370982 Hits=511
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Guassian3x3)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (* (div Guassian3x3 Guassian5x5)
-     (- Std7 Std7)))) (div (div (- Std7 Ent7)
-     (IfThenElse Ent7 Avg5 Avg5)) (div (* Std7
-     Ent11) (IfThenElse Avg7 Std7 Guassian3x3)))
-     (+ (* (IfThenElse 3.862996839098875 Std11
-         Guassian5x5) (+ -9.134275217691986 -9.875555242834515))
-         (* (IfThenElse Guassian5x5 Guassian3x3 Guassian3x3)
-             (div Guassian3x3 -4.047188022454479)))) (+
-     (IfThenElse (* (div Avg5 Guassian5x5) (div
-         -10.326519004347006 Guassian5x5)) (IfThenElse
-         (IfThenElse Guassian5x5 Ent11 Ent11) (* Std7
-         Guassian3x3) (+ Ent7 Ent7)) (div (* Ent7
-         Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (IfThenElse Ent11 Guassian3x3 Avg5)
-         (+ Avg5 3.2768525120185905))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (IfThenElse Std7 Std11 Avg7)
-     (- Avg5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (+ Std11 Std11) (IfThenElse
-     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (* Std7 -6.182524571094834) Avg5) (* Ent7
-     Std7) (div (div (div Avg5 Guassian3x3) (*
-     Avg5 Std7)) 3.8824444451447966))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (IfThenElse Std7 Std11 Avg7)
-     (- Avg5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) Guassian5x5 (IfThenElse
-     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (* Std7 -6.182524571094834) Avg5) (* Ent7
-     Std7) (div (div (div Avg5 Guassian3x3) (*
-     Avg5 Std7)) 3.8824444451447966))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3425 Adjusted=0.74487895716946 Hits=526
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (IfThenElse Std7 Std11 Avg7)
-     (- Avg5 Std11))) (IfThenElse (IfThenElse
-     (div (div Std11 Ent7) Guassian3x3) Guassian5x5
-     (IfThenElse Std11 Std7 Avg5)) (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     Std7 Avg7)) (IfThenElse (- (* Std7 -6.182524571094834)
-     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s)
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.32875 Adjusted=0.7525870178739418 Hits=537
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (IfThenElse Ent11
-     Avg7 Std11) (* (IfThenElse Guassian5x5 Guassian3x3
-     Guassian3x3) (div Guassian3x3 -4.047188022454479))))
-     (+ (IfThenElse (IfThenElse Avg5 0.9477373015876067
-         Guassian3x3) (IfThenElse (IfThenElse Guassian5x5
-         Ent11 Ent11) (IfThenElse Avg5 Std7 Guassian5x5)
-         (+ Std11 Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
-         -5.2370240960804875))) (div Avg7 (+ Avg5
-         3.2768525120185905))))
+ (- (+ (* (- (cos MacdValue) (+ (- -4.335731439197811
+     (exp (rlog VarBwBSandOK240s))) (rlog VarBwBSandBT240s)))
+     MacdValue) (- (sin (sin -2.821827122134384))
+     MinValueOver120s)) (exp (rlog -4.732378181722608)))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.32875 Adjusted=0.7525870178739418 Hits=537
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (* (IfThenElse (- (- (+ Avg5 Std7) (* Std11
-     Avg7)) (div (IfThenElse Ent11 Guassian3x3
-     Guassian5x5) (- Guassian5x5 Ent7))) (div
-     (div (- Std7 Ent7) (IfThenElse Ent7 Avg5
-         Avg5)) (div (* Std7 Ent11) (IfThenElse Avg7
-     Std7 Guassian3x3))) (+ (IfThenElse Ent11
-     Avg7 Std11) (* (IfThenElse Guassian5x5 Guassian3x3
-     Guassian3x3) (- Std7 Avg5)))) (+ (IfThenElse
-     (IfThenElse Avg5 0.9477373015876067 Guassian3x3)
-     (IfThenElse (IfThenElse Guassian5x5 Ent11
-         Ent11) (IfThenElse Avg5 Std7 Guassian5x5)
-         (+ Std11 Ent7)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div Avg7 (+ Avg5
-     3.2768525120185905))))
+ (- (+ (* (- (cos MacdValue) (+ (- -4.335731439197811
+     (exp (rlog VarBwBSandOK240s))) (sin (cos
+     VolatilityOver120s)))) MacdValue) (- (sin
+     (- MacdValue VolatilityOver120s)) MinValueOver120s))
+     (exp (rlog -4.732378181722608)))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.32125 Adjusted=0.7568590350047304 Hits=543
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
-     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent7)
-         Guassian5x5 (IfThenElse Std11 Std7 Avg5))
-         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
-             Ent11) (* Std7 Avg7)) (IfThenElse (- (* Std7
-         -6.182524571094834) Avg5) (* Ent7 Std7) (div
-         (div (div Avg5 Guassian3x3) (* Avg5 Std7))
-         3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (rlog RateOfChangeOver120s) (* RateOfChangeOver120s
+         5.428767330444556)) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.32125 Adjusted=0.7568590350047304 Hits=543
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
-     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent7)
-         Guassian5x5 (IfThenElse Std11 Std7 Avg5))
-         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
-             Ent11) (* Std7 Avg7)) (IfThenElse (- (* Std7
-         -6.182524571094834) Avg5) (* Ent7 Std7) (div
-         (div (div (IfThenElse Ent11 Guassian3x3 Avg5)
-             (+ Avg5 3.2768525120185905)) (* Avg5 Std7))
-         3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.32 Adjusted=0.7575757575757576 Hits=544
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (IfThenElse Std7 Std11 Avg7)
-     (- Avg5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (div (IfThenElse Ent11
-     Guassian3x3 Guassian5x5) (* (div Guassian3x3
-     Guassian5x5) (* (div (- Guassian3x3 1.4656767396248775)
-     Avg7) (- Std7 Std7)))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     Std7 Avg7)) (IfThenElse (- (+ (div Guassian3x3
-     Std11) (+ Guassian5x5 Std11)) Avg5) (* Ent7
-     Std7) (div (div Ent7 (* Avg5 Std7)) 3.8824444451447966))))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (+ Std11 Std11) (IfThenElse Std11 Std7 Avg5))
-         (IfThenElse (div Guassian3x3 Ent11) (* Ent11
-             Ent11) (* Std7 Avg7)) (IfThenElse (div (IfThenElse
-         Ent11 Guassian3x3 Guassian5x5) (div (IfThenElse
-         Ent11 Guassian3x3 Guassian5x5) (- Guassian5x5
-         Ent7))) (div (div (- Std7 Ent7) (IfThenElse
-         Ent7 Avg5 Avg5)) (div (* Std7 Ent11) (IfThenElse
-         Avg7 (+ (* Ent11 -8.716814701147342) (- Guassian5x5
-         3.0396803383393585)) Guassian3x3))) (div
-         (+ (IfThenElse (* (div Avg5 Guassian5x5)
-             (div -10.326519004347006 Guassian5x5)) (IfThenElse
-             (IfThenElse Guassian5x5 Ent11 Ent11) (* Std7
-             Guassian3x3) (div (+ (IfThenElse Ent11 Std7
-             Avg5) (div -0.8811947849325932 Ent11)) (div
-             (+ Ent11 Ent7) (- Std11 Ent11)))) (div (+
-             Avg5 Std7) (* Guassian5x5 -5.2370240960804875)))
-             (div (IfThenElse Ent11 Guassian3x3 Avg5)
-                 (+ Avg5 3.2768525120185905))) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (rlog (sin (sin (cos VolatilityOver120s))))
+         VolatilityOver120s)) (rlog (- (sin RateOfChangeOver120s)
+     (+ (+ AverageOver120s VarBwBSandOK240s) (+
+         RateOfChangeOver120s (- (sin (sin 3.727000519511334))
+         AverageOver120s))))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
+     MacdValue))) MacdValue)
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
-     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     (IfThenElse Ent11 Guassian5x5 Avg7) (+ -9.134275217691986
-     -9.875555242834515))) (IfThenElse (- (* Std7
-     -6.182524571094834) Avg5) (* Ent7 Std7) (div
-     (div (div Avg5 Guassian3x3) (* Avg5 Std7))
-     3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
+     (+ RateOfChangeOver120s (- (div (- (div VarBwBSandOK240s
+         RateOfChangeOver120s) VolatilityOver120s)
+         MacdValue) AverageOver120s))))) MacdValue)
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
-     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     (- Avg5 Std11) (+ -9.134275217691986 -9.875555242834515)))
-     (IfThenElse (- (* Std7 -6.182524571094834)
-         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-         (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
+     (+ RateOfChangeOver120s (- (exp (div (sin
+         VolatilityOver120s) (sin -1.606936261764396)))
+         AverageOver120s))))) MacdValue)
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3175 Adjusted=0.7590132827324478 Hits=546
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (- (- (+ Avg5 (* Ent11 Ent11)) Avg5)
-     (- Avg5 Std11))) (IfThenElse Avg7 (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     (IfThenElse Ent11 Guassian5x5 Avg7) (+ -9.134275217691986
-     -9.875555242834515))) (IfThenElse (- (div
-     -10.326519004347006 Guassian5x5) Avg5) (*
-     Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ (+
+         (+ (exp (- (sin (- (* MacdValue -4.886583491521939)
+             (sin VolatilityOver120s))) (- (cos (- VarBwBSandOK240s
+             RateOfChangeOver120s)) (exp (IfThenElse MacdValue
+             AverageOver120s VarBwBSandBF240s))))) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (exp RateOfChangeOver120s))
+         (- (sin (sin 3.727000519511334)) AverageOver120s)))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.29375 Adjusted=0.7729468599033816 Hits=565
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         (div (* Guassian5x5 Guassian3x3) (+ Avg5
-             3.2768525120185905))))) (- (div (* Ent7 Avg7)
-     (* Guassian5x5 -5.2370240960804875)) (- Avg5
-     Std11))) (IfThenElse Avg7 (IfThenElse (div
-     Guassian3x3 Ent11) (* Ent11 Ent11) (div Guassian3x3
-     (- (* Std7 -6.182524571094834) Avg5))) (IfThenElse
-     (IfThenElse (* (div Avg5 Guassian5x5) (div
-         -10.326519004347006 Guassian5x5)) (IfThenElse
-         Ent11 Guassian5x5 Guassian5x5) (div (* Ent7
-         Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (IfThenElse (cos (-
+     (- (- (IfThenElse 3.1382874244244148 RelativeStrengthIndexOver120s
+         AverageOver120s) (div MaxValueOver120s -1.2813856056808912))
+         VolatilityOver120s) RateOfChangeOver120s))
+     (rlog -4.335731439197811) (- (- (* MacdValue
+     -4.886583491521939) (IfThenElse VarBwBSandBT240s
+     (- (cos RateOfChangeOver120s) (exp (rlog
+         -4.732378181722608))) RelativeStrengthIndexOver120s))
+     (IfThenElse MinValueOver120s MaxValueOver120s
+         MinValueOver120s))) (- (div (rlog RateOfChangeOver120s)
+     (+ (cos RateOfChangeOver120s) (- (sin AverageOver120s)
+         VolatilityOver120s))) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+         (- (IfThenElse MacdValue AverageOver120s
+             VarBwBSandBF240s) AverageOver120s))))) (-
+     VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         (+ (div Guassian3x3 Std11) (+ Guassian5x5
-             Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
-         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) VolatilityOver120s))
+     (rlog (- (sin (rlog AverageOver120s)) (+
+         (+ AverageOver120s VarBwBSandOK240s) (+ (+
+         (+ (exp (- (rlog (+ AverageOver120s (sin
+             MaxValueOver120s))) (- (cos (- VarBwBSandOK240s
+             RateOfChangeOver120s)) (exp (IfThenElse MacdValue
+             AverageOver120s VarBwBSandBF240s))))) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (exp RateOfChangeOver120s))
+         (- (sin (- (* MacdValue -4.886583491521939)
+             (sin VolatilityOver120s))) AverageOver120s)))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         (+ (div Guassian3x3 Std11) (+ Guassian5x5
-             Std11))) (- (div (+ 1.8444274225440092 Guassian3x3)
-         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos (- -6.517649123210598
+     (exp (- VarBwBSandBF240s RateOfChangeOver120s))))
+     (- (cos (- VarBwBSandBF240s MacdValue)) VolatilityOver120s))
+     (rlog (rlog (* MaxValueOver120s VolatilityOver120s)))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (+ (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875))
-         (- (div (+ 1.8444274225440092 Guassian3x3)
-             (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (- (- (IfThenElse (+ (cos
+     RateOfChangeOver120s) (sin (- (- -7.042945270095103
+     RateOfChangeOver120s) (* (rlog (cos -3.719940034699931))
+     (rlog VarBwBSandOK240s))))) (- (IfThenElse
+     (div (rlog RateOfChangeOver120s) (* RateOfChangeOver120s
+         5.428767330444556)) VarBwBSandOK240s (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (div (- RateOfChangeOver120s
+     RateOfChangeOver120s) RateOfChangeOver120s)
+     VolatilityOver120s))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (+ AverageOver120s VarBwBSandOK240s))
+     MacdValue) (sin (* RateOfChangeOver120s 5.428767330444556))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- VarBwBSandBF240s MacdValue))) MacdValue)
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (* Guassian5x5 -5.2370240960804875) Avg5)
-     (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (rlog VarBwBSandOK240s) RateOfChangeOver120s)
+         VolatilityOver120s)) (rlog (- (sin (sin (*
+     (rlog (- -4.859797153795124 (exp -1.9755944897386453)))
+     (sin 3.727000519511334)))) (+ (+ AverageOver120s
+     VarBwBSandOK240s) (+ RateOfChangeOver120s
+     (* (+ VarBwBSandOK240s MacdValue) (div -5.520305035113157
+         MacdValue)))))) (- VarBwBSandBF240s VarBwBSandBT240s))
+     (cos MacdValue)) MacdValue)
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27375 Adjusted=0.7850834151128557 Hits=581
+Fitness: Standardized=0.0366779089376054 Adjusted=0.9646197641317608 Hits=2285
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 (IfThenElse Std11 Std7 Avg5) Avg5)))
-     (IfThenElse (div Guassian3x3 Ent11) (* Ent11
-         Ent11) (* Std7 Avg7)) (IfThenElse (- (+ (+
-     (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
-     Ent11)) (- (div (+ 1.8444274225440092 Guassian3x3)
-     (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (+ (cos RateOfChangeOver120s)
+     (- (div (rlog RateOfChangeOver120s) (sin
+         3.727000519511334)) VolatilityOver120s))
+     (rlog (- -1.129754403231393 (+ (+ AverageOver120s
+         VarBwBSandOK240s) (rlog (exp (div VolatilityOver120s
+         -1.490361082446331)))))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- VarBwBSandBF240s
+     MacdValue))) MacdValue)
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2675 Adjusted=0.7889546351084812 Hits=586
+Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian3x3
-         1.4656767396248775))) (- (IfThenElse Std7
-     Std11 Avg7) (+ Guassian5x5 Std11))) (IfThenElse
-     (IfThenElse (- Guassian5x5 Ent11) (IfThenElse
-         (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 Guassian5x5)) (IfThenElse
-         (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-         Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-         -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-         (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-     Std7 Avg7)) (IfThenElse (- (+ (* (div Ent7
-     (- Avg5 Guassian5x5)) (+ (* (div Ent7 (-
-     Avg5 Guassian5x5)) (+ (div Guassian3x3 Std11)
-     (+ Guassian5x5 Std11))) (+ Guassian5x5 Std11)))
-     (- (div (+ 1.8444274225440092 Guassian3x3)
-         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
+     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
+     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
+     (- MacdValue MinValueOver120s) (exp (sin
+     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
+     AverageOver120s)))))) MacdValue)
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.26375 Adjusted=0.7912957467853611 Hits=589
+Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
-     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
-         Guassian3x3 Std11) (+ Guassian5x5 Std11)))
-     (- (div (+ 1.8444274225440092 Guassian3x3)
-         (IfThenElse Std11 Ent7 Avg7)) (- (IfThenElse
-         (div Guassian3x3 Ent11) (* Ent11 Ent11) (*
-         Std7 (IfThenElse Guassian5x5 Ent11 Ent11)))
-         Std11))) Avg5) (* Ent7 Std7) (div (div (*
-     Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
+     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
+     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
+     (- MacdValue MinValueOver120s) (exp (+ (cos
+     MacdValue) (sin 3.727000519511334)))) (-
+     (sin (sin 3.727000519511334)) AverageOver120s))))))
+     MacdValue)
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2375 Adjusted=0.8080808080808081 Hits=610
+Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 (+ (div (- Guassian3x3
-     1.4656767396248775) Avg7) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (+ Std11 Std11) (IfThenElse
-     Std11 Std7 Avg5)) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (div (IfThenElse Ent11 Guassian3x3 Guassian5x5)
-         (div (IfThenElse Ent11 Guassian3x3 Guassian5x5)
-             Guassian3x3)) (div (div (- Std7 Ent7) (IfThenElse
-     Ent7 Avg5 Avg5)) (div (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ (div Guassian3x3 Std11)
-     (+ Guassian5x5 Std11))) (IfThenElse Avg7
-     (+ (* Ent11 -8.716814701147342) (- Guassian5x5
-         3.0396803383393585)) (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7))))) (div (+ (IfThenElse (*
-     (div Avg5 Guassian5x5) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-     Ent11 Ent11) (* Std7 Guassian3x3) (div (+
-     (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
-     Ent11)) (div (+ Ent11 Ent7) (div -10.326519004347006
-     Guassian5x5)))) (div (+ Avg5 Std7) (* Guassian5x5
-     -5.2370240960804875))) (div (IfThenElse Ent11
-     Guassian3x3 Avg5) (+ Avg5 3.2768525120185905)))
-     3.8824444451447966)))) Avg7) (+ Guassian5x5
-     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
-     Ent11) (IfThenElse (+ Avg5 3.2768525120185905)
-     (IfThenElse (+ Avg7 Avg7) (* Std7 Guassian3x3)
-         (+ 3.8403651393628557 Avg5)) (div (* Ent7
-     Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* Ent11 Ent11) (* Std7 Avg7)) (IfThenElse
-     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         Std11) (- (div (+ 1.8444274225440092 Guassian3x3)
-         (IfThenElse Std11 Ent7 Avg7)) (- Avg5 Std11)))
-         Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
+     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
+     MacdValue) (- (IfThenElse (rlog VarBwBSandBT240s)
+     (- MacdValue MinValueOver120s) (exp (sin
+     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
+     AverageOver120s)))))) MacdValue)
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23625 Adjusted=0.8088978766430738 Hits=611
+Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse (IfThenElse (- Guassian5x5
-     Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 (div Avg5 Guassian5x5) Avg5))) (IfThenElse
-     Guassian5x5 (* Ent11 Ent11) (IfThenElse (*
-     (div (IfThenElse (div Guassian3x3 Std11)
-         Ent7 Ent7) Avg7) (- Std7 Std7)) Guassian3x3
-     -0.9121617474395196)) (IfThenElse (- (* (div
-     (+ (div (IfThenElse (- Guassian5x5 Ent11)
-         (+ Std11 Std11) (div (- Guassian3x3 1.4656767396248775)
-         Avg7)) (* (div Guassian3x3 Guassian5x5) (-
-         Std7 Std7))) (IfThenElse (div Ent7 Avg7)
-         (- (div Avg7 Std11) (+ -2.9649760998030277
-             Guassian5x5)) (* (div Ent11 Ent7) (- Std11
-         -1.7625369021237278)))) Avg7) (- Std7 Std7))
-     Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
-     (* Avg5 Std7)) 3.8824444451447966))) (+ Guassian5x5
-     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
-     Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     Guassian5x5)) (IfThenElse (+ Avg7 Avg7) (*
-     Std7 Guassian3x3) (+ 3.8403651393628557 Avg5))
-     (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-     (div (div Avg7 5.756228806896625) (IfThenElse
-         Ent7 (IfThenElse Std11 Avg5 Avg5) Avg5)))
-     (IfThenElse (div Guassian3x3 Ent11) (* Ent11
-         Ent11) (* Std7 Avg7)) (IfThenElse (- (+ (div
-     (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875))
-     (- (div (IfThenElse (- (* Std7 -6.182524571094834)
-         Avg5) (* Ent7 Std7) (div (div (* (IfThenElse
-         Std11 Std11 Avg7) Guassian3x3) (* Avg5 Std7))
-         3.8824444451447966)) (IfThenElse Std11 Ent7
-         Avg7)) (- Avg5 Std11))) Avg5) (* Ent7 Std7)
-     (div (div (div Avg5 Guassian3x3) (* Avg5
-         Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
+     RateOfChangeOver120s) MacdValue) (- (- (IfThenElse
+     (cos (- VarBwBSandBF240s MacdValue)) (rlog
+     (- (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
+     (+ (+ RateOfChangeOver120s 0.4156749391858123)
+         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+             MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
+Fitness: Standardized=0.03625632377740304 Adjusted=0.9650122050447519 Hits=2286
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ (div Guassian3x3 Std11)
-     (+ Guassian5x5 Std11))) (* Std7 Avg7)) (IfThenElse
-     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         (+ (div Guassian3x3 Std11) (- (IfThenElse
-             Std7 Std11 Avg7) (+ Guassian5x5 Std11))))
-         (- (+ Avg5 Std11) (IfThenElse Guassian3x3
-             Avg5 Avg5))) Avg5) (* Ent7 Std7) (div (div
-     (* Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- VarBwBSandOK240s
+     RateOfChangeOver120s) MacdValue) (+ (- -9.047207476913803
+     MacdValue) (- (IfThenElse (div (- RateOfChangeOver120s
+     RateOfChangeOver120s) RateOfChangeOver120s)
+     (- MacdValue MinValueOver120s) (exp (sin
+     VarBwBSandBF240s))) (- (sin (sin 3.727000519511334))
+     AverageOver120s)))))) MacdValue)
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ (div Guassian3x3 Std11)
-     (+ Guassian5x5 Std11))) (* Std7 Avg7)) (IfThenElse
-     (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         (+ (div Guassian3x3 Std11) (- (IfThenElse
-             Std7 Std11 Avg7) (+ Guassian5x5 Std11))))
-         (- (+ Avg5 Std11) (IfThenElse Guassian3x3
-             Avg5 Avg5))) Avg5) (* Ent7 Std7) (div (div
-     (* Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23125 Adjusted=0.8121827411167513 Hits=615
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (div Ent7
-     (- Avg5 Guassian5x5))) (div (* Ent7 Avg7)
-     (* Guassian5x5 -5.2370240960804875))) (div
-     (div Avg7 5.756228806896625) (IfThenElse
-     Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
-     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
-         Guassian3x3 Std11) (- (IfThenElse Std7 Std11
-         Avg7) (+ Guassian5x5 Std11)))) (- (+ Avg5
-     Std11) (IfThenElse Guassian3x3 Avg5 Avg5)))
-     Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
-     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
-     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
-     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
-         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
-         Std11) (+ -2.9649760998030277 Guassian5x5))
-         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
-             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
-     (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
-     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
-     (* Ent7 Std7) (div (div (* Ent11 Ent11) (*
-     Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
-     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
-     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
-     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
-         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
-         Std11) (+ -2.9649760998030277 Guassian5x5))
-         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
-             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
-     (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
-     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
-     (* Ent7 Std7) (div (div (* Ent11 Ent11) (*
-     Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (cos (- VarBwBSandBF240s
+     MacdValue)) MacdValue) (+ (- -9.047207476913803
+     MacdValue) (- (IfThenElse (div (div -5.520305035113157
+     MacdValue) RateOfChangeOver120s) (+ (sin
+     (sin (rlog MinValueOver120s))) (div (- MaxValueOver120s
+     -0.06269684604635516) -1.490361082446331))
+     (exp (sin VarBwBSandBF240s))) (- (sin (sin
+     3.727000519511334)) AverageOver120s))))))
+     MacdValue)
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2225 Adjusted=0.8179959100204499 Hits=622
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ Avg5 (+ Guassian5x5 Std11)))
-     (* Std7 Avg7)) (IfThenElse (- (+ (* (div
-     Ent7 (- Avg5 Guassian5x5)) (+ (IfThenElse
-     (IfThenElse (IfThenElse (+ Avg7 Guassian3x3)
-         (+ Avg7 Avg5) (* Std7 Avg7)) (- (div Avg7
-         Std11) (+ -2.9649760998030277 Guassian5x5))
-         (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
-             Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
-     (* Std7 Guassian3x3) (+ 3.8403651393628557
-     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11)))) (- (IfThenElse Std7 Std11 Avg7)
-     (+ Guassian5x5 Std11)))) (- (+ Avg5 Std11)
-     (IfThenElse Guassian3x3 Avg5 Avg5))) Avg5)
-     (* Ent7 Std7) (div (div (IfThenElse (div
-     Guassian3x3 Ent11) (* Ent11 Ent11) (* Std7
-     Avg7)) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+         (- (* RateOfChangeOver120s 5.428767330444556)
+             VarBwBSandBT240s)) (rlog (- (- MacdValue
+         VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+         0.4156749391858123) (+ RateOfChangeOver120s
+         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.22125 Adjusted=0.8188331627430911 Hits=623
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (* Ent11 Ent11) (+ Guassian5x5
-     Std11))) (IfThenElse (IfThenElse (- Guassian5x5
-     Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (- (+
-     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
-         Guassian3x3 Std11) (+ Guassian5x5 Std11)))
-     (- (div (+ 1.8444274225440092 Guassian3x3)
-         Avg5) (+ 9.194378415013368 Guassian5x5)))
-     Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-     -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-     (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-     (div Guassian3x3 Ent11) (* (div Ent7 (- Avg5
-     Guassian5x5)) (+ (div Guassian3x3 Std11)
-     (+ Guassian5x5 Std11))) (* Guassian5x5 -5.2370240960804875))
-     (IfThenElse (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-         (+ (div Guassian3x3 Std11) (- (IfThenElse
-             Std7 Std11 Avg7) (div -10.326519004347006
-             Guassian5x5)))) (- (+ Avg5 Std11) (IfThenElse
-         Guassian3x3 Avg5 Avg5))) Avg5) (* Ent7 Std7)
-         (div -10.326519004347006 Guassian5x5))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (sin (* MacdValue
+         (rlog (- (sin (rlog AverageOver120s)) (-
+             VarBwBSandBF240s MacdValue))))) (rlog (-
+         (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
+         (+ (+ RateOfChangeOver120s 0.4156749391858123)
+             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+                 MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.21875 Adjusted=0.8205128205128205 Hits=625
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-         Ent11))) (- (div Avg7 5.756228806896625)
-     (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-     (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-     -9.875555242834515) (div -10.326519004347006
-     (+ 3.8403651393628557 Avg5))) (IfThenElse
-     (+ Avg7 Avg7) (* Std7 Guassian3x3) (IfThenElse
-     Std11 Ent7 Avg7)) (div (div (div (div Avg5
-     Guassian3x3) (* Avg5 Std7)) 3.8824444451447966)
-     (+ 9.194378415013368 Guassian5x5))) (div
-     (div Avg7 5.756228806896625) (IfThenElse
-     Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-     Ent11) (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ (div Guassian3x3 Std11) (+ Guassian5x5
-         Std11))) (* Std7 Avg7)) (IfThenElse (- (+
-     (* (div Ent7 (- Avg5 Guassian5x5)) (+ (div
-         Guassian3x3 Std11) (- (IfThenElse Std7 Std11
-         Avg7) (+ Guassian5x5 Std11)))) (- (+ Avg5
-     Std11) (IfThenElse Guassian3x3 Avg5 Avg5)))
-     Avg5) (* Ent7 Std7) (div (div (div Avg5 Guassian3x3)
-     (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (- (sin (rlog AverageOver120s))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
-     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 (+ 3.8403651393628557
-                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
-             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
-             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-         (div (div Avg7 5.756228806896625) (IfThenElse
-             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
-         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
-         (IfThenElse (- (+ (+ (IfThenElse (* (div
-             Avg5 Guassian5x5) (div -10.326519004347006
-             Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-             Ent11 Ent11) (* Std7 Guassian3x3) (div (+
-             (IfThenElse Ent11 Std7 Avg5) (div -0.8811947849325932
-             Ent11)) (div (+ Ent11 Ent7) (div -10.326519004347006
-             Guassian5x5)))) (div (+ Avg5 Std7) (* Guassian5x5
-             -5.2370240960804875))) (div (- Guassian5x5
-             Ent11) (IfThenElse Ent7 Avg5 Avg5))) (- (+
-             Avg5 Std11) (IfThenElse Guassian3x3 Avg5
-             Avg5))) Avg5) (* Ent7 Std7) (div (div (*
-             Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
+             VarBwBSandBF240s) VolatilityOver120s)) (+
+         RateOfChangeOver120s (- (- (sin (+ MacdValue
+         (- (div RateOfChangeOver120s RateOfChangeOver120s)
+             VolatilityOver120s))) (- (- MacdValue VarBwBSandBT240s)
+         VolatilityOver120s)) AverageOver120s)) (*
+         -2.2975150044658705 -4.859797153795124))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s)))
+         (rlog (- (sin (rlog AverageOver120s)) (+
+             (+ AverageOver120s VarBwBSandOK240s) (+ RateOfChangeOver120s
+             2.039074361570953)))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin 3.727000519511334)
+         (+ (+ RateOfChangeOver120s 0.4156749391858123)
+             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+                 MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
-     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 (+ 3.8403651393628557
-                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
-             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
-             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-         (div (div Avg7 5.756228806896625) (IfThenElse
-             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
-         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
-         (IfThenElse (- (+ -9.134275217691986 -9.875555242834515)
-             Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
-             (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (sin (sin
+         VolatilityOver120s)) (+ (rlog (- -4.859797153795124
+         VarBwBSandOK240s)) (+ (+ (+ (+ (+ (sin (+
+         MaxValueOver120s VolatilityOver120s)) (IfThenElse
+         VarBwBSandBF240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+         RelativeStrengthIndexOver120s)) VarBwBSandBT240s)
+         (rlog (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+             VarBwBSandOK240s) RateOfChangeOver120s))))
+         (exp RateOfChangeOver120s)) (IfThenElse 1.141523029395536
+         (+ VarBwBSandBF240s VarBwBSandBF240s) RelativeStrengthIndexOver120s))))
+         (- (rlog (- (sin RateOfChangeOver120s) 3.7007694421447273))
+             VolatilityOver120s) (- VarBwBSandBF240s VarBwBSandBT240s))
+         (rlog (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
-     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 (+ 3.8403651393628557
-                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
-             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
-             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-         (div (IfThenElse Guassian3x3 Avg5 Avg5) (IfThenElse
-             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
-         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
-         (IfThenElse (- (+ -9.134275217691986 -9.875555242834515)
-             Avg5) (* Ent7 Std7) (div (div (* Ent11 Ent11)
-             (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div (- RateOfChangeOver120s
+     AverageOver120s) VarBwBSandOK240s) (rlog
+     (- (sin VarBwBSandOK240s) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (- (sin (sin
+     3.727000519511334)) AverageOver120s) MacdValue)
+     (+ (- -9.047207476913803 MacdValue) (- (IfThenElse
+         (div (- (+ VarBwBSandOK240s MacdValue) RateOfChangeOver120s)
+             RateOfChangeOver120s) (- MacdValue MinValueOver120s)
+         (exp (sin VarBwBSandBF240s))) (- (sin (sin
+         MacdValue)) AverageOver120s)))))) MacdValue)
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2075 Adjusted=0.8281573498964803 Hits=634
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
-     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 (+ 3.8403651393628557
-                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
-             Guassian3x3) (- Avg5 Guassian5x5)) (div (*
-             Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-         (div (div Avg7 5.756228806896625) (IfThenElse
-             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
-         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
-         (IfThenElse (- (+ (+ (IfThenElse (* (div
-             Avg5 Guassian5x5) (div -10.326519004347006
-             Guassian5x5)) (IfThenElse (IfThenElse Guassian5x5
-             Ent11 Ent11) (* Std7 Guassian3x3) (div Avg5
-             Guassian3x3)) (div (+ Avg5 Std7) (* Guassian5x5
-             -5.2370240960804875))) (div (- Guassian5x5
-             Ent11) (IfThenElse Ent7 Avg5 Avg5))) (- (+
-             Avg5 Std11) (IfThenElse Guassian3x3 Avg5
-             Avg5))) Avg5) (* Ent7 Std7) (div (div (*
-             Ent11 Ent11) (* Avg5 Std7)) 3.8824444451447966))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         (+ RateOfChangeOver120s VolatilityOver120s))
+         (- (- (IfThenElse (cos (- VarBwBSandBF240s
+             MacdValue)) (rlog (- (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))
+             (+ (+ AverageOver120s VarBwBSandOK240s) (+
+                 RateOfChangeOver120s VolatilityOver120s))))
+             (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+             -5.520305035113157)) MacdValue)))) MacdValue)
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20625 Adjusted=0.8290155440414507 Hits=635
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
 Tree 0:
- (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-     (+ Avg7 (- Guassian5x5 Ent11))) (- (IfThenElse
-     Std7 Std11 Avg7) (+ Guassian5x5 Std11)))
-     (IfThenElse (IfThenElse (- Guassian5x5 Ent11)
-         (IfThenElse (* (+ -9.134275217691986 -9.875555242834515)
-             (div -10.326519004347006 (+ 3.8403651393628557
-                 Avg5))) (IfThenElse (+ Avg7 Avg7) (* Std7
-             Guassian3x3) (div Ent7 (div Avg7 5.756228806896625)))
-             (div (* Ent7 Avg7) (* Guassian5x5 -5.2370240960804875)))
-         (div (div Avg7 5.756228806896625) (IfThenElse
-             Ent7 Avg5 Avg5))) (IfThenElse (div Guassian3x3
-         Ent11) (* (div Ent7 Std7) (+ (div Guassian3x3
-         Std11) (+ Guassian5x5 Std11))) (* Std7 Avg7))
-         (+ (+ (* (div Ent7 (- Avg5 Guassian5x5))
-             (+ (+ 9.194378415013368 Guassian5x5) (- Guassian5x5
-                 Ent11))) (- (+ -9.134275217691986 -9.875555242834515)
-             (+ Guassian5x5 Std11))) (IfThenElse (IfThenElse
-             (- Guassian5x5 Ent11) (IfThenElse (* (+ -9.134275217691986
-             -9.875555242834515) (div -10.326519004347006
-             (+ 3.8403651393628557 Avg5))) (IfThenElse
-             (+ Avg7 Avg7) (* Std7 Guassian3x3) (+ 3.8403651393628557
-             Avg5)) (div (* Ent7 Avg7) (* Guassian5x5
-             -5.2370240960804875))) (div (div Avg7 5.756228806896625)
-             (IfThenElse Ent7 Avg5 Avg5))) (IfThenElse
-             3.8403651393628557 (* (div Ent7 (- Avg5 Guassian5x5))
-             (+ Avg5 (+ Guassian5x5 Std11))) (* Std7 Avg7))
-             (IfThenElse (- (+ (* (div Ent7 (- Avg5 Guassian5x5))
-                 (+ (IfThenElse (IfThenElse (IfThenElse (+
-                     Avg7 Guassian3x3) (+ Avg7 Avg5) Std7) (-
-                     (div Avg7 Std11) (+ -2.9649760998030277 Guassian5x5))
-                     (div (+ 1.8444274225440092 Guassian3x3) (IfThenElse
-                         Std11 Ent7 Avg7))) (IfThenElse (+ Avg7 Avg7)
-                     (* Std7 Guassian3x3) (+ 3.8403651393628557
-                     Avg5)) (* (div Ent7 (- Avg5 Guassian5x5))
-                     (+ (div (div (* Ent7 Avg7) (* Guassian5x5
-                         -5.2370240960804875)) 3.8824444451447966)
-                         (+ Guassian5x5 Std11)))) (- (IfThenElse Std7
-                     Std11 Avg7) (+ Guassian5x5 Std11)))) (- Std7
-                 Std7)) Avg5) (* Avg5 Std7) (div (div (* Ent11
-                 Ent11) (* Avg5 Std7)) 3.8824444451447966))))))
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (+ (exp
+         3.7007694421447273) (cos VolatilityOver120s)))
+         (rlog (- (- (IfThenElse (sin (- RateOfChangeOver120s
+             RateOfChangeOver120s)) (sin RateOfChangeOver120s)
+             (+ (sin VarBwBSandOK240s) (- (cos (cos VarBwBSandBF240s))
+                 MacdValue))) 0.4156749391858123) MacdValue))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (- MacdValue VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- (rlog (- VarBwBSandBF240s VarBwBSandBT240s))
+                 MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
+             VarBwBSandBF240s) VolatilityOver120s)) (+
+         RateOfChangeOver120s (- (- (sin (+ MacdValue
+         (- (div RateOfChangeOver120s RateOfChangeOver120s)
+             VolatilityOver120s))) (- (- MacdValue VarBwBSandBT240s)
+         VolatilityOver120s)) AverageOver120s)) (*
+         -2.2975150044658705 -4.859797153795124))
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s)))
+         (rlog (- (sin (- VarBwBSandBF240s RateOfChangeOver120s))
+             (+ (+ AverageOver120s VarBwBSandOK240s) (+
+                 RateOfChangeOver120s 2.039074361570953))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (sin (+ (rlog (cos VolatilityOver120s))
+             VarBwBSandBF240s)) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (sin (sin
+         VolatilityOver120s)) (+ (rlog (- -4.859797153795124
+         (- (sin (- -4.859797153795124 (* -2.2975150044658705
+             -4.859797153795124))) AverageOver120s)))
+         (+ (+ (+ (+ (+ (sin (+ MaxValueOver120s VolatilityOver120s))
+             (- VarBwBSandBF240s VarBwBSandBT240s)) VarBwBSandBT240s)
+             (- VarBwBSandBF240s RateOfChangeOver120s))
+             (exp RateOfChangeOver120s)) (IfThenElse 1.141523029395536
+             (+ (sin VarBwBSandOK240s) VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)))) (- (rlog
+         (- (sin RateOfChangeOver120s) 3.7007694421447273))
+         VolatilityOver120s) (- VarBwBSandBF240s VarBwBSandBT240s))
+         (rlog (- (sin 3.727000519511334) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (cos (- VarBwBSandBF240s
+         MacdValue)) (rlog (+ (exp 3.7007694421447273)
+         (+ (div VarBwBSandBF240s VarBwBSandOK240s)
+             (- (div (+ (cos (div VarBwBSandBF240s VarBwBSandBF240s))
+                 (cos (- MacdValue -1.4649118028386001)))
+                 RateOfChangeOver120s) (div VolatilityOver120s
+                 AverageOver120s))))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (- MacdValue
+         VarBwBSandBT240s) (+ (+ RateOfChangeOver120s
+         (cos -3.719940034699931)) (+ RateOfChangeOver120s
+         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
+             VarBwBSandBF240s) VolatilityOver120s)) (+
+         RateOfChangeOver120s (cos (- (- (- VarBwBSandOK240s
+         RateOfChangeOver120s) MacdValue) (- VarBwBSandBF240s
+         VarBwBSandBT240s)))) (* -2.2975150044658705
+         -4.859797153795124)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s))) (rlog (- VarBwBSandOK240s
+         RateOfChangeOver120s)) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin (+ (rlog
+         (cos VolatilityOver120s)) (div (rlog (+ (+
+         -1.3207532123812251 VarBwBSandOK240s) (+
+         VarBwBSandBT240s (div VolatilityOver120s
+         AverageOver120s)))) (* RateOfChangeOver120s
+         5.428767330444556)))) (+ (+ RateOfChangeOver120s
+         0.4156749391858123) (+ RateOfChangeOver120s
+         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (- VarBwBSandBF240s
+             MacdValue) VolatilityOver120s)) (+ RateOfChangeOver120s
+         (- (- (sin (+ MacdValue (- (div RateOfChangeOver120s
+             RateOfChangeOver120s) VolatilityOver120s)))
+             (- -4.859797153795124 VarBwBSandOK240s))
+             AverageOver120s)) (* -2.2975150044658705
+         -4.859797153795124)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s))) (rlog (- (sin (rlog
+         AverageOver120s)) (+ (+ AverageOver120s (sin
+         VarBwBSandOK240s)) (+ RateOfChangeOver120s
+         2.039074361570953)))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin (+ (rlog
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (div
+         (rlog (+ (+ -1.3207532123812251 VarBwBSandOK240s)
+             (+ VarBwBSandBT240s (div VolatilityOver120s
+                 AverageOver120s)))) (* RateOfChangeOver120s
+         5.428767330444556)))) (+ (+ RateOfChangeOver120s
+         0.4156749391858123) (+ RateOfChangeOver120s
+         (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (div (rlog
+             AverageOver120s) VarBwBSandBF240s) VolatilityOver120s))
+         (+ RateOfChangeOver120s (- (- (sin AverageOver120s)
+             (sin (+ MaxValueOver120s VolatilityOver120s)))
+             AverageOver120s)) (* -2.2975150044658705
+         -4.859797153795124)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s))) (rlog (- (sin (rlog
+         AverageOver120s)) (+ (+ AverageOver120s VarBwBSandOK240s)
+         (+ RateOfChangeOver120s 2.039074361570953))))
+         (- VarBwBSandBF240s VarBwBSandBT240s)) (rlog
+         (- (sin (+ (rlog (cos VolatilityOver120s))
+             (div (rlog (+ (+ -1.3207532123812251 VarBwBSandOK240s)
+                 (+ VarBwBSandBT240s (- (- VarBwBSandOK240s
+                     RateOfChangeOver120s) MacdValue)))) (- RateOfChangeOver120s
+                 RateOfChangeOver120s)))) (+ (+ RateOfChangeOver120s
+             0.4156749391858123) (+ RateOfChangeOver120s
+             (- (- VarBwBSandBF240s MacdValue) AverageOver120s))))))
+         MacdValue)))) MacdValue)
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (div VarBwBSandBF240s
+             VarBwBSandBF240s) VolatilityOver120s)) (+
+         RateOfChangeOver120s (- (- (sin (sin RateOfChangeOver120s))
+         (- (- MacdValue (+ RateOfChangeOver120s 0.4156749391858123))
+             VolatilityOver120s)) AverageOver120s)) (*
+         -2.2975150044658705 -4.859797153795124))
+         (+ AverageOver120s VarBwBSandOK240s)) (rlog
+         (- (sin (rlog AverageOver120s)) (+ (+ AverageOver120s
+             VarBwBSandOK240s) (+ RateOfChangeOver120s
+             2.039074361570953)))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin (cos VarBwBSandBF240s))
+         (+ (+ RateOfChangeOver120s 0.4156749391858123)
+             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+                 MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03583473861720068 Adjusted=0.9654049654049655 Hits=2287
+Tree 0:
+ (- (- (IfThenElse (div VarBwBSandBF240s VarBwBSandOK240s)
+     (rlog (- (- VarBwBSandBF240s RateOfChangeOver120s)
+         (+ (+ AverageOver120s VarBwBSandOK240s) (+
+             RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (cos
+     (- (- (- VarBwBSandOK240s RateOfChangeOver120s)
+         MacdValue) (- (- (IfThenElse (- (IfThenElse
+         (+ (+ (sin (cos RateOfChangeOver120s)) (IfThenElse
+             VarBwBSandBT240s (+ VarBwBSandBF240s VarBwBSandBF240s)
+             RelativeStrengthIndexOver120s)) (- (+ AverageOver120s
+             VarBwBSandOK240s) VolatilityOver120s)) (+
+         RateOfChangeOver120s (- (- (sin (+ MacdValue
+         (rlog (- -4.859797153795124 VarBwBSandOK240s))))
+         (- (- MacdValue VarBwBSandBT240s) VolatilityOver120s))
+         AverageOver120s)) (* -2.2975150044658705
+         -4.859797153795124)) (+ (+ AverageOver120s
+         VarBwBSandOK240s) (+ RateOfChangeOver120s
+         VolatilityOver120s))) (rlog (- (sin (rlog
+         AverageOver120s)) (+ (+ AverageOver120s VarBwBSandOK240s)
+         (+ (+ RateOfChangeOver120s 0.4156749391858123)
+             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+                 MacdValue) AverageOver120s)))))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (rlog (- (sin (- (div
+         (- RateOfChangeOver120s RateOfChangeOver120s)
+         RateOfChangeOver120s) (+ (sin AverageOver120s)
+         (+ RateOfChangeOver120s VolatilityOver120s))))
+         (+ (+ RateOfChangeOver120s 0.4156749391858123)
+             (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+                 MacdValue) AverageOver120s)))))) MacdValue))))
+     MacdValue)
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03541315345699832 Adjusted=0.9657980456026058 Hits=2288
+Tree 0:
+ (- (- (- (IfThenElse (div VarBwBSandBF240s
+     VarBwBSandOK240s) (rlog (- (sin (- VarBwBSandOK240s
+     RateOfChangeOver120s)) (+ (IfThenElse MinValueOver120s
+     MaxValueOver120s MinValueOver120s) (+ RateOfChangeOver120s
+     VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (+ (- VarBwBSandBF240s
+     (- MacdValue VarBwBSandBT240s)) (- (IfThenElse
+     (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
+         RateOfChangeOver120s)) (div VarBwBSandOK240s
+         -0.4292253164906923))) (rlog (- (- VarBwBSandBF240s
+     VarBwBSandBT240s) (+ (+ AverageOver120s VarBwBSandOK240s)
+     (+ RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (sin
+     (+ MacdValue (- (div RateOfChangeOver120s
+         RateOfChangeOver120s) VolatilityOver120s)))))
+     VolatilityOver120s) (+ (rlog (- (sin 3.727000519511334)
+     (+ (+ RateOfChangeOver120s 0.4156749391858123)
+         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+             MacdValue) AverageOver120s))))) (+ RateOfChangeOver120s
+     VolatilityOver120s))))) (cos (- (- (cos (-
+     VarBwBSandBF240s MacdValue)) MacdValue) (+
+     (- -9.047207476913803 MacdValue) (- (IfThenElse
+     (- RateOfChangeOver120s RateOfChangeOver120s)
+     (+ (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
+         RateOfChangeOver120s)) (div VarBwBSandOK240s
+         -0.4292253164906923))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (exp (- VarBwBSandBF240s
+     VarBwBSandBT240s))) MinValueOver120s)))))
+     MacdValue)
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.03541315345699832 Adjusted=0.9657980456026058 Hits=2288
+Tree 0:
+ (- (- (- (IfThenElse (div VarBwBSandBF240s
+     VarBwBSandOK240s) (rlog (- (sin (- VarBwBSandOK240s
+     RateOfChangeOver120s)) (+ (IfThenElse MinValueOver120s
+     MaxValueOver120s MinValueOver120s) (+ RateOfChangeOver120s
+     VolatilityOver120s)))) (- VarBwBSandBF240s
+     VarBwBSandBT240s)) (cos (- (- (+ (- VarBwBSandBF240s
+     (- MacdValue VarBwBSandBT240s)) (- (IfThenElse
+     (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
+         RateOfChangeOver120s)) (div VarBwBSandOK240s
+         -0.4292253164906923))) (rlog (- (- VarBwBSandBF240s
+     VarBwBSandBT240s) (+ (+ AverageOver120s VarBwBSandOK240s)
+     (+ RateOfChangeOver120s VolatilityOver120s))))
+     (- VarBwBSandBF240s VarBwBSandBT240s)) (sin
+     (+ MacdValue (- (div RateOfChangeOver120s
+         RateOfChangeOver120s) VolatilityOver120s)))))
+     VolatilityOver120s) (+ (rlog (- (sin 3.727000519511334)
+     (+ (+ RateOfChangeOver120s 0.4156749391858123)
+         (+ RateOfChangeOver120s (- (- VarBwBSandBF240s
+             MacdValue) AverageOver120s))))) (+ RateOfChangeOver120s
+     VolatilityOver120s))))) (cos (- (- (cos (-
+     VarBwBSandBF240s MacdValue)) MacdValue) (+
+     (- -9.047207476913803 MacdValue) (- (IfThenElse
+     (- RateOfChangeOver120s RateOfChangeOver120s)
+     (+ (sin (- (exp (- (+ VarBwBSandOK240s MacdValue)
+         RateOfChangeOver120s)) (div VarBwBSandOK240s
+         -0.4292253164906923))) (- VarBwBSandBF240s
+         VarBwBSandBT240s)) (exp (- VarBwBSandBF240s
+     VarBwBSandBT240s))) MinValueOver120s)))))
+     MacdValue)
+
+
+Performance of Best Individual on Testing Set:
+
+Positive Hits: 746408
+Negative Hits: 28150
+False Positives: 0
+False Negatives: 0
+True Positives: 0
+True Negatives: 0
+
+Fitness: Standardized=0.03634330805440006 Adjusted=0.9649312078613892 Hits=746408
