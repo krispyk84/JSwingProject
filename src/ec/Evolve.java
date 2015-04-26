@@ -677,7 +677,7 @@ public class Evolve
         {
         EvolutionState state;
         ParameterDatabase parameters;
-        args = new String[] {"-file", "src/ec/app/Texture/texture.params"};
+        args = new String[] {"-file", "src/ec/app/bitcoinTrader/bitcoinTrader.params"};
         // should we print the help message and quit?
         checkForHelp(args);
 

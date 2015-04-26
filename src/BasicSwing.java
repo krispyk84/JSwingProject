@@ -11,14 +11,11 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import ec.app.Texture.FinancialFunctions;
+import ec.app.bitcoinTrader.FinancialFunctions;
 
 
-public class BasicSwing extends JFrame {
-	
-	/**
-	 * test
-	 */
+public class BasicSwing extends JFrame 
+{
 	private static final long serialVersionUID = 1L;
 	JPanel p = new JPanel();
 	JButton b = new JButton("Hello World!");
@@ -62,8 +59,7 @@ public class BasicSwing extends JFrame {
 		gpProg2.main(args);
 		gpProg3.main(args);
 		gpProg4.main(args);
-		
-		
+				
 		/*
 		System.out.println("Spawning Threads");
 		ArrayList<Thread> threads = new ArrayList<Thread>();
@@ -157,5 +153,4 @@ public class BasicSwing extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 	}
-
 }
