@@ -13,7 +13,6 @@ import javax.swing.JTextField;
 
 import ec.app.bitcoinTrader.FinancialFunctions;
 
-
 public class BasicSwing extends JFrame 
 {
 	private static final long serialVersionUID = 1L;
@@ -45,11 +44,8 @@ public class BasicSwing extends JFrame
 	public static double currentUSDBalance = 1000.00;
 	public static double currentBTCBalance = 0.00000000;
 	
-	public static void main(String[] args) throws Exception{
-		//TEST BED FOR TESTING FUNCTIONS
-		
-		//String[][] test = FinancialFunctions.buildRecordsArray("okcoinNormalizedTransactionHistory.txt");
-		//System.out.println("STOP");		
+	public static void main(String[] args) throws Exception
+	{		
 		ec.Evolve gpProg1 = new ec.Evolve();
 		ec.Evolve gpProg2 = new ec.Evolve();
 		ec.Evolve gpProg3 = new ec.Evolve();
@@ -79,7 +75,8 @@ public class BasicSwing extends JFrame
 		*/
 	}
 	
-	public BasicSwing() throws Exception{
+	public BasicSwing() throws Exception
+	{
 		super("Genetic Programming Bitcoin Trader");
 		setSize(1920,1080);
 		setResizable(false);

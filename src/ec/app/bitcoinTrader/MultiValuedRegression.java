@@ -19,7 +19,8 @@ import java.util.*;
 import java.awt.Point;
 
 public class MultiValuedRegression extends GPProblem implements
-		SimpleProblemForm {
+		SimpleProblemForm 
+	{
 
 	double dollarBalance = 1000.00;
 	double bitcoinBalance = 0.0;
@@ -186,7 +187,8 @@ public class MultiValuedRegression extends GPProblem implements
 
 		// Set the training terminal nodes by calling the filter functions
 		int i = 0;
-		for (Integer index : trainingRandomValues) {
+		for (Integer index : trainingRandomValues) 
+		{
 			if (i % 1000 == 0) {
 				System.out.println("TR" + i);
 			}
@@ -358,7 +360,8 @@ public class MultiValuedRegression extends GPProblem implements
 	// The evaluate method is what gives us our program/function using the
 	// training data
 	public void evaluate(final EvolutionState state, final Individual ind,
-			final int subpopulation, final int threadnum) {
+			final int subpopulation, final int threadnum) 
+	{
 		if (!ind.evaluated) {
 			DoubleData input = (DoubleData) (this.input);
 
@@ -460,7 +463,8 @@ public class MultiValuedRegression extends GPProblem implements
 	// This is the function that was originally found in the Benchmark class for
 	// the Regression example provided with ECJ
 	public void describe(EvolutionState state, Individual ind,
-			int subpopulation, int threadnum, int log) {
+			int subpopulation, int threadnum, int log) 
+	{
 		DoubleData input = (DoubleData) (this.input);
 
 		state.output.println(
@@ -545,7 +549,6 @@ public class MultiValuedRegression extends GPProblem implements
 				}
 			} else { }
 		}
-
 		double error = ((double) testingSetSize - (double) positiveHits)
 				/ (double) testingSetSize;
 		state.output.println("Positive Hits: " + positiveHits
@@ -567,10 +570,7 @@ public class MultiValuedRegression extends GPProblem implements
 									.parseDouble(bitStampRecords[bitStampRecords.length - 1])));
 		}
 		// the fitness better be KozaFitness!
-		KozaFitness f = (KozaFitness) (ind.fitness.clone()); // make a copy,
-															 // we're just
-															 // printing it
-															 // out
+		KozaFitness f = (KozaFitness) (ind.fitness.clone()); 
 		f.setStandardizedFitness(state, error);
 		f.hits = positiveHits;
 		f.printFitnessForHumans(state, log);
