@@ -53,8 +53,17 @@ public class BasicSwing extends JFrame {
 		
 		//String[][] test = FinancialFunctions.buildRecordsArray("okcoinNormalizedTransactionHistory.txt");
 		//System.out.println("STOP");		
-		ec.Evolve gpProg = new ec.Evolve();
-		gpProg.main(args);
+		ec.Evolve gpProg1 = new ec.Evolve();
+		ec.Evolve gpProg2 = new ec.Evolve();
+		ec.Evolve gpProg3 = new ec.Evolve();
+		ec.Evolve gpProg4 = new ec.Evolve();
+		
+		gpProg1.main(args);
+		gpProg2.main(args);
+		gpProg3.main(args);
+		gpProg4.main(args);
+		
+		
 		/*
 		System.out.println("Spawning Threads");
 		ArrayList<Thread> threads = new ArrayList<Thread>();

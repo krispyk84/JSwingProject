@@ -119,15 +119,20 @@ public class FinancialFunctions {
 	//CurrentVarianceValue, this is the function that checks to see if a spike or crash is happening on one market and has yet to hit the home market
 	public static double currentVarianceValue(String[] homeMarket, String[] otherMarket, double averageDiff, int start, int seconds){
 		//double overAllAverage = averageMarketVariance(homeMarket, otherMarket); //Move this to multivalued regression and only calculate once
-		double averageHome = averageOverX(seconds, start, homeMarket);
-		double averageAway = averageOverX(seconds, start, otherMarket);
+		//double averageHome = averageOverX(seconds, start, homeMarket);
+		//double averageAway = averageOverX(seconds, start, otherMarket);
 		
-		double difference = averageHome-averageAway;
+		double difference = Double.parseDouble(otherMarket[start])-Double.parseDouble(homeMarket[start]);
 		
-		if(Math.abs(difference) > 2*MultiValuedRegression.averageDiffBSandOK){
-			return difference*1;
+		double test1 = averageDiff;
+		double toReturn = 0.0;
+		if(Math.abs(difference) > 2*Math.abs(averageDiff)){
+			toReturn = difference;
 		}
-		return 0.0;
+		if(toReturn == 0.03){
+			System.out.println("STOP");
+		}
+		return toReturn;
 	}
 	
 	//Absolute value of the difference between two numbers
