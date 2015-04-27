@@ -56,18 +56,17 @@ public class BasicSwing extends JFrame
 		ec.Evolve gpProg8 = new ec.Evolve();
 		ec.Evolve gpProg9 = new ec.Evolve();
 		ec.Evolve gpProg10 = new ec.Evolve();
-		
+
 		gpProg1.main(args, "bitcoinTrader.params");
-		gpProg2.main(args, "bitcoinTrader1.params");
-		gpProg3.main(args, "bitcoinTrader2.params");
-		gpProg4.main(args, "bitcoinTrader3.params");
-		gpProg1.main(args, "bitcoinTrader4.params");
-		gpProg2.main(args, "bitcoinTrader5.params");
-		gpProg3.main(args, "bitcoinTrader6.params");
-		gpProg4.main(args, "bitcoinTrader7.params");
-		gpProg1.main(args, "bitcoinTrader8.params");
-		gpProg2.main(args, "bitcoinTrader9.params");
-		gpProg3.main(args, "bitcoinTrader10.params");
+		//gpProg2.main(args, "bitcoinTrader2.params");
+		//gpProg3.main(args, "bitcoinTrader3.params");
+		//gpProg4.main(args, "bitcoinTrader4.params");
+		//gpProg5.main(args, "bitcoinTrader5.params");
+		//gpProg6.main(args, "bitcoinTrader6.params");
+		//gpProg7.main(args, "bitcoinTrader7.params");
+		//gpProg8.main(args, "bitcoinTrader8.params");
+		//gpProg9.main(args, "bitcoinTrader9.params");
+		//gpProg10.main(args, "bitcoinTrader10.params");
 		
 				
 		/*

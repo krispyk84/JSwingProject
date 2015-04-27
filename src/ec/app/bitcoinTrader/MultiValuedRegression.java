@@ -15,6 +15,7 @@ import ec.gp.*;
 import ec.gp.koza.*;
 import ec.simple.*;
 
+import java.text.DecimalFormat;
 import java.util.*;
 import java.awt.Point;
 
@@ -151,7 +152,7 @@ public class MultiValuedRegression extends GPProblem implements
 		for (int i = 0; i < totalSize; i++) {
 			expectedResults[i] = FinancialFunctions.buyHoldSell(bitStampRecords, i);
 		}
-
+		
 		if (trainingSetSize < 1)
 			state.output.fatal("Training Set Size must be an integer greater than 0", base.push(P_TRAIN));
 
@@ -177,7 +178,7 @@ public class MultiValuedRegression extends GPProblem implements
 			//This just prints out a progress report to console every 1000 lines of data to let us know how far along it is in execution
 			if (j % 1000 == 0) {
 				double ratio = (double) j / (double) trainingSetSize;
-				System.out.println("BUILDING TRAINING TERMINALS: " + 100*ratio + "%");
+				System.out.println("BUILDING TRAINING TERMINALS: " + new DecimalFormat("##.#").format(100*ratio) + "%");
 			}
 
 			training[j][0] = FinancialFunctions.averageOverX(30, i,	bitStampRecords);
@@ -238,7 +239,7 @@ public class MultiValuedRegression extends GPProblem implements
 		for (Integer i : testingValues) {
 			if (j % 5000 == 0) {
 				double ratio = (double) j / (double) testingSetSize;
-				System.out.println("BUILDING TESTING TERMINALS: " + 100*ratio + "%");
+				System.out.println("BUILDING TESTING TERMINALS: " + new DecimalFormat("##.#").format(100*ratio) + "%");
 			}
 
 			testing[j][0] = FinancialFunctions.averageOverX(30, i, bitStampRecords);
@@ -338,7 +339,7 @@ public class MultiValuedRegression extends GPProblem implements
 
 				((GPIndividual) ind).trees[0].child.eval(state, threadnum,
 						input, stack, ((GPIndividual) ind), this);
-				
+				/*
 				// Fitness #1 - This returns a hit if it makes a profitable trade. 
 				double dollarBalanceNew = 0, bitcoinBalanceNew = 0;
 				if (input.x < 0) { // If sell
@@ -366,7 +367,8 @@ public class MultiValuedRegression extends GPProblem implements
 					}
 
 				} else {  }
-				/*
+				*/
+				
 				// Fitness #2 - Expected Calculated Results
 				if(input.x < 0 && expectedResult < 0){
 					hits++;
@@ -375,7 +377,7 @@ public class MultiValuedRegression extends GPProblem implements
 				} else {
 					//Not a hit
 				}
-				*/
+				
 				
 			}
 
@@ -439,53 +441,69 @@ public class MultiValuedRegression extends GPProblem implements
 			volatility30s = testing[y][30];
 			volatility60s = testing[y][31];
 			volatility120s = testing[y][32];
-			currentQuality = expectedTesting[y];
+			expectedResult = expectedTesting[y];
 
 			((GPIndividual) ind).trees[0].child.eval(state, threadnum, input,
 					stack, ((GPIndividual) ind), this);
 
-			
+			/*
 			//Fitness #1
 			double dollarBalanceNew = 0, bitcoinBalanceNew = 0;
 			if (input.x < 0) { //If sell
-				if (bitcoinBalanceTest > 0 && Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest > dollarBalanceOldTest) {
+				if (bitcoinBalanceTest > 0){ //&& Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest > dollarBalanceOldTest) {
 					dollarBalanceNew = Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest;
 					bitcoinBalanceNew = 0.0;
-					positiveHits++;
-					trueNegatives++;
+					if(dollarBalanceNew > dollarBalanceOldTest){
+						positiveHits++;
+						trueNegatives++;	
+					} else {
+						negativeHits++;
+						falsePositives++;
+					}
 					bitcoinBalanceOldTest = bitcoinBalanceTest;
 					dollarBalanceTest = dollarBalanceNew;
 					bitcoinBalanceTest = bitcoinBalanceNew;
 				} else {
-					negativeHits++;
-					falseNegatives++;
+					//negativeHits++;
+					//falseNegatives++;
 				}
 			} else if (input.x > 0) { //If buy
-				if (dollarBalanceTest > 0 && dollarBalanceTest/Double.parseDouble(bitStampRecords[y]) > bitcoinBalanceOldTest) {
+				if (dollarBalanceTest > 0) {  //&& dollarBalanceTest/Double.parseDouble(bitStampRecords[y]) > bitcoinBalanceOldTest) {
 					bitcoinBalanceNew = dollarBalanceTest/Double.parseDouble(bitStampRecords[y]);
 					dollarBalanceNew = 0.0;
-					positiveHits++;
-					truePositives++;
+					if(bitcoinBalanceNew > bitcoinBalanceOld){
+						positiveHits++;
+						truePositives++;	
+					} else {
+						negativeHits++;
+						falseNegatives++;
+					}
+					
 					dollarBalanceOldTest = dollarBalanceTest;
 					dollarBalanceTest = dollarBalanceNew;
 					bitcoinBalanceTest = bitcoinBalanceNew;
 				} else {
-					negativeHits++;
-					falsePositives++;
+					//negativeHits++;
+					//falsePositives++;
 				}
 			} else { }
-			/*
+			*/
+			
 			// Fitness #2 - Expected Calculated Results
 			if(input.x < 0 && expectedResult < 0){
 				positiveHits++;
 				trueNegatives++;
-				dollarBalanceTest = Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest;
-				bitcoinBalanceTest = 0.0;
+				if(bitcoinBalanceTest > 0){
+					dollarBalanceTest = Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest;
+					bitcoinBalanceTest = 0.0;	
+				}
 			} else if (input.x > 0 && expectedResult > 0){
 				positiveHits++;
 				truePositives++;
-				bitcoinBalanceTest = dollarBalanceTest/Double.parseDouble(bitStampRecords[y]);
-				dollarBalanceTest = 0.0;
+				if(dollarBalanceTest > 0){
+					bitcoinBalanceTest = dollarBalanceTest/Double.parseDouble(bitStampRecords[y]);
+					dollarBalanceTest = 0.0;	
+				}
 			} else {
 				if(input.x > 0 && expectedResult < 0){
 					falsePositives++;
@@ -493,7 +511,8 @@ public class MultiValuedRegression extends GPProblem implements
 					falseNegatives++;
 				}
 			}
-			*/
+			System.out.println("Bitcoin Balance: " + bitcoinBalanceTest + " Dollar Balance: " + dollarBalanceTest);
+			
 		}
 		double error = ((double) testingSetSize - (double) positiveHits)
 				/ (double) testingSetSize;
