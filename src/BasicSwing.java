@@ -50,11 +50,25 @@ public class BasicSwing extends JFrame
 		ec.Evolve gpProg2 = new ec.Evolve();
 		ec.Evolve gpProg3 = new ec.Evolve();
 		ec.Evolve gpProg4 = new ec.Evolve();
+		ec.Evolve gpProg5 = new ec.Evolve();
+		ec.Evolve gpProg6 = new ec.Evolve();
+		ec.Evolve gpProg7 = new ec.Evolve();
+		ec.Evolve gpProg8 = new ec.Evolve();
+		ec.Evolve gpProg9 = new ec.Evolve();
+		ec.Evolve gpProg10 = new ec.Evolve();
 		
-		gpProg1.main(args);
-		gpProg2.main(args);
-		gpProg3.main(args);
-		gpProg4.main(args);
+		gpProg1.main(args, "bitcoinTrader.params");
+		gpProg2.main(args, "bitcoinTrader1.params");
+		gpProg3.main(args, "bitcoinTrader2.params");
+		gpProg4.main(args, "bitcoinTrader3.params");
+		gpProg1.main(args, "bitcoinTrader4.params");
+		gpProg2.main(args, "bitcoinTrader5.params");
+		gpProg3.main(args, "bitcoinTrader6.params");
+		gpProg4.main(args, "bitcoinTrader7.params");
+		gpProg1.main(args, "bitcoinTrader8.params");
+		gpProg2.main(args, "bitcoinTrader9.params");
+		gpProg3.main(args, "bitcoinTrader10.params");
+		
 				
 		/*
 		System.out.println("Spawning Threads");

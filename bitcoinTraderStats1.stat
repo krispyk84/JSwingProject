@@ -1,0 +1,160 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8206778206778207 Adjusted=0.5492459943449576 Hits=418
+Tree 0:
+ (sin (* (rlog VolatilityOver30s) (+ MacdValue
+     VolatilityOver30s)))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8193908193908194 Adjusted=0.5496345201603395 Hits=421
+Tree 0:
+ (div (div (rlog (cos MaxValueOver120s)) (rlog
+     (rlog AverageOver120s))) (div (IfThenElse
+     (IfThenElse MaxValueOver60s VarBwBSandBF120s
+         MaxValueOver60s) (exp MaxValueOver120s) (cos
+     AverageOver60s)) (- (sin AverageOver120s)
+     (IfThenElse VarBwBSandBT240s RateOfChangeOver90s
+         MaxValueOver30s))))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.818961818961819 Adjusted=0.5497641509433961 Hits=422
+Tree 0:
+ (sin (cos (* MaxValueOver60s MaxValueOver90s)))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8181038181038182 Adjusted=0.5500235960358659 Hits=424
+Tree 0:
+ (IfThenElse (sin MinValueOver30s) (sin (sin
+     (IfThenElse (div VolatilityOver60s VarBwBSandBT60s)
+         VolatilityOver60s MaxValueOver30s))) (sin
+     (- (IfThenElse AverageOver30s VolatilityOver30s
+         AverageOver120s) (sin MinValueOver120s))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8172458172458172 Adjusted=0.5502832861189801 Hits=426
+Tree 0:
+ (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+     -5.494063804404814) (sin MinValueOver120s)))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8138138138138138 Adjusted=0.5513245033112583 Hits=434
+Tree 0:
+ (sin (- (* (rlog (IfThenElse (sin (div VolatilityOver120s
+     VarBwBSandBF120s)) RateOfChangeOver30s AverageOver90s))
+     (+ (- AverageOver60s AverageOver90s) (- MinValueOver120s
+         VarBwBSandOK120s))) (div (cos VarBwBSandBF120s)
+     (* (cos RateOfChangeOver90s) (cos (exp MinValueOver120s))))))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8138138138138138 Adjusted=0.5513245033112583 Hits=434
+Tree 0:
+ (sin (- (* (rlog (IfThenElse (sin (div VolatilityOver120s
+     VarBwBSandBF120s)) RateOfChangeOver30s AverageOver90s))
+     (+ (- AverageOver60s AverageOver90s) (- MinValueOver120s
+         VarBwBSandOK120s))) (div (cos VarBwBSandBF120s)
+     (* (cos RateOfChangeOver90s) (cos (exp MinValueOver120s))))))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8138138138138138 Adjusted=0.5513245033112583 Hits=434
+Tree 0:
+ (sin (- (* (rlog (IfThenElse (sin (div VolatilityOver120s
+     VarBwBSandBF120s)) RateOfChangeOver30s AverageOver90s))
+     (+ (- AverageOver60s AverageOver90s) (- MinValueOver120s
+         VarBwBSandOK120s))) (div (cos VarBwBSandBF120s)
+     (* (cos RateOfChangeOver90s) (cos (exp MinValueOver120s))))))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8086658086658086 Adjusted=0.5528937381404175 Hits=446
+Tree 0:
+ (IfThenElse (- (exp RateOfChangeOver90s)
+     (cos (cos RelativeStrengthIndexOver30s)))
+     (sin (* (exp (+ MacdValue VarBwBSandOK60s))
+         (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+             AverageOver120s) (sin MinValueOver120s)))))
+     (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+         AverageOver120s) (sin MinValueOver120s))))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8086658086658086 Adjusted=0.5528937381404175 Hits=446
+Tree 0:
+ (IfThenElse (- (exp RateOfChangeOver90s)
+     (cos (cos RelativeStrengthIndexOver30s)))
+     (sin (* (exp (+ MacdValue VarBwBSandOK60s))
+         (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+             AverageOver120s) (sin MinValueOver120s)))))
+     (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+         AverageOver120s) (sin MinValueOver120s))))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8086658086658086 Adjusted=0.5528937381404175 Hits=446
+Tree 0:
+ (IfThenElse (- (exp RateOfChangeOver90s)
+     (cos (IfThenElse VarBwBSandBT120s VarBwBSandBF240s
+         RateOfChangeOver30s))) (sin (* (exp (+ MacdValue
+     VarBwBSandOK60s)) (sin (- (IfThenElse AverageOver30s
+     VolatilityOver30s AverageOver120s) (sin MinValueOver120s)))))
+     (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+         AverageOver120s) RelativeStrengthIndexOver60s)))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8086658086658086 Adjusted=0.5528937381404175 Hits=446
+Tree 0:
+ (IfThenElse (- (exp RateOfChangeOver90s)
+     (cos (IfThenElse VarBwBSandBT120s VarBwBSandBF240s
+         RateOfChangeOver30s))) (sin (* (exp (+ MacdValue
+     VarBwBSandOK60s)) (sin (- (IfThenElse AverageOver30s
+     VolatilityOver30s AverageOver120s) (sin MinValueOver120s)))))
+     (sin (- (IfThenElse AverageOver30s VolatilityOver30s
+         AverageOver120s) RelativeStrengthIndexOver60s)))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.8082368082368082 Adjusted=0.5530249110320286 Hits=447
+Tree 0:
+ (IfThenElse (sin (IfThenElse (IfThenElse
+     MaxValueOver60s VarBwBSandBF120s MaxValueOver60s)
+     (cos MaxValueOver120s) (sin (- (IfThenElse
+     AverageOver30s VolatilityOver30s AverageOver120s)
+     (sin MinValueOver120s))))) (+ (div 10.140880161889532
+     RateOfChangeOver120s) (rlog (- (rlog RateOfChangeOver60s)
+     RelativeStrengthIndexOver30s))) (sin (- (IfThenElse
+     AverageOver30s VolatilityOver30s AverageOver120s)
+     (- RateOfChangeOver120s (cos (exp RateOfChangeOver120s))))))

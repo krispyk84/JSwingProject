@@ -22,6 +22,7 @@ public class MultiValuedRegression extends GPProblem implements
 		SimpleProblemForm 
 	{
 
+	//Initial dollar and bitcoin balances used to test how well our GP did in trading
 	double dollarBalance = 1000.00;
 	double bitcoinBalance = 0.0;
 	double dollarBalanceTest = 1000.00;
@@ -32,37 +33,34 @@ public class MultiValuedRegression extends GPProblem implements
 	double bitcoinBalanceOldTest = 0.0;
 
 	public Random rand = new Random();
-
 	private static final long serialVersionUID = 1;
 
 	public static final String P_SIZE = "size";
 	public static final String P_TRAIN = "trainingSetSize";
 
+	//A Hased Data structure used to hold our initial test values
 	Set<Integer> testingValues = new LinkedHashSet<Integer>();
 
+	//Vars to hold the various sizes
 	public static int totalSize;
 	public int trainingSetSize;
 	public int testingSetSize;
 
-	// Integers that state the number of historic records we have for each
-	// market
-	public int okCoinNumOfRecords;
-	public static int bitstampNumOfRecords;
-	public int btceNumOfRecords;
-	public int bitfinexNumOfRecords;
-
+	//These are the arrays that hold the price line data for the 4 markets
 	public static String[] okCoinRecords;
 	public static String[] bitStampRecords;
 	public static String[] btceRecords;
 	public static String[] bitfinexRecords;
 
+	//These arrays hold the expected values that are used for fitness function #2
 	public static int[] expectedResults;
 	public static int[] expectedTraining;
 	public static int[] expectedTesting;
-
-	public static double buyAndHoldEarnings;
-
 	public double currentQuality;
+	public double expectedResult;
+	
+	//This var holds the buy and hold earnings expected if we simply buy at the beginning of the timeline, and sell at the end
+	public static double buyAndHoldEarnings;
 
 	// Doubles that store the average over x number of seconds
 	public double average30seconds;
@@ -97,268 +95,200 @@ public class MultiValuedRegression extends GPProblem implements
 	public double minValue90s;
 	public double minValue120s;
 
+	//Variance between Bitstamp and Bitfinex
 	public double varianceBetweenBSandBF60s;
-	public double varianceBetweenBSandOK60s;
-	public double varianceBetweenBSandBT60s;
-
 	public double varianceBetweenBSandBF120s;
-	public double varianceBetweenBSandOK120s;
-	public double varianceBetweenBSandBT120s;
-
 	public double varianceBetweenBSandBF240s;
-	public double varianceBetweenBSandOK240s;
+
+	//Variance between Bitstamp and BTC-E
+	public double varianceBetweenBSandBT60s;
+	public double varianceBetweenBSandBT120s;
 	public double varianceBetweenBSandBT240s;
 
+	//Variance between Bitstamp and OK-Coin
+	public double varianceBetweenBSandOK60s;
+	public double varianceBetweenBSandOK120s;
+	public double varianceBetweenBSandOK240s;
+	
 	// Volatility, aka Standard Deviation
 	public double volatility30s;
 	public double volatility60s;
 	public double volatility120s;
 
-	public double averageDiffBSandBT;// =
-									 // FinancialFunctions.averageMarketVariance(bitStampRecords,
-									 // btceRecords);
-	public double averageDiffBSandBF;// =
-									 // FinancialFunctions.averageMarketVariance(bitStampRecords,
-									 // bitfinexRecords);
-	public static double averageDiffBSandOK;// =
-											// FinancialFunctions.averageMarketVariance(bitStampRecords,
-											// okCoinRecords);
+	//These variables hold the averages between the home and away markets over the entire timeline
+	public double averageDiffBSandBT;
+	public double averageDiffBSandBF;
+	public double averageDiffBSandOK;
 
+	//Arrays that hold the training and testing data
 	public double training[][];
 	public double testing[][];
 
 	public void setup(final EvolutionState state, final Parameter base) 
 	{
 		super.setup(state, base);
-		
+		//Set the sizes
 		totalSize = state.parameters.getInt(base.push(P_SIZE), null, 1);
 		trainingSetSize = state.parameters.getInt(base.push(P_TRAIN), null, 1);
 		testingSetSize = totalSize - trainingSetSize;
 
-		okCoinNumOfRecords = totalSize;
-		bitstampNumOfRecords = totalSize;
-		btceNumOfRecords = totalSize;
-		bitfinexNumOfRecords = totalSize;
+		//Collect the data lines from the input text files
+		okCoinRecords = FinancialFunctions.buildRecordsArray("okcoinEvery10Seconds.txt");
+		bitStampRecords = FinancialFunctions.buildRecordsArray("bitstampEvery10Seconds.txt");
+		btceRecords = FinancialFunctions.buildRecordsArray("btceEvery10Seconds.txt");
+		bitfinexRecords = FinancialFunctions.buildRecordsArray("bitfinexEvery10Seconds.txt");
 
-		okCoinRecords = FinancialFunctions
-				.buildRecordsArray("okcoinEvery10Seconds.txt");
-		bitStampRecords = FinancialFunctions
-				.buildRecordsArray("bitstampEvery10Seconds.txt");
-		btceRecords = FinancialFunctions
-				.buildRecordsArray("btceEvery10Seconds.txt");
-		bitfinexRecords = FinancialFunctions
-				.buildRecordsArray("bitfinexEvery10Seconds.txt");
+		//Calculate the averages betwen markets
+		averageDiffBSandBT = FinancialFunctions.averageMarketVariance(bitStampRecords, btceRecords);
+		averageDiffBSandBF = FinancialFunctions.averageMarketVariance(bitStampRecords, bitfinexRecords);
+		averageDiffBSandOK = FinancialFunctions.averageMarketVariance(bitStampRecords, okCoinRecords);
 
-		averageDiffBSandBT = FinancialFunctions.averageMarketVariance(
-				bitStampRecords, btceRecords);
-		averageDiffBSandBF = FinancialFunctions.averageMarketVariance(
-				bitStampRecords, bitfinexRecords);
-		averageDiffBSandOK = FinancialFunctions.averageMarketVariance(
-				bitStampRecords, okCoinRecords);
+		//Calculate the buy and hold earnings over the time line
+		buyAndHoldEarnings = 1000 / (Double.parseDouble(bitStampRecords[0])) * (Double.parseDouble(bitStampRecords[totalSize - 1]));
 
-		buyAndHoldEarnings = 1000 / (Double.parseDouble(bitStampRecords[0]))
-				* (Double.parseDouble(bitStampRecords[totalSize - 1]));
-
-		expectedResults = new int[bitstampNumOfRecords];
-		for (int i = 0; i < bitstampNumOfRecords; i++) {
-			expectedResults[i] = FinancialFunctions.buyHoldSell(
-					bitStampRecords, i);
+		//This calculates the expected results by running the buy hold sell function that returns what trades should be made at a given time
+		expectedResults = new int[totalSize];
+		for (int i = 0; i < totalSize; i++) {
+			expectedResults[i] = FinancialFunctions.buyHoldSell(bitStampRecords, i);
 		}
 
 		if (trainingSetSize < 1)
-			state.output.fatal(
-					"Training Set Size must be an integer greater than 0",
-					base.push(P_TRAIN));
+			state.output.fatal("Training Set Size must be an integer greater than 0", base.push(P_TRAIN));
 
-		Random rand = new Random();
-
-		// BUILDS A LIST OF RANDOM VALUES FOR TRAINING THAT ARE NOT REPEATED
+		//This is a hashed data structures that hold the training random values. This structure is used so that inputs are not repeated
 		Set<Integer> trainingRandomValues = new LinkedHashSet<Integer>();
 
+		//We fill the training random values data structure
 		while (trainingRandomValues.size() < trainingSetSize) {
 			Integer next = rand.nextInt(totalSize) + 1;
 			trainingRandomValues.add(next);
 		}
-
+		
+		//We define our training, testing, and expected results arrays
 		training = new double[trainingSetSize][33];
 		testing = new double[testingSetSize][33];
 		expectedTraining = new int[trainingSetSize];
 		expectedTesting = new int[testingSetSize];
 
-		// Set the training terminal nodes by calling the filter functions
-		int i = 0;
-		for (Integer index : trainingRandomValues) 
+		//This loop iterates through and populates the training array for use in GP
+		int j = 0;
+		for (Integer i : trainingRandomValues) 
 		{
-			if (i % 1000 == 0) {
-				System.out.println("TR" + i);
+			//This just prints out a progress report to console every 1000 lines of data to let us know how far along it is in execution
+			if (j % 1000 == 0) {
+				double ratio = (double) j / (double) trainingSetSize;
+				System.out.println("BUILDING TRAINING TERMINALS: " + 100*ratio + "%");
 			}
 
-			training[i][0] = FinancialFunctions.averageOverX(30, index,
-					bitStampRecords);
-			training[i][1] = FinancialFunctions.averageOverX(60, index,
-					bitStampRecords);
-			training[i][2] = FinancialFunctions.averageOverX(90, index,
-					bitStampRecords);
-			training[i][3] = FinancialFunctions.averageOverX(120, index,
-					bitStampRecords);
+			training[j][0] = FinancialFunctions.averageOverX(30, i,	bitStampRecords);
+			training[j][1] = FinancialFunctions.averageOverX(60, i,	bitStampRecords);
+			training[j][2] = FinancialFunctions.averageOverX(90, i,	bitStampRecords);
+			training[j][3] = FinancialFunctions.averageOverX(120, i, bitStampRecords);
 
-			training[i][4] = FinancialFunctions.rateOfChangeOverX(30, index);
-			training[i][5] = FinancialFunctions.rateOfChangeOverX(60, index);
-			training[i][6] = FinancialFunctions.rateOfChangeOverX(90, index);
-			training[i][7] = FinancialFunctions.rateOfChangeOverX(120, index);
+			training[j][4] = FinancialFunctions.rateOfChangeOverX(30, i);
+			training[j][5] = FinancialFunctions.rateOfChangeOverX(60, i);
+			training[j][6] = FinancialFunctions.rateOfChangeOverX(90, i);
+			training[j][7] = FinancialFunctions.rateOfChangeOverX(120, i);
 
-			training[i][8] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			training[i][9] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			training[i][10] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			training[i][11] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
+			training[j][8] = FinancialFunctions.relativeStrengthIndexOverN(30,i);
+			training[j][9] = FinancialFunctions.relativeStrengthIndexOverN(30,i);
+			training[j][10] = FinancialFunctions.relativeStrengthIndexOverN(30,i);
+			training[j][11] = FinancialFunctions.relativeStrengthIndexOverN(30,i);
 
-			training[i][12] = FinancialFunctions.MACD(index, bitStampRecords);
+			training[j][12] = FinancialFunctions.MACD(i, bitStampRecords);
+			
+			training[j][13] = FinancialFunctions.maxValueOverX(30, i);
+			training[j][14] = FinancialFunctions.maxValueOverX(60, i);
+			training[j][15] = FinancialFunctions.maxValueOverX(90, i);
+			training[j][16] = FinancialFunctions.maxValueOverX(120, i);
 
-			training[i][13] = FinancialFunctions.maxValueOverX(30, index);
-			training[i][14] = FinancialFunctions.maxValueOverX(60, index);
-			training[i][15] = FinancialFunctions.maxValueOverX(90, index);
-			training[i][16] = FinancialFunctions.maxValueOverX(120, index);
+			training[j][17] = FinancialFunctions.minValueOverX(30, i, bitStampRecords);
+			training[j][18] = FinancialFunctions.minValueOverX(60, i, bitStampRecords);
+			training[j][19] = FinancialFunctions.minValueOverX(90, i, bitStampRecords);
+			training[j][20] = FinancialFunctions.minValueOverX(120, i, bitStampRecords);
 
-			training[i][17] = FinancialFunctions.minValueOverX(30, index);
-			training[i][18] = FinancialFunctions.minValueOverX(60, index);
-			training[i][19] = FinancialFunctions.minValueOverX(90, index);
-			training[i][20] = FinancialFunctions.minValueOverX(120, index);
+			training[j][21] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF,i, 6);
+			training[j][22] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF,i, 12);
+			training[j][23] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF,i, 24);
 
-			training[i][21] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 6);
-			training[i][22] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 12);
-			training[i][23] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 24);
+			training[j][24] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 6);
+			training[j][25] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 12);
+			training[j][26] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 24);
 
-			training[i][24] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, btceRecords, averageDiffBSandBT, index, 6);
-			training[i][25] = FinancialFunctions
-					.currentVarianceValue(bitStampRecords, btceRecords,
-							averageDiffBSandBT, index, 12);
-			training[i][26] = FinancialFunctions
-					.currentVarianceValue(bitStampRecords, btceRecords,
-							averageDiffBSandBT, index, 24);
+			training[j][27] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 6);
+			training[j][28] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 12);
+			training[j][29] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 24);
 
-			training[i][27] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					6);
-			training[i][28] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					12);
-			training[i][29] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					24);
+			training[j][30] = FinancialFunctions.volatility(30, i, bitStampRecords);
+			training[j][31] = FinancialFunctions.volatility(60, i, bitStampRecords);
+			training[j][32] = FinancialFunctions.volatility(90, i, bitStampRecords);
+			expectedTraining[j] = expectedResults[i];
 
-			training[i][30] = FinancialFunctions.volatility(30, index,
-					bitStampRecords);
-			training[i][31] = FinancialFunctions.volatility(60, index,
-					bitStampRecords);
-			training[i][32] = FinancialFunctions.volatility(90, index,
-					bitStampRecords);
-			expectedTraining[i] = expectedResults[index];
-			// Build expected training here
-			i++;
+			j++;
 		}
 		
 		//add all testing values from the total size
-		for (int j = 0; j < totalSize; j++) {
+		for (j = 0; j < totalSize; j++) {
 			testingValues.add(j);
 		}
 		//remove the training values from the testing values
 		testingValues.removeAll(trainingRandomValues);
 
-		i = 0;
-		for (Integer index : testingValues) {
-			if (i % 5000 == 0) {
-				System.out.println("TE" + i);
+		j = 0;
+		for (Integer i : testingValues) {
+			if (j % 5000 == 0) {
+				double ratio = (double) j / (double) testingSetSize;
+				System.out.println("BUILDING TESTING TERMINALS: " + 100*ratio + "%");
 			}
 
-			testing[i][0] = FinancialFunctions.averageOverX(30, index,
-					bitStampRecords);
-			testing[i][1] = FinancialFunctions.averageOverX(60, index,
-					bitStampRecords);
-			testing[i][2] = FinancialFunctions.averageOverX(90, index,
-					bitStampRecords);
-			testing[i][3] = FinancialFunctions.averageOverX(120, index,
-					bitStampRecords);
+			testing[j][0] = FinancialFunctions.averageOverX(30, i, bitStampRecords);
+			testing[j][1] = FinancialFunctions.averageOverX(60, i, bitStampRecords);
+			testing[j][2] = FinancialFunctions.averageOverX(90, i, bitStampRecords);
+			testing[j][3] = FinancialFunctions.averageOverX(120, i, bitStampRecords);
 
-			testing[i][4] = FinancialFunctions.rateOfChangeOverX(30, index);
-			testing[i][5] = FinancialFunctions.rateOfChangeOverX(60, index);
-			testing[i][6] = FinancialFunctions.rateOfChangeOverX(90, index);
-			testing[i][7] = FinancialFunctions.rateOfChangeOverX(120, index);
+			testing[j][4] = FinancialFunctions.rateOfChangeOverX(30, i);
+			testing[j][5] = FinancialFunctions.rateOfChangeOverX(60, i);
+			testing[j][6] = FinancialFunctions.rateOfChangeOverX(90, i);
+			testing[j][7] = FinancialFunctions.rateOfChangeOverX(120, i);
+			
+			testing[j][8] = FinancialFunctions.relativeStrengthIndexOverN(30, i);
+			testing[j][9] = FinancialFunctions.relativeStrengthIndexOverN(30, i);
+			testing[j][10] = FinancialFunctions.relativeStrengthIndexOverN(30, i);
+			testing[j][11] = FinancialFunctions.relativeStrengthIndexOverN(30, i);
+			
+			testing[j][12] = FinancialFunctions.MACD(i, bitStampRecords);
+			
+			testing[j][13] = FinancialFunctions.maxValueOverX(30, i);
+			testing[j][14] = FinancialFunctions.maxValueOverX(60, i);
+			testing[j][15] = FinancialFunctions.maxValueOverX(90, i);
+			testing[j][16] = FinancialFunctions.maxValueOverX(120, i);
+			
+			testing[j][17] = FinancialFunctions.minValueOverX(30, i, bitStampRecords);
+			testing[j][18] = FinancialFunctions.minValueOverX(60, i, bitStampRecords);
+			testing[j][19] = FinancialFunctions.minValueOverX(90, i, bitStampRecords);
+			testing[j][20] = FinancialFunctions.minValueOverX(120, i, bitStampRecords);
+		
+			testing[j][21] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF, i, 6);
+			testing[j][22] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF, i, 12);
+			testing[j][23] = FinancialFunctions.currentVarianceValue(bitStampRecords, bitfinexRecords, averageDiffBSandBF, i, 24);
 
-			testing[i][8] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			testing[i][9] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			testing[i][10] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
-			testing[i][11] = FinancialFunctions.relativeStrengthIndexOverN(30,
-					index);
+			testing[j][24] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 6);
+			testing[j][25] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 12);
+			testing[j][26] = FinancialFunctions.currentVarianceValue(bitStampRecords, btceRecords, averageDiffBSandBT, i, 24);
 
-			testing[i][12] = FinancialFunctions.MACD(index, bitStampRecords);
+			testing[j][27] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 6);
+			testing[j][28] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 12);
+			testing[j][29] = FinancialFunctions.currentVarianceValue(bitStampRecords, okCoinRecords, averageDiffBSandOK, i, 24);
 
-			testing[i][13] = FinancialFunctions.maxValueOverX(30, index);
-			testing[i][14] = FinancialFunctions.maxValueOverX(60, index);
-			testing[i][15] = FinancialFunctions.maxValueOverX(90, index);
-			testing[i][16] = FinancialFunctions.maxValueOverX(120, index);
-
-			testing[i][17] = FinancialFunctions.minValueOverX(30, index);
-			testing[i][18] = FinancialFunctions.minValueOverX(60, index);
-			testing[i][19] = FinancialFunctions.minValueOverX(90, index);
-			testing[i][20] = FinancialFunctions.minValueOverX(120, index);
-
-			testing[i][21] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 60);
-			testing[i][22] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 120);
-			testing[i][23] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, bitfinexRecords, averageDiffBSandBF,
-					index, 20);
-
-			testing[i][24] = FinancialFunctions
-					.currentVarianceValue(bitStampRecords, btceRecords,
-							averageDiffBSandBT, index, 60);
-			testing[i][25] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, btceRecords, averageDiffBSandBT, index,
-					120);
-			testing[i][26] = FinancialFunctions
-					.currentVarianceValue(bitStampRecords, btceRecords,
-							averageDiffBSandBT, index, 20);
-
-			testing[i][27] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					60);
-			testing[i][28] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					120);
-			testing[i][29] = FinancialFunctions.currentVarianceValue(
-					bitStampRecords, okCoinRecords, averageDiffBSandOK, index,
-					20);
-
-			testing[i][30] = FinancialFunctions.volatility(30, index,
-					bitStampRecords);
-			testing[i][31] = FinancialFunctions.volatility(60, index,
-					bitStampRecords);
-			testing[i][32] = FinancialFunctions.volatility(90, index,
-					bitStampRecords);
-			expectedTesting[i] = expectedResults[index];
-			i++;
+			testing[j][30] = FinancialFunctions.volatility(30, i, bitStampRecords);
+			testing[j][31] = FinancialFunctions.volatility(60, i, bitStampRecords);
+			testing[j][32] = FinancialFunctions.volatility(90, i, bitStampRecords);
+			expectedTesting[j] = expectedResults[i];
+			j++;
 		}
 	}
 
-	// The evaluate method is what gives us our program/function using the
-	// training data
+	// The evaluate method is what gives us our program/function using the training data
 	public void evaluate(final EvolutionState state, final Individual ind,
 			final int subpopulation, final int threadnum) 
 	{
@@ -366,8 +296,6 @@ public class MultiValuedRegression extends GPProblem implements
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
-			int negHits = 0;
-			double expectedResult;
 			double result;
 
 			for (int y = 0; y < trainingSetSize; y++) {
@@ -410,49 +338,49 @@ public class MultiValuedRegression extends GPProblem implements
 
 				((GPIndividual) ind).trees[0].child.eval(state, threadnum,
 						input, stack, ((GPIndividual) ind), this);
-				// fitness
+				
+				// Fitness #1 - This returns a hit if it makes a profitable trade. 
 				double dollarBalanceNew = 0, bitcoinBalanceNew = 0;
 				if (input.x < 0) { // If sell
+					double currentPrice = Double.parseDouble(bitStampRecords[y]);
 					if (bitcoinBalance > 0) { // If we have bitcoins to sell
-						dollarBalanceNew = Double
-								.parseDouble(bitStampRecords[y])
-								* bitcoinBalance; // We would earn this much
-													// money
-						bitcoinBalanceNew = 0.0; // By selling, we would have
-													// this many bitcoins left,
-													// 0
-						if (dollarBalanceNew > dollarBalanceOld) {
-							hits++;
-						} else {
-							negHits++;
+						dollarBalanceNew = currentPrice*bitcoinBalance;
+						bitcoinBalanceNew = 0.0;
+						if(dollarBalanceNew > dollarBalanceOld){
+							hits++;	
 						}
-						
 						bitcoinBalanceOld = bitcoinBalance;
 						dollarBalance = dollarBalanceNew;
 						bitcoinBalance = bitcoinBalanceNew;
 					}
 				} else if (input.x > 0) {
 					if (dollarBalance > 0) {
-						bitcoinBalanceNew = dollarBalance
-								/ Double.parseDouble(bitStampRecords[y]);
+						bitcoinBalanceNew = dollarBalance/Double.parseDouble(bitStampRecords[y]);
 						dollarBalanceNew = 0.0;
-						if (bitcoinBalanceNew > bitcoinBalanceOld) {
-							hits++;
-						} else {
-							negHits++;
+						if(bitcoinBalanceNew > bitcoinBalanceOld){
+							hits++;	
 						}
-
 						dollarBalanceOld = dollarBalance;
 						dollarBalance = dollarBalanceNew;
 						bitcoinBalance = bitcoinBalanceNew;
 					}
 
 				} else {  }
+				/*
+				// Fitness #2 - Expected Calculated Results
+				if(input.x < 0 && expectedResult < 0){
+					hits++;
+				} else if (input.x > 0 && expectedResult > 0){
+					hits++;
+				} else {
+					//Not a hit
+				}
+				*/
+				
 			}
 
-			result = ((double) trainingSetSize - (double) hits)
-					/ (double) trainingSetSize;
-			// the fitness better be KozaFitness!
+			result = ((double) trainingSetSize - (double) hits) / (double) trainingSetSize;
+			
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, result);
 			f.hits = hits;
@@ -460,15 +388,13 @@ public class MultiValuedRegression extends GPProblem implements
 		}
 	}
 
-	// This is the function that was originally found in the Benchmark class for
-	// the Regression example provided with ECJ
 	public void describe(EvolutionState state, Individual ind,
 			int subpopulation, int threadnum, int log) 
 	{
 		DoubleData input = (DoubleData) (this.input);
 
-		state.output.println(
-				"\n\nPerformance of Best Individual on Testing Set:\n", log);
+		state.output.println("\n\nPerformance of Best Individual on Testing Set:\n", log);
+		
 		// Keep track of positive, negative hits, and determines the spread of
 		// false positives to false negatives
 		int positiveHits = 0;
@@ -518,56 +444,72 @@ public class MultiValuedRegression extends GPProblem implements
 			((GPIndividual) ind).trees[0].child.eval(state, threadnum, input,
 					stack, ((GPIndividual) ind), this);
 
+			
+			//Fitness #1
 			double dollarBalanceNew = 0, bitcoinBalanceNew = 0;
-			if (input.x < 0) {
-				if (bitcoinBalanceTest > 0) {
-					dollarBalanceNew = Double.parseDouble(bitStampRecords[y])
-							* bitcoinBalanceTest;
+			if (input.x < 0) { //If sell
+				if (bitcoinBalanceTest > 0 && Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest > dollarBalanceOldTest) {
+					dollarBalanceNew = Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest;
 					bitcoinBalanceNew = 0.0;
-					if (dollarBalanceNew > dollarBalanceOldTest) {
-						positiveHits++;
-					} else {
-						negativeHits++;
-					}
+					positiveHits++;
+					trueNegatives++;
 					bitcoinBalanceOldTest = bitcoinBalanceTest;
 					dollarBalanceTest = dollarBalanceNew;
 					bitcoinBalanceTest = bitcoinBalanceNew;
+				} else {
+					negativeHits++;
+					falseNegatives++;
 				}
-			} else if (input.x > 0) {
-				if (dollarBalanceTest > 0) {
-					bitcoinBalanceNew = dollarBalanceTest
-							/ Double.parseDouble(bitStampRecords[y]);
+			} else if (input.x > 0) { //If buy
+				if (dollarBalanceTest > 0 && dollarBalanceTest/Double.parseDouble(bitStampRecords[y]) > bitcoinBalanceOldTest) {
+					bitcoinBalanceNew = dollarBalanceTest/Double.parseDouble(bitStampRecords[y]);
 					dollarBalanceNew = 0.0;
-					if (bitcoinBalanceNew > bitcoinBalanceOldTest) {
-						positiveHits++;
-					} else {
-						negativeHits++;
-					}
+					positiveHits++;
+					truePositives++;
 					dollarBalanceOldTest = dollarBalanceTest;
 					dollarBalanceTest = dollarBalanceNew;
 					bitcoinBalanceTest = bitcoinBalanceNew;
+				} else {
+					negativeHits++;
+					falsePositives++;
 				}
 			} else { }
+			/*
+			// Fitness #2 - Expected Calculated Results
+			if(input.x < 0 && expectedResult < 0){
+				positiveHits++;
+				trueNegatives++;
+				dollarBalanceTest = Double.parseDouble(bitStampRecords[y])*bitcoinBalanceTest;
+				bitcoinBalanceTest = 0.0;
+			} else if (input.x > 0 && expectedResult > 0){
+				positiveHits++;
+				truePositives++;
+				bitcoinBalanceTest = dollarBalanceTest/Double.parseDouble(bitStampRecords[y]);
+				dollarBalanceTest = 0.0;
+			} else {
+				if(input.x > 0 && expectedResult < 0){
+					falsePositives++;
+				}else{
+					falseNegatives++;
+				}
+			}
+			*/
 		}
 		double error = ((double) testingSetSize - (double) positiveHits)
 				/ (double) testingSetSize;
+		
+		//System.out.println("Positive Hits: " + positiveHits
 		state.output.println("Positive Hits: " + positiveHits
 				+ "\nNegative Hits: " + negativeHits + "\nFalse Positives: "
 				+ falsePositives + "\nFalse Negatives: " + falseNegatives
 				+ "\nTrue Positives: " + truePositives + "\nTrue Negatives: "
 				+ trueNegatives + "\n", log);
 
-		System.out.println("Dollars: " + dollarBalanceTest + " Bitcoins: "
-				+ bitcoinBalanceTest);
-		System.out.println("Buy and Hold Earnings: " + buyAndHoldEarnings);
-		System.out.println("Price per bitcoin at the end: "
-				+ bitStampRecords[bitStampRecords.length - 1]);
+		state.output.println("Dollars: " + dollarBalanceTest + " Bitcoins: " + bitcoinBalanceTest, log);
+		state.output.println("Buy and Hold Earnings: " + buyAndHoldEarnings, log);
+		state.output.println("Price per bitcoin at the end: " + bitStampRecords[bitStampRecords.length - 1],log);
 		if (bitcoinBalanceTest > 0) {
-			System.out
-					.println("Converted Bitcoins: "
-							+ bitcoinBalanceTest
-							* (Double
-									.parseDouble(bitStampRecords[bitStampRecords.length - 1])));
+			state.output.println("Converted Bitcoins: "+ bitcoinBalanceTest* (Double.parseDouble(bitStampRecords[bitStampRecords.length - 1])),log);
 		}
 		// the fitness better be KozaFitness!
 		KozaFitness f = (KozaFitness) (ind.fitness.clone()); 

@@ -1,0 +1,139 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = ../../gp/koza/koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# The Function set:
+gp.fs.0.name = f0
+gp.fs.0.size = 43
+
+#NewTerminals
+gp.fs.0.func.0 = ec.app.bitcoinTrader.AverageOver30s
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = ec.app.bitcoinTrader.AverageOver60s
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = ec.app.bitcoinTrader.AverageOver90s
+gp.fs.0.func.2.nc = nc0
+gp.fs.0.func.3 = ec.app.bitcoinTrader.AverageOver120s
+gp.fs.0.func.3.nc = nc0
+
+gp.fs.0.func.4 = ec.app.bitcoinTrader.RateOfChangeOver30s
+gp.fs.0.func.4.nc = nc0
+gp.fs.0.func.5 = ec.app.bitcoinTrader.RateOfChangeOver60s
+gp.fs.0.func.5.nc = nc0
+gp.fs.0.func.6 = ec.app.bitcoinTrader.RateOfChangeOver90s
+gp.fs.0.func.6.nc = nc0
+gp.fs.0.func.7 = ec.app.bitcoinTrader.RateOfChangeOver120s
+gp.fs.0.func.7.nc = nc0
+
+gp.fs.0.func.8 = ec.app.bitcoinTrader.RelativeStrengthIndexOver30s
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = ec.app.bitcoinTrader.RelativeStrengthIndexOver60s
+gp.fs.0.func.9.nc = nc0
+gp.fs.0.func.10 = ec.app.bitcoinTrader.RelativeStrengthIndexOver90s
+gp.fs.0.func.10.nc = nc0
+gp.fs.0.func.11 = ec.app.bitcoinTrader.RelativeStrengthIndexOver120s
+gp.fs.0.func.11.nc = nc0
+
+gp.fs.0.func.12 = ec.app.bitcoinTrader.MacdValue
+gp.fs.0.func.12.nc = nc0
+
+gp.fs.0.func.13 = ec.app.bitcoinTrader.MaxValueOver30s
+gp.fs.0.func.13.nc = nc0
+gp.fs.0.func.14 = ec.app.bitcoinTrader.MaxValueOver60s
+gp.fs.0.func.14.nc = nc0
+gp.fs.0.func.15 = ec.app.bitcoinTrader.MaxValueOver90s
+gp.fs.0.func.15.nc = nc0
+gp.fs.0.func.16 = ec.app.bitcoinTrader.MaxValueOver120s
+gp.fs.0.func.16.nc = nc0
+
+gp.fs.0.func.17 = ec.app.bitcoinTrader.MinValueOver30s
+gp.fs.0.func.17.nc = nc0
+gp.fs.0.func.18 = ec.app.bitcoinTrader.MinValueOver60s
+gp.fs.0.func.18.nc = nc0
+gp.fs.0.func.19 = ec.app.bitcoinTrader.MinValueOver90s
+gp.fs.0.func.19.nc = nc0
+gp.fs.0.func.20 = ec.app.bitcoinTrader.MinValueOver120s
+gp.fs.0.func.20.nc = nc0
+
+gp.fs.0.func.21 = ec.app.bitcoinTrader.VarBwBSandBF60s
+gp.fs.0.func.21.nc = nc0
+gp.fs.0.func.22 = ec.app.bitcoinTrader.VarBwBSandBF120s
+gp.fs.0.func.22.nc = nc0
+gp.fs.0.func.23 = ec.app.bitcoinTrader.VarBwBSandBF240s
+gp.fs.0.func.23.nc = nc0
+
+gp.fs.0.func.24 = ec.app.bitcoinTrader.VarBwBSandBT60s
+gp.fs.0.func.24.nc = nc0
+gp.fs.0.func.25 = ec.app.bitcoinTrader.VarBwBSandBT120s
+gp.fs.0.func.25.nc = nc0
+gp.fs.0.func.26 = ec.app.bitcoinTrader.VarBwBSandBT240s
+gp.fs.0.func.26.nc = nc0
+
+gp.fs.0.func.27 = ec.app.bitcoinTrader.VarBwBSandOK60s
+gp.fs.0.func.27.nc = nc0
+gp.fs.0.func.28 = ec.app.bitcoinTrader.VarBwBSandOK120s
+gp.fs.0.func.28.nc = nc0
+gp.fs.0.func.29 = ec.app.bitcoinTrader.VarBwBSandOK240s
+gp.fs.0.func.29.nc = nc0
+
+gp.fs.0.func.30 = ec.app.bitcoinTrader.VolatilityOver30s
+gp.fs.0.func.30.nc = nc0
+gp.fs.0.func.31 = ec.app.bitcoinTrader.VolatilityOver60s
+gp.fs.0.func.31.nc = nc0
+gp.fs.0.func.32 = ec.app.bitcoinTrader.VolatilityOver120s
+gp.fs.0.func.32.nc = nc0
+
+#Functions
+gp.fs.0.func.33 = ec.app.bitcoinTrader.func.Add
+gp.fs.0.func.33.nc = nc2
+gp.fs.0.func.34 = ec.app.bitcoinTrader.func.Sub
+gp.fs.0.func.34.nc = nc2
+gp.fs.0.func.35 = ec.app.bitcoinTrader.func.Mul
+gp.fs.0.func.35.nc = nc2
+gp.fs.0.func.36 = ec.app.bitcoinTrader.func.KeijzerERC
+gp.fs.0.func.36.nc = nc0
+gp.fs.0.func.37 = ec.app.bitcoinTrader.func.Div
+gp.fs.0.func.37.nc = nc2
+gp.fs.0.func.38 = ec.app.bitcoinTrader.func.IfThenElse
+gp.fs.0.func.38.nc = nc3
+gp.fs.0.func.39 = ec.app.bitcoinTrader.func.Sin
+gp.fs.0.func.39.nc = nc1
+gp.fs.0.func.40 = ec.app.bitcoinTrader.func.Cos
+gp.fs.0.func.40.nc = nc1
+gp.fs.0.func.41 = ec.app.bitcoinTrader.func.Exp
+gp.fs.0.func.41.nc = nc1
+gp.fs.0.func.42 = ec.app.bitcoinTrader.func.Log
+gp.fs.0.func.42.nc = nc1
+
+#Setting up our problem:
+eval.problem = ec.app.bitcoinTrader.MultiValuedRegression
+eval.problem.data = ec.app.bitcoinTrader.DoubleData
+eval.problem.size = 776930
+eval.problem.trainingSetSize = 2331
+
+generations = 500
+
+select.tournament.size = 3
+
+breed.elite.0 = 3
+
+# gp.tree.print-style = latex
+
+breedthreads = auto
+evalthreads = auto
+
+#Print koza statistics
+stat.num-children = 1
+stat.child.0 = ec.gp.koza.KozaShortStatistics 
+stat.child.0.modulus = 5
+stat.child.0.file = $out9.stat
+stat.file = $bitcoinTraderStats9.stat

@@ -117,10 +117,10 @@ gp.fs.0.func.42.nc = nc1
 #Setting up our problem:
 eval.problem = ec.app.bitcoinTrader.MultiValuedRegression
 eval.problem.data = ec.app.bitcoinTrader.DoubleData
-eval.problem.size = 76930
-eval.problem.trainingSetSize = 1072
+eval.problem.size = 776930
+eval.problem.trainingSetSize = 2331
 
-generations = 100
+generations = 500
 
 select.tournament.size = 3
 
@@ -135,5 +135,5 @@ evalthreads = auto
 stat.num-children = 1
 stat.child.0 = ec.gp.koza.KozaShortStatistics 
 stat.child.0.modulus = 5
-stat.child.0.file = $out2.stat
-stat.file = $bitcoinTraderStats.stat
+stat.child.0.file = $out1.stat
+stat.file = $bitcoinTraderStats1.stat

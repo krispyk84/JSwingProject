@@ -673,11 +673,11 @@ public class Evolve
 
     /** Top-level evolutionary loop.  */
 
-    public static void main(String[] args)
+    public static void main(String[] args, String paramsFile)
         {
         EvolutionState state;
         ParameterDatabase parameters;
-        args = new String[] {"-file", "src/ec/app/bitcoinTrader/bitcoinTrader.params"};
+        args = new String[] {"-file", "src/ec/app/bitcoinTrader/" + paramsFile};
         // should we print the help message and quit?
         checkForHelp(args);
 
@@ -781,6 +781,6 @@ public class Evolve
             */
             }
 
-        System.exit(0);
+        //System.exit(0);
         }
     }
